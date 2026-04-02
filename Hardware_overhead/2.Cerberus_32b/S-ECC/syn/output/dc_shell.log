@@ -150,3 +150,29 @@ Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/dw_foundation.s
 Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
 Information: Performing power optimization. (PWR-850)
 Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 64 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'Cerberus_32b'
+
+Loaded alib file './alib-52/um28nchllogl35hsl140f_ssgwc0p9v125c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy syndrome_generator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy decision before Pass 1 (OPT-776)
+Information: Ungrouping 2 of 5 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'DE_CORRECTOR'
