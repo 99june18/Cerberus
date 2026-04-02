@@ -1,6 +1,6 @@
 # Artifact Evaluation for "Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection" (ISCA 2026)
 
-## Overview
+## Overview   (초안)
 
 This repository provides the artifact for the ISCA 2026 paper **Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection**.
 
