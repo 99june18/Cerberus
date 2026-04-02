@@ -13,14 +13,14 @@ initial begin
     //codeword[287:272] = 16'b1010_0011_1010_0011; // error value
     //codeword[271:0]   = 272'b0;  
 
-    codeword[287:272] = 16'b0; 
-    codeword[271:256] = 16'b0010_1010_0101_0111; // error value
-    codeword[255:0]   = 256'b0; 
+    //codeword[287:272] = 16'b0; 
+    //codeword[271:256] = 16'b0010_1010_0101_0111; // error value
+    //codeword[255:0]   = 256'b0; 
 
-    //codeword[287] = 1'b1;                     // error value
-    //codeword[286:200] = 87'b0;
-    //codeword[199] = 1'b1;                     // error value
-    //codeword[198:0] = 199'b0;
+    codeword[287] = 1'b1;                     // error value
+    codeword[286:200] = 87'b0;
+    codeword[199] = 1'b1;                     // error value
+    codeword[198:0] = 199'b0;
 
     //codeword[287:150] = 138'b0;
     //codeword[149] = 1'b1;                     // error value
