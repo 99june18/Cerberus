@@ -176,3 +176,31 @@ Information: State dependent leakage is now switched from on to off.
   Beginning Pass 1 Mapping
   ------------------------
   Processing 'DE_CORRECTOR'
+ Implement Synthetic for 'DE_CORRECTOR'.
+  Processing 'SSE_CORRECTOR'
+Information: Added key list 'DesignWare' to design 'SSE_CORRECTOR'. (DDB-72)
+  Processing 'Cerberus_32b'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'STQ_TIE1_1' in the library 'um28nchllogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STQ_TIE0_1' in the library 'um28nchllogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy sse_corrector 'SSE_CORRECTOR' #insts = 1755. (OPT-777)
+Information: Added key list 'DesignWare' to design 'Cerberus_32b'. (DDB-72)
+Information: Ungrouping hierarchy de_corrector 'DE_CORRECTOR' #insts = 29134. (OPT-777)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
