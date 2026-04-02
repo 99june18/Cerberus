@@ -1,0 +1,119 @@
+
+===============
+Runtime : 0/10000000
+[WR-DET] NE:0 DUE:0
+[OECC]   CE:0 DUE:0 SDC:0
+[SECC]   CE:0 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:0 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 1000000/10000000
+[WR-DET] NE:1000000 DUE:0
+[OECC]   CE:270 DUE:933213 SDC:66517
+[SECC]   CE:999730 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:1000000 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 2000000/10000000
+[WR-DET] NE:2000000 DUE:0
+[OECC]   CE:523 DUE:1867135 SDC:132342
+[SECC]   CE:1999477 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:2000000 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 3000000/10000000
+[WR-DET] NE:3000000 DUE:0
+[OECC]   CE:782 DUE:2800539 SDC:198679
+[SECC]   CE:2999218 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:3000000 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 4000000/10000000
+[WR-DET] NE:4000000 DUE:0
+[OECC]   CE:1016 DUE:3734181 SDC:264803
+[SECC]   CE:3998984 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:4000000 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 5000000/10000000
+[WR-DET] NE:5000000 DUE:0
+[OECC]   CE:1235 DUE:4667893 SDC:330872
+[SECC]   CE:4998765 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:5000000 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 6000000/10000000
+[WR-DET] NE:6000000 DUE:0
+[OECC]   CE:1483 DUE:5601944 SDC:396573
+[SECC]   CE:5998517 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:6000000 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 7000000/10000000
+[WR-DET] NE:7000000 DUE:0
+[OECC]   CE:1720 DUE:6535957 SDC:462323
+[SECC]   CE:6998280 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:7000000 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 8000000/10000000
+[WR-DET] NE:8000000 DUE:0
+[OECC]   CE:1971 DUE:7469861 SDC:528168
+[SECC]   CE:7998029 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:8000000 DUE:0 SDC:0
+===============
+
+===============
+Runtime : 9000000/10000000
+[WR-DET] NE:9000000 DUE:0
+[OECC]   CE:2198 DUE:8403457 SDC:594345
+[SECC]   CE:8997802 DUE:0 SDC:0
+[TOTAL]  NE:0 CE:9000000 DUE:0 SDC:0
+===============
+
+=====WRITE_LINK_DETECT_only=====
+Runtime : 10000000
+NE : 10000000
+DUE: 0
+===============================
+
+=====OECC_count==========
+Runtime : 10000000
+NE : 0
+CE : 2441
+DUE: 9337203
+SDC: 660356
+=========================
+
+=====SECC_count=========
+Runtime : 10000000
+NE : 2441
+CE : 9997559
+DUE: 0
+SDC: 0
+========================
+
+=====Total_count========
+Runtime : 10000000
+NE : 0
+CE : 10000000
+DUE: 0
+SDC: 0
+Total : 10000000
+========================
+
+=====Total_Final==========
+Runtime : 10000000
+NE  : 0.0000000
+CE  : 100.0000000
+DUE : 0.0000000
+SDC : 0.0000000
+==========================

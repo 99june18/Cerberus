@@ -1,0 +1,37 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+        -verbose
+Design : L_ECC_DECODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr  1 15:21:28 2026
+****************************************
+
+
+    Net: decode_result_out
+
+    Capacitance        0.0000000000
+  - min_capacitance    0.0000775500
+  ------------------------------
+    Slack              -0.0000775500  (VIOLATED)
+
+
+    Design: L_ECC_DECODER
+
+    max_area           0.0000000000
+  - Current Area       1205.4000244141
+  ------------------------------
+    Slack              -1205.4000244141  (VIOLATED)
+
+
+    Design: L_ECC_DECODER
+
+    max_leakage_power      0.0000000000
+  - Current Leakage Power  157153.1875000000
+  ----------------------------------
+    Slack                  -157153.1875000000  (VIOLATED)
+
+
+1

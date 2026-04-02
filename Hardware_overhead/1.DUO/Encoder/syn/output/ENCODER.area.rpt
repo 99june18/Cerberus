@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : ENCODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr  1 14:23:52 2026
+****************************************
+
+Library(s) Used:
+
+    um28nchllogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                          608
+Number of nets:                          1835
+Number of cells:                         1579
+Number of combinational cells:           1579
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                          0
+Number of references:                       6
+
+Combinational area:               2389.295944
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  2389.295944
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+ENCODER                           2389.2959    100.0  2389.2959     0.0000  0.0000  ENCODER
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 2389.2959     0.0000  0.0000
+
+1

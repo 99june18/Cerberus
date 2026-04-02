@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : reference
+Design : ENCODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr  1 16:00:28 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STQ_EN2_S_1        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000       4      6.048000  
+STQ_EN2_S_2        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.680000       1      1.680000  
+STQ_EO2_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     254    384.047991  
+STQ_EO2_S_0P5      um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     167    252.503994  
+STQ_EO2_S_2        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     354    535.247988  
+STQ_EO3_0P5        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     545    824.039981  
+STQ_EO3_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.184000       3      6.552000  
+STQ_EO3_2          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.688000       1      2.688000  
+STQ_INV_S_0P65     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.336000       1      0.336000  
+STQ_INV_S_1        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.336000       7      2.352000  
+-----------------------------------------------------------------------------
+Total 10 references                                  2015.495953
+1

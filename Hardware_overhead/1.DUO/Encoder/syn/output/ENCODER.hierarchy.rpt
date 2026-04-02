@@ -1,0 +1,17 @@
+ 
+****************************************
+Report : hierarchy
+        -full
+Design : ENCODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr  1 14:23:52 2026
+****************************************
+
+ENCODER
+    STQ_EO2_1             um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_S_0P5         um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO2_S_2           um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO3_0P5           um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO3_1             um28nchllogl35hsl140f_ssgwc0p9v125c
+    STQ_EO3_2             um28nchllogl35hsl140f_ssgwc0p9v125c
+1

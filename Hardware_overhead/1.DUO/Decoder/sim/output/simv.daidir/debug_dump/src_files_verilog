@@ -1,0 +1,8 @@
+/home/99june18/Cerberus/Hardware_overhead/1.DUO/Decoder/rtl/CHIEN.sv
+/home/99june18/Cerberus/Hardware_overhead/1.DUO/Decoder/rtl/DECODER.sv
+/home/99june18/Cerberus/Hardware_overhead/1.DUO/Decoder/rtl/FORNEY.sv
+/home/99june18/Cerberus/Hardware_overhead/1.DUO/Decoder/rtl/GFDIV.sv
+/home/99june18/Cerberus/Hardware_overhead/1.DUO/Decoder/rtl/GFMULT.sv
+/home/99june18/Cerberus/Hardware_overhead/1.DUO/Decoder/rtl/RIBM.sv
+/home/99june18/Cerberus/Hardware_overhead/1.DUO/Decoder/rtl/SYNDROME_GENERATOR.sv
+/home/99june18/Cerberus/Hardware_overhead/1.DUO/Decoder/sim/tb/TB_testbench.sv

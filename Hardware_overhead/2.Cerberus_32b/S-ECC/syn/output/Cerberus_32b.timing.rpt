@@ -1,0 +1,680 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : Cerberus_32b
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  2 18:18:39 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchllogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: codeword_in[135]
+              (input port clocked by vclk)
+  Endpoint: data_out[129]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  SSE_CORRECTOR      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[135] (in)                                   0.00       0.00 r
+  sse_corrector/codeword_in[135] (SSE_CORRECTOR)          0.00       0.00 r
+  sse_corrector/U10139/X (STQ_EN2_8)                      0.05       0.05 r
+  sse_corrector/U10349/X (STQ_EN2_S_2)                    0.04       0.10 f
+  sse_corrector/U2175/X (STQ_INV_S_1)                     0.01       0.11 r
+  sse_corrector/U8823/X (STQ_EN2_S_2)                     0.04       0.15 f
+  sse_corrector/U7423/X (STQ_EO3_0P5)                     0.08       0.23 f
+  sse_corrector/U8191/X (STQ_EN3_3)                       0.05       0.28 r
+  sse_corrector/U11612/X (STQ_EO3_0P5)                    0.03       0.32 f
+  sse_corrector/U7170/X (STQ_ND4_MM_1P5)                  0.03       0.35 r
+  sse_corrector/U1521/X (STQ_NR3_G_2)                     0.01       0.36 f
+  sse_corrector/U6679/X (STQ_ND3_2)                       0.01       0.37 r
+  sse_corrector/U6033/X (STQ_NR2_G_3P5)                   0.01       0.38 f
+  sse_corrector/U6938/X (STQ_OR2_4)                       0.02       0.40 f
+  sse_corrector/U1576/X (STQ_NR3_G_4)                     0.02       0.43 r
+  sse_corrector/U4417/X (STQ_INV_3P5)                     0.01       0.44 f
+  sse_corrector/U1465/X (STQ_NR2B_8)                      0.02       0.46 f
+  sse_corrector/U7249/X (STQ_OR3B_8)                      0.01       0.47 r
+  sse_corrector/U231/X (STQ_INV_3)                        0.01       0.48 f
+  sse_corrector/U1881/X (STQ_NR2_G_6)                     0.01       0.49 r
+  sse_corrector/U9527/X (STQ_ND3_5)                       0.03       0.52 f
+  sse_corrector/U1816/X (STQ_NR2_6)                       0.02       0.53 r
+  sse_corrector/U3095/X (STQ_NR2_G_0P8)                   0.01       0.55 f
+  sse_corrector/U15193/X (STQ_EO2_S_2)                    0.04       0.59 r
+  sse_corrector/U8510/X (STQ_EN3_3)                       0.05       0.64 r
+  sse_corrector/U7088/X (STQ_EN3_3)                       0.03       0.67 f
+  sse_corrector/U1824/X (STQ_ND2_G_3)                     0.01       0.68 r
+  sse_corrector/U1429/X (STQ_ND2_S_5)                     0.01       0.69 f
+  sse_corrector/U1651/X (STQ_NR3_G_8)                     0.02       0.71 r
+  sse_corrector/U1650/X (STQ_ND3_16)                      0.02       0.73 f
+  sse_corrector/U1649/X (STQ_AN2_24)                      0.02       0.76 f
+  sse_corrector/U6710/X (STQ_NR2B_8)                      0.02       0.78 f
+  sse_corrector/U15358/X (STQ_MUXI2_MG_0P75)              0.03       0.81 f
+  sse_corrector/data_out[129] (SSE_CORRECTOR)             0.00       0.81 f
+  U38279/X (STQ_AO2BB2_0P5)                               0.03       0.84 f
+  data_out[129] (out)                                     0.00       0.84 f
+  data arrival time                                                  0.84
+
+  clock vclk (rise edge)                                  0.38       0.38
+  clock network delay (ideal)                             0.00       0.38
+  output external delay                                   0.00       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+  Startpoint: codeword_in[135]
+              (input port clocked by vclk)
+  Endpoint: data_out[129]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  SSE_CORRECTOR      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[135] (in)                                   0.00       0.00 r
+  sse_corrector/codeword_in[135] (SSE_CORRECTOR)          0.00       0.00 r
+  sse_corrector/U10139/X (STQ_EN2_8)                      0.05       0.05 r
+  sse_corrector/U10349/X (STQ_EN2_S_2)                    0.04       0.10 f
+  sse_corrector/U2175/X (STQ_INV_S_1)                     0.01       0.11 r
+  sse_corrector/U8823/X (STQ_EN2_S_2)                     0.04       0.15 f
+  sse_corrector/U7423/X (STQ_EO3_0P5)                     0.08       0.23 f
+  sse_corrector/U8191/X (STQ_EN3_3)                       0.05       0.28 r
+  sse_corrector/U11612/X (STQ_EO3_0P5)                    0.03       0.32 f
+  sse_corrector/U7170/X (STQ_ND4_MM_1P5)                  0.03       0.35 r
+  sse_corrector/U1521/X (STQ_NR3_G_2)                     0.01       0.36 f
+  sse_corrector/U6679/X (STQ_ND3_2)                       0.01       0.37 r
+  sse_corrector/U6033/X (STQ_NR2_G_3P5)                   0.01       0.38 f
+  sse_corrector/U6938/X (STQ_OR2_4)                       0.02       0.40 f
+  sse_corrector/U1576/X (STQ_NR3_G_4)                     0.02       0.43 r
+  sse_corrector/U4417/X (STQ_INV_3P5)                     0.01       0.44 f
+  sse_corrector/U1465/X (STQ_NR2B_8)                      0.02       0.46 f
+  sse_corrector/U7249/X (STQ_OR3B_8)                      0.01       0.47 r
+  sse_corrector/U231/X (STQ_INV_3)                        0.01       0.48 f
+  sse_corrector/U1881/X (STQ_NR2_G_6)                     0.01       0.49 r
+  sse_corrector/U9527/X (STQ_ND3_5)                       0.03       0.52 f
+  sse_corrector/U1816/X (STQ_NR2_6)                       0.02       0.53 r
+  sse_corrector/U3095/X (STQ_NR2_G_0P8)                   0.01       0.55 f
+  sse_corrector/U15193/X (STQ_EO2_S_2)                    0.04       0.59 r
+  sse_corrector/U8510/X (STQ_EN3_3)                       0.05       0.64 r
+  sse_corrector/U7088/X (STQ_EN3_3)                       0.03       0.67 f
+  sse_corrector/U1824/X (STQ_ND2_G_3)                     0.01       0.68 r
+  sse_corrector/U1429/X (STQ_ND2_S_5)                     0.01       0.69 f
+  sse_corrector/U1651/X (STQ_NR3_G_8)                     0.02       0.71 r
+  sse_corrector/U1650/X (STQ_ND3_16)                      0.02       0.73 f
+  sse_corrector/U1649/X (STQ_AN2_24)                      0.02       0.76 f
+  sse_corrector/U6710/X (STQ_NR2B_8)                      0.02       0.78 f
+  sse_corrector/U15358/X (STQ_MUXI2_MG_0P75)              0.03       0.81 f
+  sse_corrector/data_out[129] (SSE_CORRECTOR)             0.00       0.81 f
+  U38279/X (STQ_AO2BB2_0P5)                               0.03       0.84 f
+  data_out[129] (out)                                     0.00       0.84 f
+  data arrival time                                                  0.84
+
+  clock vclk (rise edge)                                  0.38       0.38
+  clock network delay (ideal)                             0.00       0.38
+  output external delay                                   0.00       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+  Startpoint: codeword_in[135]
+              (input port clocked by vclk)
+  Endpoint: data_out[136]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  SSE_CORRECTOR      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[135] (in)                                   0.00       0.00 r
+  sse_corrector/codeword_in[135] (SSE_CORRECTOR)          0.00       0.00 r
+  sse_corrector/U10139/X (STQ_EN2_8)                      0.05       0.05 r
+  sse_corrector/U10349/X (STQ_EN2_S_2)                    0.04       0.10 f
+  sse_corrector/U2175/X (STQ_INV_S_1)                     0.01       0.11 r
+  sse_corrector/U8823/X (STQ_EN2_S_2)                     0.04       0.15 f
+  sse_corrector/U7423/X (STQ_EO3_0P5)                     0.08       0.23 f
+  sse_corrector/U8191/X (STQ_EN3_3)                       0.05       0.28 r
+  sse_corrector/U11612/X (STQ_EO3_0P5)                    0.03       0.32 f
+  sse_corrector/U7170/X (STQ_ND4_MM_1P5)                  0.03       0.35 r
+  sse_corrector/U1521/X (STQ_NR3_G_2)                     0.01       0.36 f
+  sse_corrector/U6679/X (STQ_ND3_2)                       0.01       0.37 r
+  sse_corrector/U6033/X (STQ_NR2_G_3P5)                   0.01       0.38 f
+  sse_corrector/U6938/X (STQ_OR2_4)                       0.02       0.40 f
+  sse_corrector/U1576/X (STQ_NR3_G_4)                     0.02       0.43 r
+  sse_corrector/U4417/X (STQ_INV_3P5)                     0.01       0.44 f
+  sse_corrector/U1465/X (STQ_NR2B_8)                      0.02       0.46 f
+  sse_corrector/U7249/X (STQ_OR3B_8)                      0.01       0.47 r
+  sse_corrector/U231/X (STQ_INV_3)                        0.01       0.48 f
+  sse_corrector/U1881/X (STQ_NR2_G_6)                     0.01       0.49 r
+  sse_corrector/U9527/X (STQ_ND3_5)                       0.03       0.52 f
+  sse_corrector/U1816/X (STQ_NR2_6)                       0.02       0.53 r
+  sse_corrector/U3095/X (STQ_NR2_G_0P8)                   0.01       0.55 f
+  sse_corrector/U15193/X (STQ_EO2_S_2)                    0.04       0.59 r
+  sse_corrector/U8510/X (STQ_EN3_3)                       0.05       0.64 r
+  sse_corrector/U7088/X (STQ_EN3_3)                       0.03       0.67 f
+  sse_corrector/U1824/X (STQ_ND2_G_3)                     0.01       0.68 r
+  sse_corrector/U1429/X (STQ_ND2_S_5)                     0.01       0.69 f
+  sse_corrector/U1651/X (STQ_NR3_G_8)                     0.02       0.71 r
+  sse_corrector/U1650/X (STQ_ND3_16)                      0.02       0.73 f
+  sse_corrector/U1649/X (STQ_AN2_24)                      0.02       0.76 f
+  sse_corrector/U6710/X (STQ_NR2B_8)                      0.02       0.78 f
+  sse_corrector/U15353/X (STQ_MUXI2_MG_0P75)              0.03       0.81 f
+  sse_corrector/data_out[136] (SSE_CORRECTOR)             0.00       0.81 f
+  U23551/X (STQ_AO2BB2_0P5)                               0.03       0.84 f
+  data_out[136] (out)                                     0.00       0.84 f
+  data arrival time                                                  0.84
+
+  clock vclk (rise edge)                                  0.38       0.38
+  clock network delay (ideal)                             0.00       0.38
+  output external delay                                   0.00       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+  Startpoint: codeword_in[135]
+              (input port clocked by vclk)
+  Endpoint: data_out[136]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  SSE_CORRECTOR      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[135] (in)                                   0.00       0.00 r
+  sse_corrector/codeword_in[135] (SSE_CORRECTOR)          0.00       0.00 r
+  sse_corrector/U10139/X (STQ_EN2_8)                      0.05       0.05 r
+  sse_corrector/U10349/X (STQ_EN2_S_2)                    0.04       0.10 f
+  sse_corrector/U2175/X (STQ_INV_S_1)                     0.01       0.11 r
+  sse_corrector/U8823/X (STQ_EN2_S_2)                     0.04       0.15 f
+  sse_corrector/U7423/X (STQ_EO3_0P5)                     0.08       0.23 f
+  sse_corrector/U8191/X (STQ_EN3_3)                       0.05       0.28 r
+  sse_corrector/U11612/X (STQ_EO3_0P5)                    0.03       0.32 f
+  sse_corrector/U7170/X (STQ_ND4_MM_1P5)                  0.03       0.35 r
+  sse_corrector/U1521/X (STQ_NR3_G_2)                     0.01       0.36 f
+  sse_corrector/U6679/X (STQ_ND3_2)                       0.01       0.37 r
+  sse_corrector/U6033/X (STQ_NR2_G_3P5)                   0.01       0.38 f
+  sse_corrector/U6938/X (STQ_OR2_4)                       0.02       0.40 f
+  sse_corrector/U1576/X (STQ_NR3_G_4)                     0.02       0.43 r
+  sse_corrector/U4417/X (STQ_INV_3P5)                     0.01       0.44 f
+  sse_corrector/U1465/X (STQ_NR2B_8)                      0.02       0.46 f
+  sse_corrector/U7249/X (STQ_OR3B_8)                      0.01       0.47 r
+  sse_corrector/U231/X (STQ_INV_3)                        0.01       0.48 f
+  sse_corrector/U1881/X (STQ_NR2_G_6)                     0.01       0.49 r
+  sse_corrector/U9527/X (STQ_ND3_5)                       0.03       0.52 f
+  sse_corrector/U1816/X (STQ_NR2_6)                       0.02       0.53 r
+  sse_corrector/U3095/X (STQ_NR2_G_0P8)                   0.01       0.55 f
+  sse_corrector/U15193/X (STQ_EO2_S_2)                    0.04       0.59 r
+  sse_corrector/U8510/X (STQ_EN3_3)                       0.05       0.64 r
+  sse_corrector/U7088/X (STQ_EN3_3)                       0.03       0.67 f
+  sse_corrector/U1824/X (STQ_ND2_G_3)                     0.01       0.68 r
+  sse_corrector/U1429/X (STQ_ND2_S_5)                     0.01       0.69 f
+  sse_corrector/U1651/X (STQ_NR3_G_8)                     0.02       0.71 r
+  sse_corrector/U1650/X (STQ_ND3_16)                      0.02       0.73 f
+  sse_corrector/U1649/X (STQ_AN2_24)                      0.02       0.76 f
+  sse_corrector/U6710/X (STQ_NR2B_8)                      0.02       0.78 f
+  sse_corrector/U15353/X (STQ_MUXI2_MG_0P75)              0.03       0.81 f
+  sse_corrector/data_out[136] (SSE_CORRECTOR)             0.00       0.81 f
+  U23551/X (STQ_AO2BB2_0P5)                               0.03       0.84 f
+  data_out[136] (out)                                     0.00       0.84 f
+  data arrival time                                                  0.84
+
+  clock vclk (rise edge)                                  0.38       0.38
+  clock network delay (ideal)                             0.00       0.38
+  output external delay                                   0.00       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+  Startpoint: codeword_in[242]
+              (input port clocked by vclk)
+  Endpoint: data_out[16]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[242] (in)                    0.00       0.00 r
+  U34439/X (STQ_EN2_8)                     0.05       0.05 r
+  U30662/X (STQ_EN2_8)                     0.04       0.08 f
+  U8941/X (STQ_EN2_S_2)                    0.03       0.12 r
+  U29683/X (STQ_EN3_3)                     0.05       0.17 r
+  U38599/X (STQ_EO3_3)                     0.03       0.19 f
+  U38445/X (STQ_EN3_6)                     0.07       0.27 r
+  U9308/X (STQ_EN2_6)                      0.04       0.30 f
+  U10087/X (STQ_BUF_S_18)                  0.02       0.32 f
+  U6263/X (STQ_INV_7P5)                    0.01       0.33 r
+  U28281/X (STQ_EN2_8)                     0.04       0.38 f
+  U30353/X (STQ_BUF_S_18)                  0.02       0.40 f
+  U21670/X (STQ_EO2_2)                     0.04       0.44 r
+  U32889/X (STQ_EN3_3)                     0.03       0.47 f
+  U22285/X (STQ_NR2B_1)                    0.01       0.48 r
+  U17496/X (STQ_ND2_S_1)                   0.01       0.49 f
+  U21302/X (STQ_NR2B_V1DG_1)               0.01       0.51 r
+  U18385/X (STQ_ND2_S_1)                   0.01       0.52 f
+  U9256/X (STQ_OAI31_G_2)                  0.02       0.54 r
+  U9258/X (STQ_NR3_G_2)                    0.01       0.55 f
+  U7373/X (STQ_ND2_G_3)                    0.01       0.56 r
+  U2895/X (STQ_NR2_3)                      0.01       0.57 f
+  U29458/X (STQ_OR3B_4)                    0.03       0.60 f
+  U6769/X (STQ_INV_3)                      0.01       0.61 r
+  U2728/X (STQ_ND2_G_2)                    0.01       0.62 f
+  U32519/X (STQ_OR4B_8)                    0.05       0.67 f
+  U31789/X (STQ_NR2_G_16)                  0.02       0.69 r
+  U30601/X (STQ_ND2B_V1DG_2)               0.02       0.70 f
+  U6828/X (STQ_NR2_G_4)                    0.02       0.72 r
+  U5925/X (STQ_NR3_G_4)                    0.01       0.73 f
+  U34154/X (STQ_ND4_MM_8)                  0.03       0.76 r
+  U30222/X (STQ_AN3B_4)                    0.01       0.77 f
+  U13137/X (STQ_ND2_S_5)                   0.01       0.78 r
+  U34155/X (STQ_NR3_G_4)                   0.01       0.79 f
+  U31553/X (STQ_ND2_7)                     0.01       0.80 r
+  U35674/X (STQ_NR4_1)                     0.01       0.81 f
+  U40443/X (STQ_OA21B_2)                   0.02       0.83 f
+  U8461/X (STQ_OAI21_0P5)                  0.01       0.84 r
+  data_out[16] (out)                       0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.46
+
+
+  Startpoint: codeword_in[242]
+              (input port clocked by vclk)
+  Endpoint: data_out[16]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[242] (in)                    0.00       0.00 r
+  U34439/X (STQ_EN2_8)                     0.05       0.05 r
+  U30662/X (STQ_EN2_8)                     0.04       0.08 f
+  U8941/X (STQ_EN2_S_2)                    0.03       0.12 r
+  U29683/X (STQ_EN3_3)                     0.05       0.17 r
+  U38599/X (STQ_EO3_3)                     0.03       0.19 f
+  U38445/X (STQ_EN3_6)                     0.07       0.27 r
+  U9308/X (STQ_EN2_6)                      0.04       0.30 f
+  U10087/X (STQ_BUF_S_18)                  0.02       0.32 f
+  U6263/X (STQ_INV_7P5)                    0.01       0.33 r
+  U28281/X (STQ_EN2_8)                     0.04       0.38 f
+  U30353/X (STQ_BUF_S_18)                  0.02       0.40 f
+  U21670/X (STQ_EO2_2)                     0.04       0.44 r
+  U32889/X (STQ_EN3_3)                     0.03       0.47 f
+  U22285/X (STQ_NR2B_1)                    0.01       0.48 r
+  U17496/X (STQ_ND2_S_1)                   0.01       0.49 f
+  U21302/X (STQ_NR2B_V1DG_1)               0.01       0.51 r
+  U18385/X (STQ_ND2_S_1)                   0.01       0.52 f
+  U9256/X (STQ_OAI31_G_2)                  0.02       0.54 r
+  U9258/X (STQ_NR3_G_2)                    0.01       0.55 f
+  U7373/X (STQ_ND2_G_3)                    0.01       0.56 r
+  U2895/X (STQ_NR2_3)                      0.01       0.57 f
+  U29458/X (STQ_OR3B_4)                    0.03       0.60 f
+  U6769/X (STQ_INV_3)                      0.01       0.61 r
+  U2728/X (STQ_ND2_G_2)                    0.01       0.62 f
+  U32519/X (STQ_OR4B_8)                    0.05       0.67 f
+  U31789/X (STQ_NR2_G_16)                  0.02       0.69 r
+  U30601/X (STQ_ND2B_V1DG_2)               0.02       0.70 f
+  U6828/X (STQ_NR2_G_4)                    0.02       0.72 r
+  U5925/X (STQ_NR3_G_4)                    0.01       0.73 f
+  U34154/X (STQ_ND4_MM_8)                  0.03       0.76 r
+  U30222/X (STQ_AN3B_4)                    0.01       0.77 f
+  U13137/X (STQ_ND2_S_5)                   0.01       0.78 r
+  U34155/X (STQ_NR3_G_4)                   0.01       0.79 f
+  U31553/X (STQ_ND2_7)                     0.01       0.80 r
+  U35674/X (STQ_NR4_1)                     0.01       0.81 f
+  U40443/X (STQ_OA21B_2)                   0.02       0.83 f
+  U8461/X (STQ_OAI21_0P5)                  0.01       0.84 r
+  data_out[16] (out)                       0.00       0.84 r
+  data arrival time                                   0.84
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.84
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.46
+
+
+  Startpoint: codeword_in[150]
+              (input port clocked by vclk)
+  Endpoint: data_out[129]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  SSE_CORRECTOR      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[150] (in)                                   0.00       0.00 r
+  sse_corrector/codeword_in[150] (SSE_CORRECTOR)          0.00       0.00 r
+  sse_corrector/U3446/X (STQ_EN2_4)                       0.05       0.05 r
+  sse_corrector/U4995/X (STQ_INV_S_1P25)                  0.01       0.06 f
+  sse_corrector/U9707/X (STQ_EO3_1)                       0.07       0.13 f
+  sse_corrector/U8606/X (STQ_EO3_2)                       0.03       0.16 r
+  sse_corrector/U12002/X (STQ_EO3_0P5)                    0.03       0.20 f
+  sse_corrector/U1930/X (STQ_EO3_1)                       0.04       0.24 r
+  sse_corrector/U1913/X (STQ_EO3_1)                       0.03       0.28 f
+  sse_corrector/U12013/X (STQ_EO3_0P5)                    0.04       0.32 r
+  sse_corrector/U6052/X (STQ_ND4_1P5)                     0.03       0.35 f
+  sse_corrector/U4423/X (STQ_NR3_G_2)                     0.02       0.36 r
+  sse_corrector/U7252/X (STQ_AN6_4)                       0.04       0.40 r
+  sse_corrector/U7250/X (STQ_OR2_7)                       0.02       0.42 r
+  sse_corrector/U7293/X (STQ_ND2B_4)                      0.01       0.43 f
+  sse_corrector/U1564/X (STQ_ND2_S_7)                     0.01       0.44 r
+  sse_corrector/U6501/X (STQ_OA21B_8)                     0.01       0.46 f
+  sse_corrector/U6500/X (STQ_NR3_G_4)                     0.02       0.48 r
+  sse_corrector/U5818/X (STQ_ND2_7)                       0.02       0.50 f
+  sse_corrector/U3825/X (STQ_INV_4)                       0.01       0.51 r
+  sse_corrector/U1523/X (STQ_OR3B_4)                      0.02       0.53 r
+  sse_corrector/U186/X (STQ_ND2_G_1)                      0.02       0.55 f
+  sse_corrector/U7246/X (STQ_EO2_2)                       0.04       0.58 r
+  sse_corrector/U1829/X (STQ_EO3_2)                       0.03       0.61 f
+  sse_corrector/U8515/X (STQ_EO3_3)                       0.03       0.64 r
+  sse_corrector/U9542/X (STQ_EN3_3)                       0.03       0.67 f
+  sse_corrector/U1823/X (STQ_ND2_G_4)                     0.01       0.68 r
+  sse_corrector/U9584/X (STQ_ND2_S_5)                     0.01       0.70 f
+  sse_corrector/U1651/X (STQ_NR3_G_8)                     0.02       0.71 r
+  sse_corrector/U1650/X (STQ_ND3_16)                      0.02       0.73 f
+  sse_corrector/U1649/X (STQ_AN2_24)                      0.02       0.76 f
+  sse_corrector/U6710/X (STQ_NR2B_8)                      0.02       0.78 f
+  sse_corrector/U15358/X (STQ_MUXI2_MG_0P75)              0.03       0.81 f
+  sse_corrector/data_out[129] (SSE_CORRECTOR)             0.00       0.81 f
+  U38279/X (STQ_AO2BB2_0P5)                               0.03       0.84 f
+  data_out[129] (out)                                     0.00       0.84 f
+  data arrival time                                                  0.84
+
+  clock vclk (rise edge)                                  0.38       0.38
+  clock network delay (ideal)                             0.00       0.38
+  output external delay                                   0.00       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+  Startpoint: codeword_in[150]
+              (input port clocked by vclk)
+  Endpoint: data_out[129]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  SSE_CORRECTOR      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[150] (in)                                   0.00       0.00 r
+  sse_corrector/codeword_in[150] (SSE_CORRECTOR)          0.00       0.00 r
+  sse_corrector/U3446/X (STQ_EN2_4)                       0.05       0.05 r
+  sse_corrector/U4995/X (STQ_INV_S_1P25)                  0.01       0.06 f
+  sse_corrector/U9707/X (STQ_EO3_1)                       0.07       0.13 f
+  sse_corrector/U8606/X (STQ_EO3_2)                       0.03       0.16 r
+  sse_corrector/U12002/X (STQ_EO3_0P5)                    0.03       0.20 f
+  sse_corrector/U1930/X (STQ_EO3_1)                       0.04       0.24 r
+  sse_corrector/U1913/X (STQ_EO3_1)                       0.03       0.28 f
+  sse_corrector/U12013/X (STQ_EO3_0P5)                    0.04       0.32 r
+  sse_corrector/U6052/X (STQ_ND4_1P5)                     0.03       0.35 f
+  sse_corrector/U4423/X (STQ_NR3_G_2)                     0.02       0.36 r
+  sse_corrector/U7252/X (STQ_AN6_4)                       0.04       0.40 r
+  sse_corrector/U7250/X (STQ_OR2_7)                       0.02       0.42 r
+  sse_corrector/U7293/X (STQ_ND2B_4)                      0.01       0.43 f
+  sse_corrector/U1564/X (STQ_ND2_S_7)                     0.01       0.44 r
+  sse_corrector/U6501/X (STQ_OA21B_8)                     0.01       0.46 f
+  sse_corrector/U6500/X (STQ_NR3_G_4)                     0.02       0.48 r
+  sse_corrector/U5818/X (STQ_ND2_7)                       0.02       0.50 f
+  sse_corrector/U3825/X (STQ_INV_4)                       0.01       0.51 r
+  sse_corrector/U1523/X (STQ_OR3B_4)                      0.02       0.53 r
+  sse_corrector/U186/X (STQ_ND2_G_1)                      0.02       0.55 f
+  sse_corrector/U7246/X (STQ_EO2_2)                       0.04       0.58 r
+  sse_corrector/U1829/X (STQ_EO3_2)                       0.03       0.61 f
+  sse_corrector/U8515/X (STQ_EO3_3)                       0.03       0.64 r
+  sse_corrector/U9542/X (STQ_EN3_3)                       0.03       0.67 f
+  sse_corrector/U1823/X (STQ_ND2_G_4)                     0.01       0.68 r
+  sse_corrector/U9584/X (STQ_ND2_S_5)                     0.01       0.70 f
+  sse_corrector/U1651/X (STQ_NR3_G_8)                     0.02       0.71 r
+  sse_corrector/U1650/X (STQ_ND3_16)                      0.02       0.73 f
+  sse_corrector/U1649/X (STQ_AN2_24)                      0.02       0.76 f
+  sse_corrector/U6710/X (STQ_NR2B_8)                      0.02       0.78 f
+  sse_corrector/U15358/X (STQ_MUXI2_MG_0P75)              0.03       0.81 f
+  sse_corrector/data_out[129] (SSE_CORRECTOR)             0.00       0.81 f
+  U38279/X (STQ_AO2BB2_0P5)                               0.03       0.84 f
+  data_out[129] (out)                                     0.00       0.84 f
+  data arrival time                                                  0.84
+
+  clock vclk (rise edge)                                  0.38       0.38
+  clock network delay (ideal)                             0.00       0.38
+  output external delay                                   0.00       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+  Startpoint: codeword_in[150]
+              (input port clocked by vclk)
+  Endpoint: data_out[129]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  SSE_CORRECTOR      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[150] (in)                                   0.00       0.00 r
+  sse_corrector/codeword_in[150] (SSE_CORRECTOR)          0.00       0.00 r
+  sse_corrector/U3446/X (STQ_EN2_4)                       0.05       0.05 r
+  sse_corrector/U4995/X (STQ_INV_S_1P25)                  0.01       0.06 f
+  sse_corrector/U9707/X (STQ_EO3_1)                       0.07       0.13 f
+  sse_corrector/U8606/X (STQ_EO3_2)                       0.03       0.16 r
+  sse_corrector/U12002/X (STQ_EO3_0P5)                    0.03       0.20 f
+  sse_corrector/U1930/X (STQ_EO3_1)                       0.04       0.24 r
+  sse_corrector/U1913/X (STQ_EO3_1)                       0.03       0.28 f
+  sse_corrector/U12013/X (STQ_EO3_0P5)                    0.04       0.32 r
+  sse_corrector/U6052/X (STQ_ND4_1P5)                     0.03       0.35 f
+  sse_corrector/U4423/X (STQ_NR3_G_2)                     0.02       0.36 r
+  sse_corrector/U7252/X (STQ_AN6_4)                       0.04       0.40 r
+  sse_corrector/U7250/X (STQ_OR2_7)                       0.02       0.42 r
+  sse_corrector/U7293/X (STQ_ND2B_4)                      0.01       0.43 f
+  sse_corrector/U1564/X (STQ_ND2_S_7)                     0.01       0.44 r
+  sse_corrector/U6501/X (STQ_OA21B_8)                     0.01       0.46 f
+  sse_corrector/U6500/X (STQ_NR3_G_4)                     0.02       0.48 r
+  sse_corrector/U5818/X (STQ_ND2_7)                       0.02       0.50 f
+  sse_corrector/U3825/X (STQ_INV_4)                       0.01       0.51 r
+  sse_corrector/U1523/X (STQ_OR3B_4)                      0.02       0.53 r
+  sse_corrector/U186/X (STQ_ND2_G_1)                      0.02       0.55 f
+  sse_corrector/U7246/X (STQ_EO2_2)                       0.04       0.58 r
+  sse_corrector/U1829/X (STQ_EO3_2)                       0.03       0.61 f
+  sse_corrector/U8515/X (STQ_EO3_3)                       0.03       0.64 r
+  sse_corrector/U9542/X (STQ_EN3_3)                       0.03       0.67 f
+  sse_corrector/U1823/X (STQ_ND2_G_4)                     0.01       0.68 r
+  sse_corrector/U9584/X (STQ_ND2_S_5)                     0.01       0.70 f
+  sse_corrector/U1651/X (STQ_NR3_G_8)                     0.02       0.71 r
+  sse_corrector/U1650/X (STQ_ND3_16)                      0.02       0.73 f
+  sse_corrector/U1649/X (STQ_AN2_24)                      0.02       0.76 f
+  sse_corrector/U6710/X (STQ_NR2B_8)                      0.02       0.78 f
+  sse_corrector/U15358/X (STQ_MUXI2_MG_0P75)              0.03       0.81 f
+  sse_corrector/data_out[129] (SSE_CORRECTOR)             0.00       0.81 f
+  U38279/X (STQ_AO2BB2_0P5)                               0.03       0.84 f
+  data_out[129] (out)                                     0.00       0.84 f
+  data arrival time                                                  0.84
+
+  clock vclk (rise edge)                                  0.38       0.38
+  clock network delay (ideal)                             0.00       0.38
+  output external delay                                   0.00       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+  Startpoint: codeword_in[150]
+              (input port clocked by vclk)
+  Endpoint: data_out[129]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+  SSE_CORRECTOR      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  codeword_in[150] (in)                                   0.00       0.00 r
+  sse_corrector/codeword_in[150] (SSE_CORRECTOR)          0.00       0.00 r
+  sse_corrector/U3446/X (STQ_EN2_4)                       0.05       0.05 r
+  sse_corrector/U4995/X (STQ_INV_S_1P25)                  0.01       0.06 f
+  sse_corrector/U9707/X (STQ_EO3_1)                       0.07       0.13 f
+  sse_corrector/U8606/X (STQ_EO3_2)                       0.03       0.16 r
+  sse_corrector/U12002/X (STQ_EO3_0P5)                    0.03       0.20 f
+  sse_corrector/U1930/X (STQ_EO3_1)                       0.04       0.24 r
+  sse_corrector/U1913/X (STQ_EO3_1)                       0.03       0.28 f
+  sse_corrector/U12013/X (STQ_EO3_0P5)                    0.04       0.32 r
+  sse_corrector/U6052/X (STQ_ND4_1P5)                     0.03       0.35 f
+  sse_corrector/U4423/X (STQ_NR3_G_2)                     0.02       0.36 r
+  sse_corrector/U7252/X (STQ_AN6_4)                       0.04       0.40 r
+  sse_corrector/U7250/X (STQ_OR2_7)                       0.02       0.42 r
+  sse_corrector/U7293/X (STQ_ND2B_4)                      0.01       0.43 f
+  sse_corrector/U1564/X (STQ_ND2_S_7)                     0.01       0.44 r
+  sse_corrector/U6501/X (STQ_OA21B_8)                     0.01       0.46 f
+  sse_corrector/U6500/X (STQ_NR3_G_4)                     0.02       0.48 r
+  sse_corrector/U5818/X (STQ_ND2_7)                       0.02       0.50 f
+  sse_corrector/U3825/X (STQ_INV_4)                       0.01       0.51 r
+  sse_corrector/U1523/X (STQ_OR3B_4)                      0.02       0.53 r
+  sse_corrector/U186/X (STQ_ND2_G_1)                      0.02       0.55 f
+  sse_corrector/U7246/X (STQ_EO2_2)                       0.04       0.58 r
+  sse_corrector/U1829/X (STQ_EO3_2)                       0.03       0.61 f
+  sse_corrector/U8515/X (STQ_EO3_3)                       0.03       0.64 r
+  sse_corrector/U9542/X (STQ_EN3_3)                       0.03       0.67 f
+  sse_corrector/U1823/X (STQ_ND2_G_4)                     0.01       0.68 r
+  sse_corrector/U9584/X (STQ_ND2_S_5)                     0.01       0.70 f
+  sse_corrector/U1651/X (STQ_NR3_G_8)                     0.02       0.71 r
+  sse_corrector/U1650/X (STQ_ND3_16)                      0.02       0.73 f
+  sse_corrector/U1649/X (STQ_AN2_24)                      0.02       0.76 f
+  sse_corrector/U6710/X (STQ_NR2B_8)                      0.02       0.78 f
+  sse_corrector/U15358/X (STQ_MUXI2_MG_0P75)              0.03       0.81 f
+  sse_corrector/data_out[129] (SSE_CORRECTOR)             0.00       0.81 f
+  U38279/X (STQ_AO2BB2_0P5)                               0.03       0.84 f
+  data_out[129] (out)                                     0.00       0.84 f
+  data arrival time                                                  0.84
+
+  clock vclk (rise edge)                                  0.38       0.38
+  clock network delay (ideal)                             0.00       0.38
+  output external delay                                   0.00       0.38
+  data required time                                                 0.38
+  --------------------------------------------------------------------------
+  data required time                                                 0.38
+  data arrival time                                                 -0.84
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.46
+
+
+1

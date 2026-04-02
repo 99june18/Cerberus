@@ -1,0 +1,56 @@
+Information: Propagating switching activity (high effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+ 
+****************************************
+Report : power
+        -analysis_effort high
+Design : ENCODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr  1 16:00:29 2026
+****************************************
+
+
+Library(s) Used:
+
+    um28nchllogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db)
+
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchllogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+ENCODER                ZeroWLM           um28nchllogl35hsl140f_ssgwc0p9v125c
+
+
+Global Operating Voltage = 0.9  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =   4.0846 mW   (78%)
+  Net Switching Power  =   1.1799 mW   (22%)
+                         ---------
+Total Dynamic Power    =   5.2645 mW  (100%)
+
+Cell Leakage Power     = 228.7542 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      4.0846            1.1799        2.2875e+05            5.4933  ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total              4.0846 mW         1.1799 mW     2.2875e+05 nW         5.4933 mW
+1

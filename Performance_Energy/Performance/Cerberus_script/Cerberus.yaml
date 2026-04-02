@@ -1,0 +1,361 @@
+source_dir:
+  base_gpgpusim: /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution
+
+org_config_dir: /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/configs/tested-cfgs/SM7_QV100
+
+log_file_path: /root/Cerberus_script/run_status/Cerberus.txt
+
+run: 
+  - HBM4_polybench
+  - HBM4_parboil
+  - HBM4_rodinia
+  - HBM4_graphBIG
+
+  - DUO_polybench
+  - DUO_parboil
+  - DUO_rodinia
+  - DUO_graphBIG
+
+  - Unity_polybench
+  - Unity_parboil
+  - Unity_rodinia
+  - Unity_graphBIG
+
+  - Cerberus_polybench
+  - Cerberus_parboil
+  - Cerberus_rodinia
+  - Cerberus_graphBIG
+  
+  - Cerberus40b_polybench
+  - Cerberus40b_parboil
+  - Cerberus40b_rodinia
+  - Cerberus40b_graphBIG
+
+sets:
+  - name: HBM4_rodinia # benchmark / could be not exact name
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1 # rodinia folder
+    result_dir: /root/Cerberus_script/result/HBM4
+    source: base_gpgpusim
+    prefix: HBM4_R # logfile prefix
+    description: HBM4 # written in log / nessesary
+    commonOptions: # optional
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads: 
+      - name: b+tree
+      - name: backprop
+      - name: bfs
+      - name: dwt2d
+      - name: nw
+      - name: srad_v1
+
+  - name: HBM4_parboil
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil
+    result_dir: /root/Cerberus_script/result/HBM4
+    source: base_gpgpusim
+    prefix: HBM4_R
+    description: HBM4
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: spmv
+      - name: mri-q
+      - name: sgemm
+
+  - name: HBM4_graphBIG
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench
+    result_dir: /root/Cerberus_script/result/HBM4
+    source: base_gpgpusim
+    prefix: HBM4_G
+    description: HBM4
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: gpu_BFS
+      - name: gpu_DegreeCentr
+      - name: gpu_SSSP
+      - name: gpu_kCore
+
+  - name: HBM4_polybench
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA
+    result_dir: /root/Cerberus_script/result/HBM4
+    source: base_gpgpusim
+    prefix: HBM4_B
+    description: HBM4
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: 3DCONV
+      - name: ATAX
+      - name: MVT
+
+###########################################################################################################################
+
+  - name: DUO_rodinia # benchmark / could be not exact name
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1 # rodinia folder
+    result_dir: /root/Cerberus_script/result/DUO
+    source: base_gpgpusim
+    prefix: DUO_R # logfile prefix
+    description: DUO # written in log / nessesary
+    commonOptions: # optional
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads: 
+      - name: b+tree
+      - name: backprop
+      - name: bfs
+      - name: dwt2d
+      - name: nw
+      - name: srad_v1
+
+  - name: DUO_parboil
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil
+    result_dir: /root/Cerberus_script/result/DUO
+    source: base_gpgpusim
+    prefix: DUO_P
+    description: DUO
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: spmv
+      - name: mri-q
+      - name: sgemm
+
+  - name: DUO_graphBIG
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench
+    result_dir: /root/Cerberus_script/result/DUO
+    source: base_gpgpusim
+    prefix: DUO_G
+    description: DUO
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: gpu_BFS
+      - name: gpu_DegreeCentr
+      - name: gpu_SSSP
+      - name: gpu_kCore
+
+  - name: DUO_polybench
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA
+    result_dir: /root/Cerberus_script/result/DUO
+    source: base_gpgpusim
+    prefix: DUO_B
+    description: DUO
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: 3DCONV
+      - name: ATAX
+      - name: MVT
+
+###########################################################################################################################
+
+  - name: Unity_rodinia # benchmark / could be not exact name
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1 # rodinia folder
+    result_dir: /root/Cerberus_script/result/Unity
+    source: base_gpgpusim
+    prefix: Unity_R # logfile prefix
+    description: Unity # written in log / nessesary
+    commonOptions: # optional
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads: 
+      - name: b+tree
+      - name: backprop
+      - name: bfs
+      - name: dwt2d
+      - name: nw
+      - name: srad_v1
+
+  - name: Unity_parboil
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil
+    result_dir: /root/Cerberus_script/result/Unity
+    source: base_gpgpusim
+    prefix: Unity_P
+    description: Unity
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: spmv
+      - name: mri-q
+      - name: sgemm
+
+  - name: Unity_graphBIG
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench
+    result_dir: /root/Cerberus_script/result/Unity
+    source: base_gpgpusim
+    prefix: Unity_G
+    description: Unity
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: gpu_BFS
+      - name: gpu_DegreeCentr
+      - name: gpu_SSSP
+      - name: gpu_kCore
+
+  - name: Unity_polybench
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA
+    result_dir: /root/Cerberus_script/result/Unity
+    source: base_gpgpusim
+    prefix: Unity_B
+    description: Unity
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: 3DCONV
+      - name: ATAX
+      - name: MVT
+
+###########################################################################################################################
+
+  - name: Cerberus_rodinia # benchmark / could be not exact name
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1 # rodinia folder
+    result_dir: /root/Cerberus_script/result/Cerberus
+    source: base_gpgpusim
+    prefix: Cerberus_R # logfile prefix
+    description: Cerberus # written in log / nessesary
+    commonOptions: # optional
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads: 
+      - name: b+tree
+      - name: backprop
+      - name: bfs
+      - name: dwt2d
+      - name: nw
+      - name: srad_v1
+
+  - name: Cerberus_parboil
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil
+    result_dir: /root/Cerberus_script/result/Cerberus
+    source: base_gpgpusim
+    prefix: Cerberus_P
+    description: Cerberus
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: spmv
+      - name: mri-q
+      - name: sgemm
+
+  - name: Cerberus_graphBIG
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench
+    result_dir: /root/Cerberus_script/result/Cerberus
+    source: base_gpgpusim
+    prefix: Cerberus_G
+    description: Cerberus
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: gpu_BFS
+      - name: gpu_DegreeCentr
+      - name: gpu_SSSP
+      - name: gpu_kCore
+
+  - name: Cerberus_polybench
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA
+    result_dir: /root/Cerberus_script/result/Cerberus
+    source: base_gpgpusim
+    prefix: Cerberus_B
+    description: Cerberus
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: 3DCONV
+      - name: ATAX
+      - name: MVT
+
+###########################################################################################################################
+
+  - name: Cerberus40b_rodinia # benchmark / could be not exact name
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1 # rodinia folder
+    result_dir: /root/Cerberus_script/result/Cerberus40b
+    source: base_gpgpusim # 30B_cachecraft_8B_caching # scheme 
+    prefix: Cerberus40b_R # logfile prefix
+    description: Cerberus40b # written in log / nessesary
+    commonOptions: # optional
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads: 
+      - name: b+tree
+      - name: backprop
+      - name: bfs
+      - name: dwt2d
+      - name: nw
+      - name: srad_v1
+
+  - name: Cerberus40b_parboil
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil
+    result_dir: /root/Cerberus_script/result/Cerberus40b
+    source: base_gpgpusim
+    prefix: Cerberus40b_P
+    description: Cerberus40b
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: spmv
+      - name: mri-q
+      - name: sgemm
+
+  - name: Cerberus40b_graphBIG
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench
+    result_dir: /root/Cerberus_script/result/Cerberus40b
+    source: base_gpgpusim
+    prefix: Cerberus40b_G
+    description: Cerberus40b
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: gpu_BFS
+      - name: gpu_DegreeCentr
+      - name: gpu_SSSP
+      - name: gpu_kCore
+
+  - name: Cerberus40b_polybench
+    dir: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA
+    result_dir: /root/Cerberus_script/result/Cerberus40b
+    source: base_gpgpusim
+    prefix: Cerberus40b_B
+    description: Cerberus40b
+    commonOptions:
+      gpgpu_n_mem: "32"
+      gpgpu_clock_domains: "1132.0:1132.0:1132.0:1600.0"
+      gpgpu_dram_timing_opt: "nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8"
+    workloads:
+      - name: 3DCONV
+      - name: ATAX
+      - name: MVT

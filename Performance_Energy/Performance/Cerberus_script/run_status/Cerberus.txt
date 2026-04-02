@@ -1,0 +1,142 @@
+This process PID: 1124
+Start_timedate: 2026-04-02 06:53:22
+Benchmark: Cerberus40b_graphBIG / start_date: 2026-04-02 07:16:40
+Description: Cerberus40b
+gpu_DegreeCentr     : PID 10015 / Running    / Elapsed time: 0 days 1 hours 44 minutes / Cerberus40b_G_gpu_DegreeCentr.txt
+gpu_BFS             : PID 9949  / Running    / Elapsed time: 0 days 1 hours 44 minutes / Cerberus40b_G_gpu_BFS.txt
+gpu_kCore           : PID 10185 / Completed  / Elapsed time: 0 days 0 hours 38 minutes / Cerberus40b_G_gpu_kCore.txt
+gpu_SSSP            : PID 10105 / Running    / Elapsed time: 0 days 1 hours 44 minutes / Cerberus40b_G_gpu_SSSP.txt
+
+Benchmark: Cerberus_parboil / start_date: 2026-04-02 06:56:53
+Description: Cerberus
+sgemm               : PID 7817  / Running    / Elapsed time: 0 days 2 hours 4 minutes / Cerberus_P_sgemm.txt
+spmv                : PID 7619  / Running    / Elapsed time: 0 days 2 hours 4 minutes / Cerberus_P_spmv.txt
+mri-q               : PID 7718  / Running    / Elapsed time: 0 days 2 hours 4 minutes / Cerberus_P_mri-q.txt
+
+Benchmark: Unity_graphBIG / start_date: 2026-04-02 06:56:04
+Description: Unity
+gpu_DegreeCentr     : PID 6152  / Running    / Elapsed time: 0 days 2 hours 5 minutes / Unity_G_gpu_DegreeCentr.txt
+gpu_BFS             : PID 6069  / Running    / Elapsed time: 0 days 2 hours 5 minutes / Unity_G_gpu_BFS.txt
+gpu_kCore           : PID 6318  / Completed  / Elapsed time: 0 days 0 hours 38 minutes / Unity_G_gpu_kCore.txt
+gpu_SSSP            : PID 6235  / Running    / Elapsed time: 0 days 2 hours 5 minutes / Unity_G_gpu_SSSP.txt
+
+Benchmark: HBM4_graphBIG / start_date: 2026-04-02 06:53:56
+Description: HBM4
+gpu_DegreeCentr     : PID 2458  / Running    / Elapsed time: 0 days 2 hours 7 minutes / HBM4_G_gpu_DegreeCentr.txt
+gpu_BFS             : PID 2375  / Running    / Elapsed time: 0 days 2 hours 7 minutes / HBM4_G_gpu_BFS.txt
+gpu_kCore           : PID 2624  / Completed  / Elapsed time: 0 days 0 hours 35 minutes / HBM4_G_gpu_kCore.txt
+gpu_SSSP            : PID 2541  / Running    / Elapsed time: 0 days 2 hours 7 minutes / HBM4_G_gpu_SSSP.txt
+
+Benchmark: Unity_polybench / start_date: 2026-04-02 06:56:20
+Description: Unity
+ATAX                : PID 6504  / Completed  / Elapsed time: 0 days 0 hours 57 minutes / Unity_B_ATAX.txt
+MVT                 : PID 6607  / Completed  / Elapsed time: 0 days 0 hours 56 minutes / Unity_B_MVT.txt
+3DCONV              : PID 6401  / Completed  / Elapsed time: 0 days 1 hours 59 minutes / Unity_B_3DCONV.txt
+
+Benchmark: Unity_rodinia / start_date: 2026-04-02 06:55:31
+Description: Unity
+dwt2d               : PID 5244  / Completed  / Elapsed time: 0 days 0 hours 31 minutes / Unity_R_dwt2d.txt
+bfs                 : PID 5145  / Completed  / Elapsed time: 0 days 1 hours 54 minutes / Unity_R_bfs.txt
+nw                  : PID 5429  / Completed  / Elapsed time: 0 days 1 hours 30 minutes / Unity_R_nw.txt
+backprop            : PID 5046  / Completed  / Elapsed time: 0 days 0 hours 14 minutes / Unity_R_backprop.txt
+srad_v1             : PID 5536  / Running    / Elapsed time: 0 days 2 hours 5 minutes / Unity_R_srad_v1.txt
+b+tree              : PID 4881  / Completed  / Elapsed time: 0 days 0 hours 27 minutes / Unity_R_b+tree.txt
+
+Benchmark: Cerberus_graphBIG / start_date: 2026-04-02 06:57:09
+Description: Cerberus
+gpu_DegreeCentr     : PID 7999  / Running    / Elapsed time: 0 days 2 hours 4 minutes / Cerberus_G_gpu_DegreeCentr.txt
+gpu_BFS             : PID 7916  / Running    / Elapsed time: 0 days 2 hours 4 minutes / Cerberus_G_gpu_BFS.txt
+gpu_kCore           : PID 8165  / Completed  / Elapsed time: 0 days 0 hours 36 minutes / Cerberus_G_gpu_kCore.txt
+gpu_SSSP            : PID 8082  / Running    / Elapsed time: 0 days 2 hours 4 minutes / Cerberus_G_gpu_SSSP.txt
+
+Benchmark: DUO_rodinia / start_date: 2026-04-02 06:54:27
+Description: DUO
+dwt2d               : PID 3397  / Completed  / Elapsed time: 0 days 0 hours 28 minutes / DUO_R_dwt2d.txt
+bfs                 : PID 3298  / Completed  / Elapsed time: 0 days 1 hours 52 minutes / DUO_R_bfs.txt
+nw                  : PID 3582  / Completed  / Elapsed time: 0 days 1 hours 32 minutes / DUO_R_nw.txt
+backprop            : PID 3199  / Completed  / Elapsed time: 0 days 0 hours 13 minutes / DUO_R_backprop.txt
+srad_v1             : PID 3693  / Running    / Elapsed time: 0 days 2 hours 6 minutes / DUO_R_srad_v1.txt
+b+tree              : PID 3034  / Completed  / Elapsed time: 0 days 0 hours 25 minutes / DUO_R_b+tree.txt
+
+Benchmark: HBM4_parboil / start_date: 2026-04-02 06:53:41
+Description: HBM4
+sgemm               : PID 2276  / Completed  / Elapsed time: 0 days 2 hours 6 minutes / HBM4_R_sgemm.txt
+spmv                : PID 2078  / Running    / Elapsed time: 0 days 2 hours 7 minutes / HBM4_R_spmv.txt
+mri-q               : PID 2177  / Running    / Elapsed time: 0 days 2 hours 7 minutes / HBM4_R_mri-q.txt
+
+Benchmark: Cerberus40b_polybench / start_date: 2026-04-02 07:16:57
+Description: Cerberus40b
+ATAX                : PID 10348 / Completed  / Elapsed time: 0 days 0 hours 56 minutes / Cerberus40b_B_ATAX.txt
+MVT                 : PID 10455 / Completed  / Elapsed time: 0 days 0 hours 59 minutes / Cerberus40b_B_MVT.txt
+3DCONV              : PID 10281 / Running    / Elapsed time: 0 days 1 hours 44 minutes / Cerberus40b_B_3DCONV.txt
+
+Benchmark: Cerberus40b_rodinia / start_date: 2026-04-02 07:16:06
+Description: Cerberus40b
+dwt2d               : PID 9115  / Completed  / Elapsed time: 0 days 0 hours 30 minutes / Cerberus40b_R_dwt2d.txt
+bfs                 : PID 9016  / Running    / Elapsed time: 0 days 1 hours 45 minutes / Cerberus40b_R_bfs.txt
+nw                  : PID 9188  / Completed  / Elapsed time: 0 days 1 hours 26 minutes / Cerberus40b_R_nw.txt
+backprop            : PID 8917  / Completed  / Elapsed time: 0 days 0 hours 18 minutes / Cerberus40b_R_backprop.txt
+srad_v1             : PID 9292  / Running    / Elapsed time: 0 days 1 hours 45 minutes / Cerberus40b_R_srad_v1.txt
+b+tree              : PID 8752  / Completed  / Elapsed time: 0 days 0 hours 32 minutes / Cerberus40b_R_b+tree.txt
+
+Benchmark: Cerberus40b_parboil / start_date: 2026-04-02 07:16:25
+Description: Cerberus40b
+sgemm               : PID 9821  / Running    / Elapsed time: 0 days 1 hours 45 minutes / Cerberus40b_P_sgemm.txt
+spmv                : PID 9585  / Running    / Elapsed time: 0 days 1 hours 45 minutes / Cerberus40b_P_spmv.txt
+mri-q               : PID 9700  / Running    / Elapsed time: 0 days 1 hours 45 minutes / Cerberus40b_P_mri-q.txt
+
+Benchmark: DUO_parboil / start_date: 2026-04-02 06:54:45
+Description: DUO
+sgemm               : PID 4123  / Running    / Elapsed time: 0 days 2 hours 6 minutes / DUO_P_sgemm.txt
+spmv                : PID 3925  / Running    / Elapsed time: 0 days 2 hours 6 minutes / DUO_P_spmv.txt
+mri-q               : PID 4024  / Running    / Elapsed time: 0 days 2 hours 6 minutes / DUO_P_mri-q.txt
+
+Benchmark: Cerberus_rodinia / start_date: 2026-04-02 06:56:35
+Description: Cerberus
+dwt2d               : PID 7091  / Completed  / Elapsed time: 0 days 0 hours 30 minutes / Cerberus_R_dwt2d.txt
+bfs                 : PID 6992  / Completed  / Elapsed time: 0 days 1 hours 54 minutes / Cerberus_R_bfs.txt
+nw                  : PID 7276  / Completed  / Elapsed time: 0 days 1 hours 34 minutes / Cerberus_R_nw.txt
+backprop            : PID 6893  / Completed  / Elapsed time: 0 days 0 hours 14 minutes / Cerberus_R_backprop.txt
+srad_v1             : PID 7383  / Running    / Elapsed time: 0 days 2 hours 4 minutes / Cerberus_R_srad_v1.txt
+b+tree              : PID 6728  / Completed  / Elapsed time: 0 days 0 hours 28 minutes / Cerberus_R_b+tree.txt
+
+Benchmark: HBM4_rodinia / start_date: 2026-04-02 06:53:23
+Description: HBM4
+dwt2d               : PID 1550  / Completed  / Elapsed time: 0 days 0 hours 27 minutes / HBM4_R_dwt2d.txt
+bfs                 : PID 1451  / Completed  / Elapsed time: 0 days 2 hours 2 minutes / HBM4_R_bfs.txt
+nw                  : PID 1735  / Completed  / Elapsed time: 0 days 1 hours 34 minutes / HBM4_R_nw.txt
+backprop            : PID 1352  / Completed  / Elapsed time: 0 days 0 hours 11 minutes / HBM4_R_backprop.txt
+srad_v1             : PID 1846  / Running    / Elapsed time: 0 days 2 hours 8 minutes / HBM4_R_srad_v1.txt
+b+tree              : PID 1187  / Completed  / Elapsed time: 0 days 0 hours 24 minutes / HBM4_R_b+tree.txt
+
+Benchmark: DUO_graphBIG / start_date: 2026-04-02 06:55:00
+Description: DUO
+gpu_DegreeCentr     : PID 4305  / Running    / Elapsed time: 0 days 2 hours 6 minutes / DUO_G_gpu_DegreeCentr.txt
+gpu_BFS             : PID 4222  / Running    / Elapsed time: 0 days 2 hours 6 minutes / DUO_G_gpu_BFS.txt
+gpu_kCore           : PID 4471  / Completed  / Elapsed time: 0 days 0 hours 36 minutes / DUO_G_gpu_kCore.txt
+gpu_SSSP            : PID 4388  / Running    / Elapsed time: 0 days 2 hours 6 minutes / DUO_G_gpu_SSSP.txt
+
+Benchmark: HBM4_polybench / start_date: 2026-04-02 06:54:12
+Description: HBM4
+ATAX                : PID 2810  / Completed  / Elapsed time: 0 days 0 hours 56 minutes / HBM4_B_ATAX.txt
+MVT                 : PID 2913  / Completed  / Elapsed time: 0 days 0 hours 57 minutes / HBM4_B_MVT.txt
+3DCONV              : PID 2707  / Completed  / Elapsed time: 0 days 1 hours 51 minutes / HBM4_B_3DCONV.txt
+
+Benchmark: Unity_parboil / start_date: 2026-04-02 06:55:49
+Description: Unity
+sgemm               : PID 5970  / Running    / Elapsed time: 0 days 2 hours 5 minutes / Unity_P_sgemm.txt
+spmv                : PID 5772  / Running    / Elapsed time: 0 days 2 hours 5 minutes / Unity_P_spmv.txt
+mri-q               : PID 5871  / Running    / Elapsed time: 0 days 2 hours 5 minutes / Unity_P_mri-q.txt
+
+Benchmark: DUO_polybench / start_date: 2026-04-02 06:55:16
+Description: DUO
+ATAX                : PID 4657  / Completed  / Elapsed time: 0 days 0 hours 59 minutes / DUO_B_ATAX.txt
+MVT                 : PID 4760  / Completed  / Elapsed time: 0 days 0 hours 56 minutes / DUO_B_MVT.txt
+3DCONV              : PID 4554  / Completed  / Elapsed time: 0 days 1 hours 57 minutes / DUO_B_3DCONV.txt
+
+Benchmark: Cerberus_polybench / start_date: 2026-04-02 06:57:25
+Description: Cerberus
+ATAX                : PID 8369  / Completed  / Elapsed time: 0 days 0 hours 57 minutes / Cerberus_B_ATAX.txt
+MVT                 : PID 8472  / Completed  / Elapsed time: 0 days 0 hours 58 minutes / Cerberus_B_MVT.txt
+3DCONV              : PID 8266  / Completed  / Elapsed time: 0 days 1 hours 54 minutes / Cerberus_B_3DCONV.txt
+

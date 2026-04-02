@@ -1,0 +1,637 @@
+ 
+****************************************
+Report : resources
+Design : Cerberus_32b
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  2 17:45:13 2026
+****************************************
+
+
+Resource Report for Ungrouped Hierarchy de_corrector in file
+        /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy/rtl/DE_CORRECTOR.sv
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| sub_x_1        | DW01_dec       | width=16   | sub_10_C353 (DE_CORRECTOR.sv:10) |
+| sub_x_2        | DW01_dec       | width=16   | sub_10_C353_2 (DE_CORRECTOR.sv:10) |
+| sub_x_3        | DW01_dec       | width=16   | sub_10_C387 (DE_CORRECTOR.sv:10) |
+| sub_x_4        | DW01_dec       | width=16   | sub_10_C387_2 (DE_CORRECTOR.sv:10) |
+| sub_x_5        | DW01_dec       | width=16   | sub_10_C421 (DE_CORRECTOR.sv:10) |
+| sub_x_6        | DW01_dec       | width=16   | sub_10_C421_2 (DE_CORRECTOR.sv:10) |
+| sub_x_7        | DW01_dec       | width=16   | sub_10_C455 (DE_CORRECTOR.sv:10) |
+| sub_x_8        | DW01_dec       | width=16   | sub_10_C455_2 (DE_CORRECTOR.sv:10) |
+| sub_x_9        | DW01_dec       | width=16   | sub_10_C489 (DE_CORRECTOR.sv:10) |
+| sub_x_10       | DW01_dec       | width=16   | sub_10_C489_2 (DE_CORRECTOR.sv:10) |
+| sub_x_11       | DW01_dec       | width=16   | sub_10_C523 (DE_CORRECTOR.sv:10) |
+| sub_x_12       | DW01_dec       | width=16   | sub_10_C523_2 (DE_CORRECTOR.sv:10) |
+| sub_x_13       | DW01_dec       | width=16   | sub_10_C557 (DE_CORRECTOR.sv:10) |
+| sub_x_14       | DW01_dec       | width=16   | sub_10_C557_2 (DE_CORRECTOR.sv:10) |
+| sub_x_15       | DW01_dec       | width=16   | sub_10_C591 (DE_CORRECTOR.sv:10) |
+| sub_x_16       | DW01_dec       | width=16   | sub_10_C591_2 (DE_CORRECTOR.sv:10) |
+| sub_x_17       | DW01_dec       | width=16   | sub_10_C625 (DE_CORRECTOR.sv:10) |
+| sub_x_18       | DW01_dec       | width=16   | sub_10_C625_2 (DE_CORRECTOR.sv:10) |
+| sub_x_19       | DW01_dec       | width=16   | sub_10_C659 (DE_CORRECTOR.sv:10) |
+| sub_x_20       | DW01_dec       | width=16   | sub_10_C659_2 (DE_CORRECTOR.sv:10) |
+| sub_x_21       | DW01_dec       | width=16   | sub_10_C693 (DE_CORRECTOR.sv:10) |
+| sub_x_22       | DW01_dec       | width=16   | sub_10_C693_2 (DE_CORRECTOR.sv:10) |
+| sub_x_23       | DW01_dec       | width=16   | sub_10_C727 (DE_CORRECTOR.sv:10) |
+| sub_x_24       | DW01_dec       | width=16   | sub_10_C727_2 (DE_CORRECTOR.sv:10) |
+| sub_x_25       | DW01_dec       | width=16   | sub_10_C761 (DE_CORRECTOR.sv:10) |
+| sub_x_26       | DW01_dec       | width=16   | sub_10_C761_2 (DE_CORRECTOR.sv:10) |
+| sub_x_27       | DW01_dec       | width=16   | sub_10_C795 (DE_CORRECTOR.sv:10) |
+| sub_x_28       | DW01_dec       | width=16   | sub_10_C795_2 (DE_CORRECTOR.sv:10) |
+| sub_x_29       | DW01_dec       | width=16   | sub_10_C829 (DE_CORRECTOR.sv:10) |
+| sub_x_30       | DW01_dec       | width=16   | sub_10_C829_2 (DE_CORRECTOR.sv:10) |
+| sub_x_31       | DW01_dec       | width=16   | sub_10_C863 (DE_CORRECTOR.sv:10) |
+| sub_x_32       | DW01_dec       | width=16   | sub_10_C863_2 (DE_CORRECTOR.sv:10) |
+| sub_x_33       | DW01_dec       | width=16   | sub_10_C897 (DE_CORRECTOR.sv:10) |
+| sub_x_34       | DW01_dec       | width=16   | sub_10_C897_2 (DE_CORRECTOR.sv:10) |
+| sub_x_35       | DW01_dec       | width=16   | sub_10_C931 (DE_CORRECTOR.sv:10) |
+| sub_x_36       | DW01_dec       | width=16   | sub_10_C931_2 (DE_CORRECTOR.sv:10) |
+| sub_x_37       | DW01_dec       | width=16   | sub_10_C965 (DE_CORRECTOR.sv:10) |
+| sub_x_38       | DW01_dec       | width=16   | sub_10_C965_2 (DE_CORRECTOR.sv:10) |
+| sub_x_39       | DW01_dec       | width=16   | sub_10_C999 (DE_CORRECTOR.sv:10) |
+| sub_x_40       | DW01_dec       | width=16   | sub_10_C999_2 (DE_CORRECTOR.sv:10) |
+| sub_x_41       | DW01_dec       | width=16   | sub_10_C1033 (DE_CORRECTOR.sv:10) |
+| sub_x_42       | DW01_dec       | width=16   | sub_10_C1033_2 (DE_CORRECTOR.sv:10) |
+| sub_x_43       | DW01_dec       | width=16   | sub_10_C1067 (DE_CORRECTOR.sv:10) |
+| sub_x_44       | DW01_dec       | width=16   | sub_10_C1067_2 (DE_CORRECTOR.sv:10) |
+| sub_x_45       | DW01_dec       | width=16   | sub_10_C1101 (DE_CORRECTOR.sv:10) |
+| sub_x_46       | DW01_dec       | width=16   | sub_10_C1101_2 (DE_CORRECTOR.sv:10) |
+| sub_x_47       | DW01_dec       | width=16   | sub_10_C1135 (DE_CORRECTOR.sv:10) |
+| sub_x_48       | DW01_dec       | width=16   | sub_10_C1135_2 (DE_CORRECTOR.sv:10) |
+| sub_x_49       | DW01_dec       | width=16   | sub_10_C1169 (DE_CORRECTOR.sv:10) |
+| sub_x_50       | DW01_dec       | width=16   | sub_10_C1169_2 (DE_CORRECTOR.sv:10) |
+| sub_x_51       | DW01_dec       | width=16   | sub_10_C1203 (DE_CORRECTOR.sv:10) |
+| sub_x_52       | DW01_dec       | width=16   | sub_10_C1203_2 (DE_CORRECTOR.sv:10) |
+| sub_x_53       | DW01_dec       | width=16   | sub_10_C1237 (DE_CORRECTOR.sv:10) |
+| sub_x_54       | DW01_dec       | width=16   | sub_10_C1237_2 (DE_CORRECTOR.sv:10) |
+| sub_x_55       | DW01_dec       | width=16   | sub_10_C1271 (DE_CORRECTOR.sv:10) |
+| sub_x_56       | DW01_dec       | width=16   | sub_10_C1271_2 (DE_CORRECTOR.sv:10) |
+| sub_x_57       | DW01_dec       | width=16   | sub_10_C1305 (DE_CORRECTOR.sv:10) |
+| sub_x_58       | DW01_dec       | width=16   | sub_10_C1305_2 (DE_CORRECTOR.sv:10) |
+| sub_x_59       | DW01_dec       | width=16   | sub_10_C1339 (DE_CORRECTOR.sv:10) |
+| sub_x_60       | DW01_dec       | width=16   | sub_10_C1339_2 (DE_CORRECTOR.sv:10) |
+| sub_x_61       | DW01_dec       | width=16   | sub_10_C1373 (DE_CORRECTOR.sv:10) |
+| sub_x_62       | DW01_dec       | width=16   | sub_10_C1373_2 (DE_CORRECTOR.sv:10) |
+| sub_x_63       | DW01_dec       | width=16   | sub_10_C1407 (DE_CORRECTOR.sv:10) |
+| sub_x_64       | DW01_dec       | width=16   | sub_10_C1407_2 (DE_CORRECTOR.sv:10) |
+| sub_x_65       | DW01_dec       | width=16   | sub_10_C1441 (DE_CORRECTOR.sv:10) |
+| sub_x_66       | DW01_dec       | width=16   | sub_10_C1441_2 (DE_CORRECTOR.sv:10) |
+| sub_x_67       | DW01_dec       | width=16   | sub_10_C1475 (DE_CORRECTOR.sv:10) |
+| sub_x_68       | DW01_dec       | width=16   | sub_10_C1475_2 (DE_CORRECTOR.sv:10) |
+| sub_x_69       | DW01_dec       | width=16   | sub_10_C1509 (DE_CORRECTOR.sv:10) |
+| sub_x_70       | DW01_dec       | width=16   | sub_10_C1509_2 (DE_CORRECTOR.sv:10) |
+| sub_x_71       | DW01_dec       | width=16   | sub_10_C1543 (DE_CORRECTOR.sv:10) |
+| sub_x_72       | DW01_dec       | width=16   | sub_10_C1543_2 (DE_CORRECTOR.sv:10) |
+| sub_x_73       | DW01_dec       | width=16   | sub_10_C1577 (DE_CORRECTOR.sv:10) |
+| sub_x_74       | DW01_dec       | width=16   | sub_10_C1577_2 (DE_CORRECTOR.sv:10) |
+| sub_x_75       | DW01_dec       | width=16   | sub_10_C1611 (DE_CORRECTOR.sv:10) |
+| sub_x_76       | DW01_dec       | width=16   | sub_10_C1611_2 (DE_CORRECTOR.sv:10) |
+| sub_x_77       | DW01_dec       | width=16   | sub_10_C1645 (DE_CORRECTOR.sv:10) |
+| sub_x_78       | DW01_dec       | width=16   | sub_10_C1645_2 (DE_CORRECTOR.sv:10) |
+| sub_x_79       | DW01_dec       | width=16   | sub_10_C1679 (DE_CORRECTOR.sv:10) |
+| sub_x_80       | DW01_dec       | width=16   | sub_10_C1679_2 (DE_CORRECTOR.sv:10) |
+| sub_x_81       | DW01_dec       | width=16   | sub_10_C1713 (DE_CORRECTOR.sv:10) |
+| sub_x_82       | DW01_dec       | width=16   | sub_10_C1713_2 (DE_CORRECTOR.sv:10) |
+| sub_x_83       | DW01_dec       | width=16   | sub_10_C1747 (DE_CORRECTOR.sv:10) |
+| sub_x_84       | DW01_dec       | width=16   | sub_10_C1747_2 (DE_CORRECTOR.sv:10) |
+| sub_x_85       | DW01_dec       | width=16   | sub_10_C1781 (DE_CORRECTOR.sv:10) |
+| sub_x_86       | DW01_dec       | width=16   | sub_10_C1781_2 (DE_CORRECTOR.sv:10) |
+| sub_x_87       | DW01_dec       | width=16   | sub_10_C1815 (DE_CORRECTOR.sv:10) |
+| sub_x_88       | DW01_dec       | width=16   | sub_10_C1815_2 (DE_CORRECTOR.sv:10) |
+| sub_x_89       | DW01_dec       | width=16   | sub_10_C1849 (DE_CORRECTOR.sv:10) |
+| sub_x_90       | DW01_dec       | width=16   | sub_10_C1849_2 (DE_CORRECTOR.sv:10) |
+| sub_x_91       | DW01_dec       | width=16   | sub_10_C1883 (DE_CORRECTOR.sv:10) |
+| sub_x_92       | DW01_dec       | width=16   | sub_10_C1883_2 (DE_CORRECTOR.sv:10) |
+| sub_x_93       | DW01_dec       | width=16   | sub_10_C1917 (DE_CORRECTOR.sv:10) |
+| sub_x_94       | DW01_dec       | width=16   | sub_10_C1917_2 (DE_CORRECTOR.sv:10) |
+| sub_x_95       | DW01_dec       | width=16   | sub_10_C1951 (DE_CORRECTOR.sv:10) |
+| sub_x_96       | DW01_dec       | width=16   | sub_10_C1951_2 (DE_CORRECTOR.sv:10) |
+| sub_x_97       | DW01_dec       | width=16   | sub_10_C1985 (DE_CORRECTOR.sv:10) |
+| sub_x_98       | DW01_dec       | width=16   | sub_10_C1985_2 (DE_CORRECTOR.sv:10) |
+| sub_x_99       | DW01_dec       | width=16   | sub_10_C2019 (DE_CORRECTOR.sv:10) |
+| sub_x_100      | DW01_dec       | width=16   | sub_10_C2019_2 (DE_CORRECTOR.sv:10) |
+| sub_x_101      | DW01_dec       | width=16   | sub_10_C2053 (DE_CORRECTOR.sv:10) |
+| sub_x_102      | DW01_dec       | width=16   | sub_10_C2053_2 (DE_CORRECTOR.sv:10) |
+| sub_x_103      | DW01_dec       | width=16   | sub_10_C2087 (DE_CORRECTOR.sv:10) |
+| sub_x_104      | DW01_dec       | width=16   | sub_10_C2087_2 (DE_CORRECTOR.sv:10) |
+| sub_x_105      | DW01_dec       | width=16   | sub_10_C2121 (DE_CORRECTOR.sv:10) |
+| sub_x_106      | DW01_dec       | width=16   | sub_10_C2121_2 (DE_CORRECTOR.sv:10) |
+| sub_x_107      | DW01_dec       | width=16   | sub_10_C2155 (DE_CORRECTOR.sv:10) |
+| sub_x_108      | DW01_dec       | width=16   | sub_10_C2155_2 (DE_CORRECTOR.sv:10) |
+| sub_x_109      | DW01_dec       | width=16   | sub_10_C2189 (DE_CORRECTOR.sv:10) |
+| sub_x_110      | DW01_dec       | width=16   | sub_10_C2189_2 (DE_CORRECTOR.sv:10) |
+| sub_x_111      | DW01_dec       | width=16   | sub_10_C2223 (DE_CORRECTOR.sv:10) |
+| sub_x_112      | DW01_dec       | width=16   | sub_10_C2223_2 (DE_CORRECTOR.sv:10) |
+| sub_x_113      | DW01_dec       | width=16   | sub_10_C2257 (DE_CORRECTOR.sv:10) |
+| sub_x_114      | DW01_dec       | width=16   | sub_10_C2257_2 (DE_CORRECTOR.sv:10) |
+| sub_x_115      | DW01_dec       | width=16   | sub_10_C2291 (DE_CORRECTOR.sv:10) |
+| sub_x_116      | DW01_dec       | width=16   | sub_10_C2291_2 (DE_CORRECTOR.sv:10) |
+| sub_x_117      | DW01_dec       | width=16   | sub_10_C2325 (DE_CORRECTOR.sv:10) |
+| sub_x_118      | DW01_dec       | width=16   | sub_10_C2325_2 (DE_CORRECTOR.sv:10) |
+| sub_x_119      | DW01_dec       | width=16   | sub_10_C2359 (DE_CORRECTOR.sv:10) |
+| sub_x_120      | DW01_dec       | width=16   | sub_10_C2359_2 (DE_CORRECTOR.sv:10) |
+| sub_x_121      | DW01_dec       | width=16   | sub_10_C2393 (DE_CORRECTOR.sv:10) |
+| sub_x_122      | DW01_dec       | width=16   | sub_10_C2393_2 (DE_CORRECTOR.sv:10) |
+| sub_x_123      | DW01_dec       | width=16   | sub_10_C2427 (DE_CORRECTOR.sv:10) |
+| sub_x_124      | DW01_dec       | width=16   | sub_10_C2427_2 (DE_CORRECTOR.sv:10) |
+| sub_x_125      | DW01_dec       | width=16   | sub_10_C2461 (DE_CORRECTOR.sv:10) |
+| sub_x_126      | DW01_dec       | width=16   | sub_10_C2461_2 (DE_CORRECTOR.sv:10) |
+| sub_x_127      | DW01_dec       | width=16   | sub_10_C2495 (DE_CORRECTOR.sv:10) |
+| sub_x_128      | DW01_dec       | width=16   | sub_10_C2495_2 (DE_CORRECTOR.sv:10) |
+| sub_x_129      | DW01_dec       | width=16   | sub_10_C2529 (DE_CORRECTOR.sv:10) |
+| sub_x_130      | DW01_dec       | width=16   | sub_10_C2529_2 (DE_CORRECTOR.sv:10) |
+| sub_x_131      | DW01_dec       | width=16   | sub_10_C2563 (DE_CORRECTOR.sv:10) |
+| sub_x_132      | DW01_dec       | width=16   | sub_10_C2563_2 (DE_CORRECTOR.sv:10) |
+| sub_x_133      | DW01_dec       | width=16   | sub_10_C2597 (DE_CORRECTOR.sv:10) |
+| sub_x_134      | DW01_dec       | width=16   | sub_10_C2597_2 (DE_CORRECTOR.sv:10) |
+| sub_x_135      | DW01_dec       | width=16   | sub_10_C2631 (DE_CORRECTOR.sv:10) |
+| sub_x_136      | DW01_dec       | width=16   | sub_10_C2631_2 (DE_CORRECTOR.sv:10) |
+| sub_x_137      | DW01_dec       | width=16   | sub_10_C2665 (DE_CORRECTOR.sv:10) |
+| sub_x_138      | DW01_dec       | width=16   | sub_10_C2665_2 (DE_CORRECTOR.sv:10) |
+| sub_x_139      | DW01_dec       | width=16   | sub_10_C2699 (DE_CORRECTOR.sv:10) |
+| sub_x_140      | DW01_dec       | width=16   | sub_10_C2699_2 (DE_CORRECTOR.sv:10) |
+| sub_x_141      | DW01_dec       | width=16   | sub_10_C2733 (DE_CORRECTOR.sv:10) |
+| sub_x_142      | DW01_dec       | width=16   | sub_10_C2733_2 (DE_CORRECTOR.sv:10) |
+| sub_x_143      | DW01_dec       | width=16   | sub_10_C2767 (DE_CORRECTOR.sv:10) |
+| sub_x_144      | DW01_dec       | width=16   | sub_10_C2767_2 (DE_CORRECTOR.sv:10) |
+| sub_x_145      | DW01_dec       | width=16   | sub_10_C2801 (DE_CORRECTOR.sv:10) |
+| sub_x_146      | DW01_dec       | width=16   | sub_10_C2801_2 (DE_CORRECTOR.sv:10) |
+| sub_x_147      | DW01_dec       | width=16   | sub_10_C2835 (DE_CORRECTOR.sv:10) |
+| sub_x_148      | DW01_dec       | width=16   | sub_10_C2835_2 (DE_CORRECTOR.sv:10) |
+| sub_x_149      | DW01_dec       | width=16   | sub_10_C2869 (DE_CORRECTOR.sv:10) |
+| sub_x_150      | DW01_dec       | width=16   | sub_10_C2869_2 (DE_CORRECTOR.sv:10) |
+| sub_x_151      | DW01_dec       | width=16   | sub_10_C2903 (DE_CORRECTOR.sv:10) |
+| sub_x_152      | DW01_dec       | width=16   | sub_10_C2903_2 (DE_CORRECTOR.sv:10) |
+| sub_x_153      | DW01_dec       | width=16   | sub_10_C2937 (DE_CORRECTOR.sv:10) |
+| sub_x_154      | DW01_dec       | width=16   | sub_10_C2937_2 (DE_CORRECTOR.sv:10) |
+| sub_x_155      | DW01_dec       | width=16   | sub_10_C2971 (DE_CORRECTOR.sv:10) |
+| sub_x_156      | DW01_dec       | width=16   | sub_10_C2971_2 (DE_CORRECTOR.sv:10) |
+| sub_x_157      | DW01_dec       | width=16   | sub_10_C3005 (DE_CORRECTOR.sv:10) |
+| sub_x_158      | DW01_dec       | width=16   | sub_10_C3005_2 (DE_CORRECTOR.sv:10) |
+| sub_x_159      | DW01_dec       | width=16   | sub_10_C3039 (DE_CORRECTOR.sv:10) |
+| sub_x_160      | DW01_dec       | width=16   | sub_10_C3039_2 (DE_CORRECTOR.sv:10) |
+| sub_x_161      | DW01_dec       | width=16   | sub_10_C3073 (DE_CORRECTOR.sv:10) |
+| sub_x_162      | DW01_dec       | width=16   | sub_10_C3073_2 (DE_CORRECTOR.sv:10) |
+| sub_x_163      | DW01_dec       | width=16   | sub_10_C3107 (DE_CORRECTOR.sv:10) |
+| sub_x_164      | DW01_dec       | width=16   | sub_10_C3107_2 (DE_CORRECTOR.sv:10) |
+| sub_x_165      | DW01_dec       | width=16   | sub_10_C3141 (DE_CORRECTOR.sv:10) |
+| sub_x_166      | DW01_dec       | width=16   | sub_10_C3141_2 (DE_CORRECTOR.sv:10) |
+| sub_x_167      | DW01_dec       | width=16   | sub_10_C3175 (DE_CORRECTOR.sv:10) |
+| sub_x_168      | DW01_dec       | width=16   | sub_10_C3175_2 (DE_CORRECTOR.sv:10) |
+| sub_x_169      | DW01_dec       | width=16   | sub_10_C3209 (DE_CORRECTOR.sv:10) |
+| sub_x_170      | DW01_dec       | width=16   | sub_10_C3209_2 (DE_CORRECTOR.sv:10) |
+| sub_x_171      | DW01_dec       | width=16   | sub_10_C3243 (DE_CORRECTOR.sv:10) |
+| sub_x_172      | DW01_dec       | width=16   | sub_10_C3243_2 (DE_CORRECTOR.sv:10) |
+| sub_x_173      | DW01_dec       | width=16   | sub_10_C3277 (DE_CORRECTOR.sv:10) |
+| sub_x_174      | DW01_dec       | width=16   | sub_10_C3277_2 (DE_CORRECTOR.sv:10) |
+| sub_x_175      | DW01_dec       | width=16   | sub_10_C3311 (DE_CORRECTOR.sv:10) |
+| sub_x_176      | DW01_dec       | width=16   | sub_10_C3311_2 (DE_CORRECTOR.sv:10) |
+| sub_x_177      | DW01_dec       | width=16   | sub_10_C3345 (DE_CORRECTOR.sv:10) |
+| sub_x_178      | DW01_dec       | width=16   | sub_10_C3345_2 (DE_CORRECTOR.sv:10) |
+| sub_x_179      | DW01_dec       | width=16   | sub_10_C3379 (DE_CORRECTOR.sv:10) |
+| sub_x_180      | DW01_dec       | width=16   | sub_10_C3379_2 (DE_CORRECTOR.sv:10) |
+| sub_x_181      | DW01_dec       | width=16   | sub_10_C3413 (DE_CORRECTOR.sv:10) |
+| sub_x_182      | DW01_dec       | width=16   | sub_10_C3413_2 (DE_CORRECTOR.sv:10) |
+| sub_x_183      | DW01_dec       | width=16   | sub_10_C3447 (DE_CORRECTOR.sv:10) |
+| sub_x_184      | DW01_dec       | width=16   | sub_10_C3447_2 (DE_CORRECTOR.sv:10) |
+| sub_x_185      | DW01_dec       | width=16   | sub_10_C3481 (DE_CORRECTOR.sv:10) |
+| sub_x_186      | DW01_dec       | width=16   | sub_10_C3481_2 (DE_CORRECTOR.sv:10) |
+| sub_x_187      | DW01_dec       | width=16   | sub_10_C3515 (DE_CORRECTOR.sv:10) |
+| sub_x_188      | DW01_dec       | width=16   | sub_10_C3515_2 (DE_CORRECTOR.sv:10) |
+| sub_x_189      | DW01_dec       | width=16   | sub_10_C3549 (DE_CORRECTOR.sv:10) |
+| sub_x_190      | DW01_dec       | width=16   | sub_10_C3549_2 (DE_CORRECTOR.sv:10) |
+| sub_x_191      | DW01_dec       | width=16   | sub_10_C3583 (DE_CORRECTOR.sv:10) |
+| sub_x_192      | DW01_dec       | width=16   | sub_10_C3583_2 (DE_CORRECTOR.sv:10) |
+| sub_x_193      | DW01_dec       | width=16   | sub_10_C3617 (DE_CORRECTOR.sv:10) |
+| sub_x_194      | DW01_dec       | width=16   | sub_10_C3617_2 (DE_CORRECTOR.sv:10) |
+| sub_x_195      | DW01_dec       | width=16   | sub_10_C3651 (DE_CORRECTOR.sv:10) |
+| sub_x_196      | DW01_dec       | width=16   | sub_10_C3651_2 (DE_CORRECTOR.sv:10) |
+| sub_x_197      | DW01_dec       | width=16   | sub_10_C3685 (DE_CORRECTOR.sv:10) |
+| sub_x_198      | DW01_dec       | width=16   | sub_10_C3685_2 (DE_CORRECTOR.sv:10) |
+| sub_x_199      | DW01_dec       | width=16   | sub_10_C3719 (DE_CORRECTOR.sv:10) |
+| sub_x_200      | DW01_dec       | width=16   | sub_10_C3719_2 (DE_CORRECTOR.sv:10) |
+| sub_x_201      | DW01_dec       | width=16   | sub_10_C3753 (DE_CORRECTOR.sv:10) |
+| sub_x_202      | DW01_dec       | width=16   | sub_10_C3753_2 (DE_CORRECTOR.sv:10) |
+| sub_x_203      | DW01_dec       | width=16   | sub_10_C3787 (DE_CORRECTOR.sv:10) |
+| sub_x_204      | DW01_dec       | width=16   | sub_10_C3787_2 (DE_CORRECTOR.sv:10) |
+| sub_x_205      | DW01_dec       | width=16   | sub_10_C3821 (DE_CORRECTOR.sv:10) |
+| sub_x_206      | DW01_dec       | width=16   | sub_10_C3821_2 (DE_CORRECTOR.sv:10) |
+| sub_x_207      | DW01_dec       | width=16   | sub_10_C3855 (DE_CORRECTOR.sv:10) |
+| sub_x_208      | DW01_dec       | width=16   | sub_10_C3855_2 (DE_CORRECTOR.sv:10) |
+| sub_x_209      | DW01_dec       | width=16   | sub_10_C3889 (DE_CORRECTOR.sv:10) |
+| sub_x_210      | DW01_dec       | width=16   | sub_10_C3889_2 (DE_CORRECTOR.sv:10) |
+| sub_x_211      | DW01_dec       | width=16   | sub_10_C3923 (DE_CORRECTOR.sv:10) |
+| sub_x_212      | DW01_dec       | width=16   | sub_10_C3923_2 (DE_CORRECTOR.sv:10) |
+| sub_x_213      | DW01_dec       | width=16   | sub_10_C3957 (DE_CORRECTOR.sv:10) |
+| sub_x_214      | DW01_dec       | width=16   | sub_10_C3957_2 (DE_CORRECTOR.sv:10) |
+| sub_x_215      | DW01_dec       | width=16   | sub_10_C3991 (DE_CORRECTOR.sv:10) |
+| sub_x_216      | DW01_dec       | width=16   | sub_10_C3991_2 (DE_CORRECTOR.sv:10) |
+| sub_x_217      | DW01_dec       | width=16   | sub_10_C4025 (DE_CORRECTOR.sv:10) |
+| sub_x_218      | DW01_dec       | width=16   | sub_10_C4025_2 (DE_CORRECTOR.sv:10) |
+| sub_x_219      | DW01_dec       | width=16   | sub_10_C4059 (DE_CORRECTOR.sv:10) |
+| sub_x_220      | DW01_dec       | width=16   | sub_10_C4059_2 (DE_CORRECTOR.sv:10) |
+| sub_x_221      | DW01_dec       | width=16   | sub_10_C4093 (DE_CORRECTOR.sv:10) |
+| sub_x_222      | DW01_dec       | width=16   | sub_10_C4093_2 (DE_CORRECTOR.sv:10) |
+| sub_x_223      | DW01_dec       | width=16   | sub_10_C4127 (DE_CORRECTOR.sv:10) |
+| sub_x_224      | DW01_dec       | width=16   | sub_10_C4127_2 (DE_CORRECTOR.sv:10) |
+| sub_x_225      | DW01_dec       | width=16   | sub_10_C4161 (DE_CORRECTOR.sv:10) |
+| sub_x_226      | DW01_dec       | width=16   | sub_10_C4161_2 (DE_CORRECTOR.sv:10) |
+| sub_x_227      | DW01_dec       | width=16   | sub_10_C4195 (DE_CORRECTOR.sv:10) |
+| sub_x_228      | DW01_dec       | width=16   | sub_10_C4195_2 (DE_CORRECTOR.sv:10) |
+| sub_x_229      | DW01_dec       | width=16   | sub_10_C4229 (DE_CORRECTOR.sv:10) |
+| sub_x_230      | DW01_dec       | width=16   | sub_10_C4229_2 (DE_CORRECTOR.sv:10) |
+| sub_x_231      | DW01_dec       | width=16   | sub_10_C4263 (DE_CORRECTOR.sv:10) |
+| sub_x_232      | DW01_dec       | width=16   | sub_10_C4263_2 (DE_CORRECTOR.sv:10) |
+| sub_x_233      | DW01_dec       | width=16   | sub_10_C4297 (DE_CORRECTOR.sv:10) |
+| sub_x_234      | DW01_dec       | width=16   | sub_10_C4297_2 (DE_CORRECTOR.sv:10) |
+| sub_x_235      | DW01_dec       | width=16   | sub_10_C4331 (DE_CORRECTOR.sv:10) |
+| sub_x_236      | DW01_dec       | width=16   | sub_10_C4331_2 (DE_CORRECTOR.sv:10) |
+| sub_x_237      | DW01_dec       | width=16   | sub_10_C4365 (DE_CORRECTOR.sv:10) |
+| sub_x_238      | DW01_dec       | width=16   | sub_10_C4365_2 (DE_CORRECTOR.sv:10) |
+| sub_x_239      | DW01_dec       | width=16   | sub_10_C4399 (DE_CORRECTOR.sv:10) |
+| sub_x_240      | DW01_dec       | width=16   | sub_10_C4399_2 (DE_CORRECTOR.sv:10) |
+| sub_x_241      | DW01_dec       | width=16   | sub_10_C4433 (DE_CORRECTOR.sv:10) |
+| sub_x_242      | DW01_dec       | width=16   | sub_10_C4433_2 (DE_CORRECTOR.sv:10) |
+| sub_x_243      | DW01_dec       | width=16   | sub_10_C4467 (DE_CORRECTOR.sv:10) |
+| sub_x_244      | DW01_dec       | width=16   | sub_10_C4467_2 (DE_CORRECTOR.sv:10) |
+| sub_x_245      | DW01_dec       | width=16   | sub_10_C4501 (DE_CORRECTOR.sv:10) |
+| sub_x_246      | DW01_dec       | width=16   | sub_10_C4501_2 (DE_CORRECTOR.sv:10) |
+| sub_x_247      | DW01_dec       | width=16   | sub_10_C4535 (DE_CORRECTOR.sv:10) |
+| sub_x_248      | DW01_dec       | width=16   | sub_10_C4535_2 (DE_CORRECTOR.sv:10) |
+| sub_x_249      | DW01_dec       | width=16   | sub_10_C4569 (DE_CORRECTOR.sv:10) |
+| sub_x_250      | DW01_dec       | width=16   | sub_10_C4569_2 (DE_CORRECTOR.sv:10) |
+| sub_x_251      | DW01_dec       | width=16   | sub_10_C4603 (DE_CORRECTOR.sv:10) |
+| sub_x_252      | DW01_dec       | width=16   | sub_10_C4603_2 (DE_CORRECTOR.sv:10) |
+| sub_x_253      | DW01_dec       | width=16   | sub_10_C4637 (DE_CORRECTOR.sv:10) |
+| sub_x_254      | DW01_dec       | width=16   | sub_10_C4637_2 (DE_CORRECTOR.sv:10) |
+| sub_x_255      | DW01_dec       | width=16   | sub_10_C4671 (DE_CORRECTOR.sv:10) |
+| sub_x_256      | DW01_dec       | width=16   | sub_10_C4671_2 (DE_CORRECTOR.sv:10) |
+| sub_x_257      | DW01_dec       | width=16   | sub_10_C4705 (DE_CORRECTOR.sv:10) |
+| sub_x_258      | DW01_dec       | width=16   | sub_10_C4705_2 (DE_CORRECTOR.sv:10) |
+| sub_x_259      | DW01_dec       | width=16   | sub_10_C4739 (DE_CORRECTOR.sv:10) |
+| sub_x_260      | DW01_dec       | width=16   | sub_10_C4739_2 (DE_CORRECTOR.sv:10) |
+| sub_x_261      | DW01_dec       | width=16   | sub_10_C4773 (DE_CORRECTOR.sv:10) |
+| sub_x_262      | DW01_dec       | width=16   | sub_10_C4773_2 (DE_CORRECTOR.sv:10) |
+| sub_x_263      | DW01_dec       | width=16   | sub_10_C4807 (DE_CORRECTOR.sv:10) |
+| sub_x_264      | DW01_dec       | width=16   | sub_10_C4807_2 (DE_CORRECTOR.sv:10) |
+| sub_x_265      | DW01_dec       | width=16   | sub_10_C4841 (DE_CORRECTOR.sv:10) |
+| sub_x_266      | DW01_dec       | width=16   | sub_10_C4841_2 (DE_CORRECTOR.sv:10) |
+| sub_x_267      | DW01_dec       | width=16   | sub_10_C4875 (DE_CORRECTOR.sv:10) |
+| sub_x_268      | DW01_dec       | width=16   | sub_10_C4875_2 (DE_CORRECTOR.sv:10) |
+| sub_x_269      | DW01_dec       | width=16   | sub_10_C4909 (DE_CORRECTOR.sv:10) |
+| sub_x_270      | DW01_dec       | width=16   | sub_10_C4909_2 (DE_CORRECTOR.sv:10) |
+| sub_x_271      | DW01_dec       | width=16   | sub_10_C4943 (DE_CORRECTOR.sv:10) |
+| sub_x_272      | DW01_dec       | width=16   | sub_10_C4943_2 (DE_CORRECTOR.sv:10) |
+| sub_x_273      | DW01_dec       | width=16   | sub_10_C4977 (DE_CORRECTOR.sv:10) |
+| sub_x_274      | DW01_dec       | width=16   | sub_10_C4977_2 (DE_CORRECTOR.sv:10) |
+| sub_x_275      | DW01_dec       | width=16   | sub_10_C5011 (DE_CORRECTOR.sv:10) |
+| sub_x_276      | DW01_dec       | width=16   | sub_10_C5011_2 (DE_CORRECTOR.sv:10) |
+| sub_x_277      | DW01_dec       | width=16   | sub_10_C5045 (DE_CORRECTOR.sv:10) |
+| sub_x_278      | DW01_dec       | width=16   | sub_10_C5045_2 (DE_CORRECTOR.sv:10) |
+| sub_x_279      | DW01_dec       | width=16   | sub_10_C5079 (DE_CORRECTOR.sv:10) |
+| sub_x_280      | DW01_dec       | width=16   | sub_10_C5079_2 (DE_CORRECTOR.sv:10) |
+| sub_x_281      | DW01_dec       | width=16   | sub_10_C5113 (DE_CORRECTOR.sv:10) |
+| sub_x_282      | DW01_dec       | width=16   | sub_10_C5113_2 (DE_CORRECTOR.sv:10) |
+| sub_x_283      | DW01_dec       | width=16   | sub_10_C5147 (DE_CORRECTOR.sv:10) |
+| sub_x_284      | DW01_dec       | width=16   | sub_10_C5147_2 (DE_CORRECTOR.sv:10) |
+| sub_x_285      | DW01_dec       | width=16   | sub_10_C5181 (DE_CORRECTOR.sv:10) |
+| sub_x_286      | DW01_dec       | width=16   | sub_10_C5181_2 (DE_CORRECTOR.sv:10) |
+| sub_x_287      | DW01_dec       | width=16   | sub_10_C5215 (DE_CORRECTOR.sv:10) |
+| sub_x_288      | DW01_dec       | width=16   | sub_10_C5215_2 (DE_CORRECTOR.sv:10) |
+| sub_x_289      | DW01_dec       | width=16   | sub_10_C5249 (DE_CORRECTOR.sv:10) |
+| sub_x_290      | DW01_dec       | width=16   | sub_10_C5249_2 (DE_CORRECTOR.sv:10) |
+| sub_x_291      | DW01_dec       | width=16   | sub_10_C5283 (DE_CORRECTOR.sv:10) |
+| sub_x_292      | DW01_dec       | width=16   | sub_10_C5283_2 (DE_CORRECTOR.sv:10) |
+| sub_x_293      | DW01_dec       | width=16   | sub_10_C5317 (DE_CORRECTOR.sv:10) |
+| sub_x_294      | DW01_dec       | width=16   | sub_10_C5317_2 (DE_CORRECTOR.sv:10) |
+| sub_x_295      | DW01_dec       | width=16   | sub_10_C5351 (DE_CORRECTOR.sv:10) |
+| sub_x_296      | DW01_dec       | width=16   | sub_10_C5351_2 (DE_CORRECTOR.sv:10) |
+| sub_x_297      | DW01_dec       | width=16   | sub_10_C5385 (DE_CORRECTOR.sv:10) |
+| sub_x_298      | DW01_dec       | width=16   | sub_10_C5385_2 (DE_CORRECTOR.sv:10) |
+| sub_x_299      | DW01_dec       | width=16   | sub_10_C5419 (DE_CORRECTOR.sv:10) |
+| sub_x_300      | DW01_dec       | width=16   | sub_10_C5419_2 (DE_CORRECTOR.sv:10) |
+| sub_x_301      | DW01_dec       | width=16   | sub_10_C5453 (DE_CORRECTOR.sv:10) |
+| sub_x_302      | DW01_dec       | width=16   | sub_10_C5453_2 (DE_CORRECTOR.sv:10) |
+| sub_x_303      | DW01_dec       | width=16   | sub_10_C5487 (DE_CORRECTOR.sv:10) |
+| sub_x_304      | DW01_dec       | width=16   | sub_10_C5487_2 (DE_CORRECTOR.sv:10) |
+| sub_x_305      | DW01_dec       | width=16   | sub_10_C5521 (DE_CORRECTOR.sv:10) |
+| sub_x_306      | DW01_dec       | width=16   | sub_10_C5521_2 (DE_CORRECTOR.sv:10) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| sub_x_1            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_2            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_3            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_4            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_5            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_6            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_7            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_8            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_9            | DW01_dec         | pparch (area,speed)                 |
+| sub_x_10           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_11           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_12           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_13           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_14           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_15           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_16           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_17           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_18           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_19           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_20           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_21           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_22           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_23           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_24           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_25           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_26           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_27           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_28           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_29           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_30           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_31           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_32           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_33           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_34           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_35           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_36           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_37           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_38           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_39           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_40           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_41           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_42           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_43           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_44           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_45           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_46           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_47           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_48           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_49           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_50           | DW01_dec         | apparch (area)     |                |
+| sub_x_51           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_52           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_53           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_54           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_55           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_56           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_57           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_58           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_59           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_60           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_61           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_62           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_63           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_64           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_65           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_66           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_67           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_68           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_69           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_70           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_71           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_72           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_73           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_74           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_75           | DW01_dec         | apparch (area)     |                |
+| sub_x_76           | DW01_dec         | apparch (area)     |                |
+| sub_x_77           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_78           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_79           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_80           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_81           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_82           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_83           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_84           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_85           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_86           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_87           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_88           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_89           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_90           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_91           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_92           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_93           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_94           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_95           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_96           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_97           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_98           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_99           | DW01_dec         | pparch (area,speed)                 |
+| sub_x_100          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_101          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_102          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_103          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_104          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_105          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_106          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_107          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_108          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_109          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_110          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_111          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_112          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_113          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_114          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_115          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_116          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_117          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_118          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_119          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_120          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_121          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_122          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_123          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_124          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_125          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_126          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_127          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_128          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_129          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_130          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_131          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_132          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_133          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_134          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_135          | DW01_dec         | apparch (area)     |                |
+| sub_x_136          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_137          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_138          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_139          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_140          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_141          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_142          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_143          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_144          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_145          | DW01_dec         | apparch (area)     |                |
+| sub_x_146          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_147          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_148          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_149          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_150          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_151          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_152          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_153          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_154          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_155          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_156          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_157          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_158          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_159          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_160          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_161          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_162          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_163          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_164          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_165          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_166          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_167          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_168          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_169          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_170          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_171          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_172          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_173          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_174          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_175          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_176          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_177          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_178          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_179          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_180          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_181          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_182          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_183          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_184          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_185          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_186          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_187          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_188          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_189          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_190          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_191          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_192          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_193          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_194          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_195          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_196          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_197          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_198          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_199          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_200          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_201          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_202          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_203          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_204          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_205          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_206          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_207          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_208          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_209          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_210          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_211          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_212          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_213          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_214          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_215          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_216          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_217          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_218          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_219          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_220          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_221          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_222          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_223          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_224          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_225          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_226          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_227          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_228          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_229          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_230          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_231          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_232          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_233          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_234          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_235          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_236          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_237          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_238          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_239          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_240          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_241          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_242          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_243          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_244          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_245          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_246          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_247          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_248          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_249          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_250          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_251          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_252          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_253          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_254          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_255          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_256          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_257          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_258          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_259          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_260          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_261          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_262          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_263          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_264          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_265          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_266          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_267          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_268          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_269          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_270          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_271          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_272          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_273          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_274          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_275          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_276          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_277          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_278          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_279          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_280          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_281          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_282          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_283          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_284          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_285          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_286          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_287          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_288          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_289          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_290          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_291          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_292          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_293          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_294          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_295          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_296          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_297          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_298          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_299          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_300          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_301          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_302          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_303          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_304          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_305          | DW01_dec         | pparch (area,speed)                 |
+| sub_x_306          | DW01_dec         | pparch (area,speed)                 |
+===============================================================================
+
+1

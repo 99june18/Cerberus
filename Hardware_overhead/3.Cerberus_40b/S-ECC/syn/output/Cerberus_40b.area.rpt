@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : area
+Design : Cerberus_40b
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr  1 17:53:13 2026
+****************************************
+
+Library(s) Used:
+
+    um28nchllogl35hsl140f_ssgwc0p9v125c (File: /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db)
+
+Number of ports:                         1146
+Number of nets:                         64286
+Number of cells:                        63438
+Number of combinational cells:          63437
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                       9932
+Number of references:                     363
+
+Combinational area:              82633.150720
+Buf/Inv area:                     5610.863963
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 82633.150720
+Total area:                 undefined
+
+The above information was reported from the logical library. The following are from the physical library:
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------
+Cerberus_40b                      82633.1507    100.0  79412.5908     0.0000  0.0000  Cerberus_40b
+sse_corrector                      3220.5599      3.9   3220.5599     0.0000  0.0000  SSE_CORRECTOR
+--------------------------------  ----------  -------  ----------  ---------  ------  -------------
+Total                                                  82633.1507     0.0000  0.0000
+
+1

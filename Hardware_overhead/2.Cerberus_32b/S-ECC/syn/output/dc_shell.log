@@ -1,0 +1,490 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version Q-2019.12-SP5-5 for linux64 - Mar 21, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/99june18/.synopsys_dv_prefs.tcl
+# ---------------------------------------
+# DESIGN PROFILE
+# ---------------------------------------
+set topmodule_name      Cerberus_32b
+Cerberus_32b
+set clk_port_name       clk
+clk
+set clk_freq            1600
+1600
+# ---------------------------------------
+# Read Libraries
+# ---------------------------------------
+#set LIBLIST_PATH        $env(LIBLIST_PATH)
+#source $LIBLIST_PATH
+set link_library [list /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db]
+/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db
+set target_library [list /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db]
+/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db
+# ---------------------------------------
+# Read Source Codes
+# ---------------------------------------
+set RTL_PATH            $env(RTL_PATH)
+/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/syn/..//rtl/
+read_file $RTL_PATH -autoread -recursive -format sverilog -top $topmodule_name
+== READ_FILE autoread for top design 'Cerberus_32b' ==
+
+Starting READ_FILE autoread mode...
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/'. (AUTOREAD-105)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/DECISION.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/DE_CORRECTOR.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/Cerberus_32b.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/SSE_CORRECTOR.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/SYNDROME_GENERATOR.sv'.  (AUTOREAD-100)
+Information: Source filelist.f ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Scanning file { DECISION.sv }. (AUTOREAD-303)
+Information: Scanning file { DE_CORRECTOR.sv }. (AUTOREAD-303)
+Information: Scanning file { Cerberus_32b.sv }. (AUTOREAD-303)
+Information: Scanning file { SSE_CORRECTOR.sv }. (AUTOREAD-303)
+Information: Scanning file { SYNDROME_GENERATOR.sv }. (AUTOREAD-303)
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/DE_CORRECTOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/DECISION.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/SYNDROME_GENERATOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/SSE_CORRECTOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/Cerberus_32b.sv
+Presto compilation completed successfully.
+Elaborating top design Cerberus_32b
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'um28nchllogl35hsl140f_ssgwc0p9v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (Cerberus_32b)
+Elaborated 1 design.
+Current design is now 'Cerberus_32b'.
+Information: Building the design 'SYNDROME_GENERATOR'. (HDL-193)
+Presto compilation completed successfully. (SYNDROME_GENERATOR)
+Information: Building the design 'SSE_CORRECTOR'. (HDL-193)
+Warning:  /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/rtl/SSE_CORRECTOR.sv:107: signed to unsigned part selection occurs. (VER-318)
+Presto compilation completed successfully. (SSE_CORRECTOR)
+Information: Building the design 'DE_CORRECTOR'. (HDL-193)
+Presto compilation completed successfully. (DE_CORRECTOR)
+Information: Building the design 'DECISION'. (HDL-193)
+Presto compilation completed successfully. (DECISION)
+Autoread command completed successfully.
+# ---------------------------------------
+# 1. Environments Setting
+# ---------------------------------------
+link
+
+  Linking design 'Cerberus_32b'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  um28nchllogl35hsl140f_ssgwc0p9v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db
+
+1
+uniquify
+1
+# ---------------------------------------
+# 2. Constraints Setting
+# ---------------------------------------
+# Clock
+# Reduce clock period to model wire delay (60% of original period)
+set delay_percentage 0.6
+0.6
+set clk_period [expr 1000 / double($clk_freq)]
+0.625
+set clk_period [expr $clk_period * $delay_percentage]
+0.375
+if {[sizeof_collection [get_ports $clk_port_name]] > 0} {
+  # Create real clock if clock port is found
+  set clk_name $clk_port_name
+  create_clock -period $clk_period -name $clk_name [get_port {clk}]
+  # If real clock, set infinite drive strength
+  set_drive 0 $clk_name
+} elseif {[sizeof_collection [get_ports $clk_port_name]] == 0} {
+  # Create virtual clock if clock port is not found
+  set clk_name vclk
+  create_clock -period $clk_period -name $clk_name
+}
+Warning: Can't find port 'clk' in design 'Cerberus_32b'. (UID-95)
+Warning: Can't find port 'clk' in design 'Cerberus_32b'. (UID-95)
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+1
+# Apply default timing constraints for modules
+set_input_delay  [expr 2/3 * $clk_period] [all_inputs] -clock $clk_name
+1
+set_output_delay [expr 2/3 * $clk_period] [all_outputs] -clock $clk_name
+1
+# Transition time of a slope that drives the port,
+# such that a higher transition value means longer delays
+# This prevents the hold time violations that we don't have to care about
+set_input_transition 0.1 [all_inputs]
+1
+# Area
+# If max_area is set 0, DesignCompiler will minimize the design as small as possible
+set_max_area 0 
+1
+# ---------------------------------------
+# 3. Compilation
+# ---------------------------------------
+compile_ultra
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 49 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'Cerberus_32b'
+
+Loaded alib file './alib-52/um28nchllogl35hsl140f_ssgwc0p9v125c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy syndrome_generator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy decision before Pass 1 (OPT-776)
+Information: Ungrouping 2 of 5 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'DE_CORRECTOR'
+ Implement Synthetic for 'DE_CORRECTOR'.
+  Processing 'SSE_CORRECTOR'
+ Implement Synthetic for 'SSE_CORRECTOR'.
+  Processing 'Cerberus_32b'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'STQ_TIE1_1' in the library 'um28nchllogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STQ_TIE0_1' in the library 'um28nchllogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy de_corrector 'DE_CORRECTOR' #insts = 29134. (OPT-777)
+  Mapping Optimization (Phase 1)
+Information: Added key list 'DesignWare' to design 'Cerberus_32b'. (DDB-72)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+  Mapping Optimization (Phase 11)
+  Mapping Optimization (Phase 12)
+  Mapping Optimization (Phase 13)
+  Mapping Optimization (Phase 14)
+  Mapping Optimization (Phase 15)
+  Mapping Optimization (Phase 16)
+  Mapping Optimization (Phase 17)
+  Mapping Optimization (Phase 18)
+  Mapping Optimization (Phase 19)
+  Mapping Optimization (Phase 20)
+  Mapping Optimization (Phase 21)
+  Mapping Optimization (Phase 22)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    1:15:40  180015.7      0.70     174.5       0.0                           27959038.0000
+    1:15:53  178811.0      1.31     302.1       2.3                           27746764.0000
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    1:15:55  179957.6      0.83     200.6       0.0                           28076024.0000
+    1:16:07  179832.4      0.94     222.0       0.0                           28054714.0000
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+Information: Added key list 'DesignWare' to design 'SSE_CORRECTOR'. (DDB-72)
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+    1:16:46   63025.5      1.06     267.6       0.0                           5844504.0000
+    1:17:43   64452.5      0.73     186.7     106.0                           6118518.0000
+    1:17:43   64452.5      0.73     186.7     106.0                           6118518.0000
+    1:17:44   64452.5      0.73     186.7     106.0                           6118518.0000
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+    1:18:43   63680.4      0.73     186.6     106.0                           6044177.0000
+    1:18:55   63665.6      0.88     221.0     105.0                           6042028.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    1:19:54   63528.0      0.88     220.5     105.0                           6024335.0000
+    1:19:56   63428.7      0.88     220.1     105.0                           6006911.0000
+    1:19:58   63370.1      0.88     220.0     104.0                           5996885.5000
+    1:19:59   63342.9      0.88     219.8     104.0                           5991824.0000
+    1:20:24   67132.6      0.71     178.6     104.0                           6881204.0000
+    1:20:37   67388.5      0.71     175.9     104.0                           6947317.5000
+    1:20:42   67434.2      0.71     174.7     104.0                           6962066.5000
+    1:20:42   67434.2      0.71     174.7     104.0                           6962066.5000
+    1:20:46   67428.8      0.71     174.7     104.0                           6931635.5000
+    1:20:46   67428.8      0.71     174.7     104.0                           6931635.5000
+    1:22:22   70810.8      0.70     174.7     111.0                           7524459.0000
+    1:22:22   70810.8      0.70     174.7     111.0                           7524459.0000
+    1:23:21   74300.2      0.62     157.9     111.0                           8268999.5000
+    1:23:21   74300.2      0.62     157.9     111.0                           8268999.5000
+    1:26:10   77930.5      0.62     155.8     155.0                           8866419.0000
+    1:26:10   77930.5      0.62     155.8     155.0                           8866419.0000
+    1:30:39   83550.1      0.54     137.6     181.0                           10043622.0000
+    1:30:39   83550.1      0.54     137.6     181.0                           10043622.0000
+    1:33:26   85903.6      0.55     139.6     188.0                           10445649.0000
+    1:33:26   85903.6      0.55     139.6     188.0                           10445649.0000
+    1:35:39   88477.5      0.53     133.4     189.0                           10995047.0000
+    1:35:39   88477.5      0.53     133.4     189.0                           10995047.0000
+    1:39:11   90980.1      0.53     134.7     194.0                           11428064.0000
+    1:39:11   90980.1      0.53     134.7     194.0                           11428064.0000
+    1:42:26   94750.0      0.51     129.4     234.0                           12231943.0000
+    1:42:27   94750.0      0.51     129.4     234.0                           12231943.0000
+    1:45:43   96970.8      0.52     131.1     238.0                           12595337.0000
+
+
+  Beginning Design Rule Fixing  (min_capacitance)  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    1:45:43   96970.8      0.52     131.1     238.0                           12595337.0000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    1:45:54   97050.4      0.51     129.8      47.0 data_out[46]              12615627.0000
+    1:46:03   97073.8      0.51     129.0      47.0 data_out[22]              12623778.0000
+    1:46:10   97114.6      0.50     128.8      47.0 data_out[16]              12635447.0000
+    1:46:16   97163.3      0.50     128.6      47.0 data_out[0]               12647359.0000
+    1:46:23   97196.1      0.50     128.4      47.0 data_out[106]             12656857.0000
+    1:46:29   97254.5      0.50     128.2      47.0 data_out[46]              12669692.0000
+    1:46:33   97238.2      0.50     128.1      40.0 data_out[129]             12666830.0000
+    1:46:38   97257.9      0.50     128.0      24.0 net533247                 12673701.0000
+    1:46:42   97289.8      0.50     127.8       0.0 data_out[16]              12681377.0000
+    1:46:47   97302.1      0.50     127.8       0.0                           12683119.0000
+    1:50:25   99553.3      0.51     129.6      11.0                           13055763.0000
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    1:50:25   99553.3      0.51     129.6      11.0                           13055763.0000
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+    1:51:29   88185.0      0.55     139.3       0.0                           10944757.0000
+    1:56:11   92595.9      0.53     134.3       8.0                           11705258.0000
+    1:56:11   92595.9      0.53     134.3       8.0                           11705258.0000
+    1:56:14   92563.8      0.53     134.3       8.0                           11696605.0000
+    1:56:14   92563.8      0.53     134.3       8.0                           11696605.0000
+    1:59:33   95368.6      0.53     133.3       7.0                           12181558.0000
+    1:59:33   95368.6      0.53     133.3       7.0                           12181558.0000
+    1:59:48   96006.1      0.52     131.0       7.0                           12327435.0000
+    1:59:48   96006.1      0.52     131.0       7.0                           12327435.0000
+    2:04:30   99049.3      0.51     129.8       0.0                           12840728.0000
+    2:04:30   99049.3      0.51     129.8       0.0                           12840728.0000
+    2:08:39  102613.4      0.48     123.1      16.0                           13633855.0000
+    2:08:39  102613.4      0.48     123.1      16.0                           13633855.0000
+    2:11:49  104223.3      0.49     123.9      18.0                           13884389.0000
+    2:11:49  104223.3      0.49     123.9      18.0                           13884389.0000
+    2:12:56  104982.0      0.48     123.1      16.0                           14053445.0000
+    2:12:56  104982.0      0.48     123.1      16.0                           14053445.0000
+    2:14:34  105700.4      0.48     123.2      16.0                           14164160.0000
+    2:14:34  105700.4      0.48     123.2      16.0                           14164160.0000
+    2:16:07  106862.8      0.48     121.8      22.0                           14410547.0000
+    2:16:07  106862.8      0.48     121.8      22.0                           14410547.0000
+    2:19:18  108020.6      0.48     122.3      13.0                           14615339.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    2:19:20  108014.3      0.48     122.3      13.0                           14614663.0000
+    2:20:37   93196.7      0.48     121.6       9.0                           11705294.0000
+    2:20:48   93328.2      0.48     121.0       9.0                           11732808.0000
+    2:20:49   93312.6      0.48     121.0       9.0                           11731210.0000
+    2:20:51   93297.0      0.48     121.0       9.0                           11728719.0000
+    2:20:52   93280.8      0.48     121.0       9.0                           11726581.0000
+    2:20:53   93263.9      0.48     121.0       9.0                           11723758.0000
+    2:20:54   93244.7      0.48     121.0       9.0                           11720679.0000
+    2:20:55   93203.9      0.48     121.0       9.0                           11714261.0000
+    2:20:57   93159.0      0.48     121.0       9.0                           11706622.0000
+    2:20:59   93123.9      0.48     121.0       9.0                           11700680.0000
+    2:21:03   93056.5      0.48     121.0       9.0                           11688520.0000
+    2:21:03   93055.5      0.48     121.0       9.0                           11688336.0000
+    2:21:03   93055.5      0.48     121.0       9.0                           11688336.0000
+    2:21:06   93055.2      0.48     121.0       9.0                           11688378.0000
+    2:21:10   92947.8      0.48     121.0       9.0                           11672365.0000
+    2:21:12   92829.1      0.48     121.1       9.0                           11654429.0000
+    2:21:14   92749.1      0.48     121.1       9.0                           11641126.0000
+    2:21:16   92586.8      0.48     121.0       9.0                           11608591.0000
+    2:21:19   92518.3      0.48     121.0       0.0 data_out[10]              11593678.0000
+    2:21:22   92534.2      0.47     120.9       0.0 data_out[52]              11597957.0000
+    2:21:25   92613.9      0.47     120.8       0.0 data_out[10]              11615086.0000
+    2:21:29   92627.6      0.47     120.7       0.0 data_out[124]             11617371.0000
+    2:21:33   92627.5      0.47     120.6       0.0 data_out[16]              11618028.0000
+    2:21:35   92658.6      0.47     120.5       0.0 data_out[16]              11623935.0000
+    2:21:38   92684.3      0.47     120.4       0.0 data_out[16]              11630212.0000
+    2:21:42   92711.6      0.47     120.3       0.0 data_out[125]             11637226.0000
+    2:21:45   92724.7      0.47     120.2       0.0 data_out[114]             11640006.0000
+    2:21:48   92777.7      0.47     120.1       0.0 data_out[16]              11650273.0000
+    2:21:51   92838.8      0.47     120.1       0.0 data_out[13]              11664861.0000
+    2:21:54   92891.7      0.47     119.9       0.0 data_out[13]              11675941.0000
+    2:21:56   92903.8      0.47     119.9       0.0                           11678185.0000
+    2:23:40   94738.6      0.47     118.6       3.0                           12065167.0000
+    2:23:40   94738.6      0.47     118.6       3.0                           12065167.0000
+    2:23:44   94735.4      0.47     118.5       3.0                           12067301.0000
+    2:23:48   94747.1      0.47     118.4       3.0                           12070835.0000
+    2:23:48   94746.6      0.47     118.4       3.0                           12070765.0000
+    2:23:48   94746.6      0.47     118.4       3.0                           12070765.0000
+    2:23:49   94765.6      0.47     118.4       3.0                           12074434.0000
+    2:24:26   90746.7      0.46     118.4       3.0                           11206250.0000
+    2:24:30   90585.8      0.46     118.4       3.0                           11184221.0000
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# ---------------------------------------
+# 4. Design Reports
+# ---------------------------------------
+check_design  > $topmodule_name.check_design.rpt
+report_constraint -all_violators -verbose -sig 10 > $topmodule_name.all_viol.rpt
+report_design > $topmodule_name.design.rpt
+report_area -physical -hierarchy > $topmodule_name.area.rpt
+report_cell > $topmodule_name.cell.rpt
+report_qor > $topmodule_name.qor.rpt
+report_reference > $topmodule_name.reference.rpt
+report_resources > $topmodule_name.resources.rpt
+report_hierarchy -full > $topmodule_name.hierarchy.rpt
+report_timing -nworst 10 -max_paths 10 > $topmodule_name.timing.rpt
+report_power -analysis_effort high > $topmodule_name.power.rpt
+report_threshold_voltage_group > $topmodule_name.vth.rpt
+# Dump out the constraints in an SDC file
+write_sdc $topmodule_name.constraints.sdc
+1
+# Dump out the synthesized database and gate-level-netlist
+write -hierarchy -format ddc -output      $topmodule_name.ddc
+Writing ddc file 'Cerberus_32b.ddc'.
+1
+write -hierarchy -format verilog -output  $topmodule_name.netlist.v
+Writing verilog file '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC/syn/output/Cerberus_32b.netlist.v'.
+1
+exit
+Memory usage for this session 1247 Mbytes.
+Memory usage for this session including child processes 1347 Mbytes.
+CPU usage for this session 8732 seconds ( 2.43 hours ).
+Elapsed time for this session 8794 seconds ( 2.44 hours ).
+
+Thank you...

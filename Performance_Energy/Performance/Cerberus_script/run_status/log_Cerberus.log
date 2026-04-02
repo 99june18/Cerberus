@@ -1,0 +1,1795 @@
+YAML_config: Cerberus.yaml
+Origianl_gpgpusim_config: /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/configs/tested-cfgs/SM7_QV100
+Log_file_path: /root/Cerberus_script/run_status/Cerberus.txt
+start_date: 2026-04-02 06:53:22
+PID: 1124
+Benchmarks to run : ['HBM4_rodinia', 'HBM4_parboil', 'HBM4_graphBIG', 'HBM4_polybench', 'DUO_rodinia', 'DUO_parboil', 'DUO_graphBIG', 'DUO_polybench', 'Unity_rodinia', 'Unity_parboil', 'Unity_graphBIG', 'Unity_polybench', 'Cerberus_rodinia', 'Cerberus_parboil', 'Cerberus_graphBIG', 'Cerberus_polybench', 'Cerberus40b_rodinia', 'Cerberus40b_parboil', 'Cerberus40b_graphBIG', 'Cerberus40b_polybench']
+Make a new output directory: /root/Cerberus_script/result/HBM4
+Make a new output directory: /root/Cerberus_script/result/DUO
+Make a new output directory: /root/Cerberus_script/result/Unity
+Make a new output directory: /root/Cerberus_script/result/Cerberus
+Make a new output directory: /root/Cerberus_script/result/Cerberus40b
+HBM4_rodinia -> /root/Cerberus_script/result/HBM4
+HBM4_parboil -> /root/Cerberus_script/result/HBM4
+HBM4_graphBIG -> /root/Cerberus_script/result/HBM4
+HBM4_polybench -> /root/Cerberus_script/result/HBM4
+DUO_rodinia -> /root/Cerberus_script/result/DUO
+DUO_parboil -> /root/Cerberus_script/result/DUO
+DUO_graphBIG -> /root/Cerberus_script/result/DUO
+DUO_polybench -> /root/Cerberus_script/result/DUO
+Unity_rodinia -> /root/Cerberus_script/result/Unity
+Unity_parboil -> /root/Cerberus_script/result/Unity
+Unity_graphBIG -> /root/Cerberus_script/result/Unity
+Unity_polybench -> /root/Cerberus_script/result/Unity
+Cerberus_rodinia -> /root/Cerberus_script/result/Cerberus
+Cerberus_parboil -> /root/Cerberus_script/result/Cerberus
+Cerberus_graphBIG -> /root/Cerberus_script/result/Cerberus
+Cerberus_polybench -> /root/Cerberus_script/result/Cerberus
+Cerberus40b_rodinia -> /root/Cerberus_script/result/Cerberus40b
+Cerberus40b_parboil -> /root/Cerberus_script/result/Cerberus40b
+Cerberus40b_graphBIG -> /root/Cerberus_script/result/Cerberus40b
+Cerberus40b_polybench -> /root/Cerberus_script/result/Cerberus40b
+
+Run HBM4_rodinia =======================================
+Datetime: 2026-04-02 06:53:23
+Available cores: 64 / workload_count: 6
+Result_dir: /root/Cerberus_script/result/HBM4
+
+### workload: b+tree / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/HBM4_R_b+tree.txt
+log_name: HBM4_R_b+tree.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree; ./run >> HBM4_R_b+tree.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: backprop / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/HBM4_R_backprop.txt
+log_name: HBM4_R_backprop.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop; ./run >> HBM4_R_backprop.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: bfs / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/HBM4_R_bfs.txt
+log_name: HBM4_R_bfs.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs; ./run >> HBM4_R_bfs.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: dwt2d / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/HBM4_R_dwt2d.txt
+log_name: HBM4_R_dwt2d.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d; ./run >> HBM4_R_dwt2d.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: nw / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/HBM4_R_nw.txt
+log_name: HBM4_R_nw.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw; ./run >> HBM4_R_nw.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: srad_v1 / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1/HBM4_R_srad_v1.txt
+log_name: HBM4_R_srad_v1.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1; ./run >> HBM4_R_srad_v1.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run HBM4_parboil =======================================
+Datetime: 2026-04-02 06:53:41
+Available cores: 57 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/HBM4
+
+### workload: spmv / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv/HBM4_R_spmv.txt
+log_name: HBM4_R_spmv.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv; ./run >> HBM4_R_spmv.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: mri-q / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q/HBM4_R_mri-q.txt
+log_name: HBM4_R_mri-q.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q; ./run >> HBM4_R_mri-q.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: sgemm / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm/HBM4_R_sgemm.txt
+log_name: HBM4_R_sgemm.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm; ./run >> HBM4_R_sgemm.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run HBM4_graphBIG =======================================
+Datetime: 2026-04-02 06:53:56
+Available cores: 55 / workload_count: 4
+Result_dir: /root/Cerberus_script/result/HBM4
+
+### workload: gpu_BFS / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS/HBM4_G_gpu_BFS.txt
+log_name: HBM4_G_gpu_BFS.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS; ./run >> HBM4_G_gpu_BFS.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_DegreeCentr / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr/HBM4_G_gpu_DegreeCentr.txt
+log_name: HBM4_G_gpu_DegreeCentr.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr; ./run >> HBM4_G_gpu_DegreeCentr.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_SSSP / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP/HBM4_G_gpu_SSSP.txt
+log_name: HBM4_G_gpu_SSSP.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP; ./run >> HBM4_G_gpu_SSSP.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_kCore / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/HBM4_G_gpu_kCore.txt
+log_name: HBM4_G_gpu_kCore.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore; ./run >> HBM4_G_gpu_kCore.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run HBM4_polybench =======================================
+Datetime: 2026-04-02 06:54:12
+Available cores: 51 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/HBM4
+
+### workload: 3DCONV / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/HBM4_B_3DCONV.txt
+log_name: HBM4_B_3DCONV.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV; ./run >> HBM4_B_3DCONV.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: ATAX / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/HBM4_B_ATAX.txt
+log_name: HBM4_B_ATAX.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX; ./run >> HBM4_B_ATAX.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: MVT / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=24:WL=14:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/HBM4_B_MVT.txt
+log_name: HBM4_B_MVT.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT; ./run >> HBM4_B_MVT.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run DUO_rodinia =======================================
+Datetime: 2026-04-02 06:54:27
+Available cores: 47 / workload_count: 6
+Result_dir: /root/Cerberus_script/result/DUO
+
+### workload: b+tree / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/DUO_R_b+tree.txt
+log_name: DUO_R_b+tree.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree; ./run >> DUO_R_b+tree.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: backprop / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/DUO_R_backprop.txt
+log_name: DUO_R_backprop.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop; ./run >> DUO_R_backprop.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: bfs / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/DUO_R_bfs.txt
+log_name: DUO_R_bfs.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs; ./run >> DUO_R_bfs.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: dwt2d / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/DUO_R_dwt2d.txt
+log_name: DUO_R_dwt2d.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d; ./run >> DUO_R_dwt2d.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: nw / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/DUO_R_nw.txt
+log_name: DUO_R_nw.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw; ./run >> DUO_R_nw.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: srad_v1 / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1/DUO_R_srad_v1.txt
+log_name: DUO_R_srad_v1.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1; ./run >> DUO_R_srad_v1.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run DUO_parboil =======================================
+Datetime: 2026-04-02 06:54:45
+Available cores: 40 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/DUO
+
+### workload: spmv / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv/DUO_P_spmv.txt
+log_name: DUO_P_spmv.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv; ./run >> DUO_P_spmv.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: mri-q / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q/DUO_P_mri-q.txt
+log_name: DUO_P_mri-q.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q; ./run >> DUO_P_mri-q.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: sgemm / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm/DUO_P_sgemm.txt
+log_name: DUO_P_sgemm.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm; ./run >> DUO_P_sgemm.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run DUO_graphBIG =======================================
+Datetime: 2026-04-02 06:55:00
+Available cores: 36 / workload_count: 4
+Result_dir: /root/Cerberus_script/result/DUO
+
+### workload: gpu_BFS / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS/DUO_G_gpu_BFS.txt
+log_name: DUO_G_gpu_BFS.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS; ./run >> DUO_G_gpu_BFS.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_DegreeCentr / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr/DUO_G_gpu_DegreeCentr.txt
+log_name: DUO_G_gpu_DegreeCentr.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr; ./run >> DUO_G_gpu_DegreeCentr.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_SSSP / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP/DUO_G_gpu_SSSP.txt
+log_name: DUO_G_gpu_SSSP.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP; ./run >> DUO_G_gpu_SSSP.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_kCore / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/DUO_G_gpu_kCore.txt
+log_name: DUO_G_gpu_kCore.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore; ./run >> DUO_G_gpu_kCore.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run DUO_polybench =======================================
+Datetime: 2026-04-02 06:55:16
+Available cores: 31 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/DUO
+
+### workload: 3DCONV / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/DUO_B_3DCONV.txt
+log_name: DUO_B_3DCONV.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV; ./run >> DUO_B_3DCONV.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: ATAX / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/DUO_B_ATAX.txt
+log_name: DUO_B_ATAX.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX; ./run >> DUO_B_ATAX.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: MVT / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=18:WL=11:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/DUO_B_MVT.txt
+log_name: DUO_B_MVT.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT; ./run >> DUO_B_MVT.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Unity_rodinia =======================================
+Datetime: 2026-04-02 06:55:31
+Available cores: 30 / workload_count: 6
+Result_dir: /root/Cerberus_script/result/Unity
+
+### workload: b+tree / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/Unity_R_b+tree.txt
+log_name: Unity_R_b+tree.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree; ./run >> Unity_R_b+tree.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: backprop / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/Unity_R_backprop.txt
+log_name: Unity_R_backprop.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop; ./run >> Unity_R_backprop.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: bfs / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/Unity_R_bfs.txt
+log_name: Unity_R_bfs.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs; ./run >> Unity_R_bfs.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: dwt2d / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/Unity_R_dwt2d.txt
+log_name: Unity_R_dwt2d.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d; ./run >> Unity_R_dwt2d.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: nw / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/Unity_R_nw.txt
+log_name: Unity_R_nw.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw; ./run >> Unity_R_nw.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: srad_v1 / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1/Unity_R_srad_v1.txt
+log_name: Unity_R_srad_v1.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1; ./run >> Unity_R_srad_v1.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Unity_parboil =======================================
+Datetime: 2026-04-02 06:55:49
+Available cores: 23 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/Unity
+
+### workload: spmv / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv/Unity_P_spmv.txt
+log_name: Unity_P_spmv.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv; ./run >> Unity_P_spmv.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: mri-q / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q/Unity_P_mri-q.txt
+log_name: Unity_P_mri-q.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q; ./run >> Unity_P_mri-q.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: sgemm / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm/Unity_P_sgemm.txt
+log_name: Unity_P_sgemm.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm; ./run >> Unity_P_sgemm.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Unity_graphBIG =======================================
+Datetime: 2026-04-02 06:56:04
+Available cores: 22 / workload_count: 4
+Result_dir: /root/Cerberus_script/result/Unity
+
+### workload: gpu_BFS / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS/Unity_G_gpu_BFS.txt
+log_name: Unity_G_gpu_BFS.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS; ./run >> Unity_G_gpu_BFS.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_DegreeCentr / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr/Unity_G_gpu_DegreeCentr.txt
+log_name: Unity_G_gpu_DegreeCentr.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr; ./run >> Unity_G_gpu_DegreeCentr.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_SSSP / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP/Unity_G_gpu_SSSP.txt
+log_name: Unity_G_gpu_SSSP.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP; ./run >> Unity_G_gpu_SSSP.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_kCore / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/Unity_G_gpu_kCore.txt
+log_name: Unity_G_gpu_kCore.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore; ./run >> Unity_G_gpu_kCore.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Unity_polybench =======================================
+Datetime: 2026-04-02 06:56:20
+Available cores: 13 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/Unity
+
+### workload: 3DCONV / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/Unity_B_3DCONV.txt
+log_name: Unity_B_3DCONV.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV; ./run >> Unity_B_3DCONV.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: ATAX / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/Unity_B_ATAX.txt
+log_name: Unity_B_ATAX.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX; ./run >> Unity_B_ATAX.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: MVT / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=16:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/Unity_B_MVT.txt
+log_name: Unity_B_MVT.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT; ./run >> Unity_B_MVT.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Cerberus_rodinia =======================================
+Datetime: 2026-04-02 06:56:35
+Available cores: 10 / workload_count: 6
+Result_dir: /root/Cerberus_script/result/Cerberus
+
+### workload: b+tree / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/Cerberus_R_b+tree.txt
+log_name: Cerberus_R_b+tree.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree; ./run >> Cerberus_R_b+tree.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: backprop / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/Cerberus_R_backprop.txt
+log_name: Cerberus_R_backprop.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop; ./run >> Cerberus_R_backprop.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: bfs / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/Cerberus_R_bfs.txt
+log_name: Cerberus_R_bfs.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs; ./run >> Cerberus_R_bfs.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: dwt2d / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/Cerberus_R_dwt2d.txt
+log_name: Cerberus_R_dwt2d.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d; ./run >> Cerberus_R_dwt2d.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: nw / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/Cerberus_R_nw.txt
+log_name: Cerberus_R_nw.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw; ./run >> Cerberus_R_nw.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: srad_v1 / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1/Cerberus_R_srad_v1.txt
+log_name: Cerberus_R_srad_v1.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1; ./run >> Cerberus_R_srad_v1.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Cerberus_parboil =======================================
+Datetime: 2026-04-02 06:56:53
+Available cores: 6 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/Cerberus
+
+### workload: spmv / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv/Cerberus_P_spmv.txt
+log_name: Cerberus_P_spmv.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv; ./run >> Cerberus_P_spmv.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: mri-q / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q/Cerberus_P_mri-q.txt
+log_name: Cerberus_P_mri-q.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q; ./run >> Cerberus_P_mri-q.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: sgemm / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm/Cerberus_P_sgemm.txt
+log_name: Cerberus_P_sgemm.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm; ./run >> Cerberus_P_sgemm.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Cerberus_graphBIG =======================================
+Datetime: 2026-04-02 06:57:09
+Available cores: 3 / workload_count: 4
+Result_dir: /root/Cerberus_script/result/Cerberus
+
+### workload: gpu_BFS / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS/Cerberus_G_gpu_BFS.txt
+log_name: Cerberus_G_gpu_BFS.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS; ./run >> Cerberus_G_gpu_BFS.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_DegreeCentr / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr/Cerberus_G_gpu_DegreeCentr.txt
+log_name: Cerberus_G_gpu_DegreeCentr.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr; ./run >> Cerberus_G_gpu_DegreeCentr.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_SSSP / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP/Cerberus_G_gpu_SSSP.txt
+log_name: Cerberus_G_gpu_SSSP.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP; ./run >> Cerberus_G_gpu_SSSP.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_kCore / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/Cerberus_G_gpu_kCore.txt
+log_name: Cerberus_G_gpu_kCore.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore; ./run >> Cerberus_G_gpu_kCore.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Cerberus_polybench =======================================
+Datetime: 2026-04-02 06:57:25
+Available cores: 0 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/Cerberus
+
+### workload: 3DCONV / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/Cerberus_B_3DCONV.txt
+log_name: Cerberus_B_3DCONV.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV; ./run >> Cerberus_B_3DCONV.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: ATAX / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/Cerberus_B_ATAX.txt
+log_name: Cerberus_B_ATAX.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX; ./run >> Cerberus_B_ATAX.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: MVT / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=19:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/Cerberus_B_MVT.txt
+log_name: Cerberus_B_MVT.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT; ./run >> Cerberus_B_MVT.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/HBM4_R_backprop.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/DUO_R_backprop.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/Unity_R_backprop.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/Cerberus_R_backprop.txt -> /root/Cerberus_script/result/Cerberus/
+
+Run Cerberus40b_rodinia =======================================
+Datetime: 2026-04-02 07:16:06
+Available cores: 2 / workload_count: 6
+Result_dir: /root/Cerberus_script/result/Cerberus40b
+
+### workload: b+tree / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/Cerberus40b_R_b+tree.txt
+log_name: Cerberus40b_R_b+tree.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree; ./run >> Cerberus40b_R_b+tree.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: backprop / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/Cerberus40b_R_backprop.txt
+log_name: Cerberus40b_R_backprop.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop; ./run >> Cerberus40b_R_backprop.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: bfs / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/Cerberus40b_R_bfs.txt
+log_name: Cerberus40b_R_bfs.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs; ./run >> Cerberus40b_R_bfs.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: dwt2d / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/Cerberus40b_R_dwt2d.txt
+log_name: Cerberus40b_R_dwt2d.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d; ./run >> Cerberus40b_R_dwt2d.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: nw / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/Cerberus40b_R_nw.txt
+log_name: Cerberus40b_R_nw.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw; ./run >> Cerberus40b_R_nw.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: srad_v1 / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1/Cerberus40b_R_srad_v1.txt
+log_name: Cerberus40b_R_srad_v1.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/srad_v1; ./run >> Cerberus40b_R_srad_v1.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Cerberus40b_parboil =======================================
+Datetime: 2026-04-02 07:16:25
+Available cores: 0 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/Cerberus40b
+
+### workload: spmv / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv/Cerberus40b_P_spmv.txt
+log_name: Cerberus40b_P_spmv.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/spmv; ./run >> Cerberus40b_P_spmv.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: mri-q / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q/Cerberus40b_P_mri-q.txt
+log_name: Cerberus40b_P_mri-q.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/mri-q; ./run >> Cerberus40b_P_mri-q.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: sgemm / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm/Cerberus40b_P_sgemm.txt
+log_name: Cerberus40b_P_sgemm.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm; ./run >> Cerberus40b_P_sgemm.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Cerberus40b_graphBIG =======================================
+Datetime: 2026-04-02 07:16:40
+Available cores: 0 / workload_count: 4
+Result_dir: /root/Cerberus_script/result/Cerberus40b
+
+### workload: gpu_BFS / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS/Cerberus40b_G_gpu_BFS.txt
+log_name: Cerberus40b_G_gpu_BFS.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_BFS; ./run >> Cerberus40b_G_gpu_BFS.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_DegreeCentr / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr/Cerberus40b_G_gpu_DegreeCentr.txt
+log_name: Cerberus40b_G_gpu_DegreeCentr.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_DegreeCentr; ./run >> Cerberus40b_G_gpu_DegreeCentr.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_SSSP / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP/Cerberus40b_G_gpu_SSSP.txt
+log_name: Cerberus40b_G_gpu_SSSP.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_SSSP; ./run >> Cerberus40b_G_gpu_SSSP.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: gpu_kCore / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/Cerberus40b_G_gpu_kCore.txt
+log_name: Cerberus40b_G_gpu_kCore.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore; ./run >> Cerberus40b_G_gpu_kCore.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+
+Run Cerberus40b_polybench =======================================
+Datetime: 2026-04-02 07:16:57
+Available cores: 0 / workload_count: 3
+Result_dir: /root/Cerberus_script/result/Cerberus40b
+
+### workload: 3DCONV / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/Cerberus40b_B_3DCONV.txt
+log_name: Cerberus40b_B_3DCONV.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV; ./run >> Cerberus40b_B_3DCONV.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: ATAX / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/Cerberus40b_B_ATAX.txt
+log_name: Cerberus40b_B_ATAX.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX; ./run >> Cerberus40b_B_ATAX.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+### workload: MVT / scheme: base_gpgpusim --------------------------------
+config to be applied:
+-gpgpu_n_mem 32
+-gpgpu_clock_domains 1132.0:1132.0:1132.0:1600.0
+-gpgpu_dram_timing_opt nbk=32:CCD=2:RRD=4:RCD=30:RAS=55:RP=30:RC=90:CL=20:WL=10:CDLR=6:WR=35:nbkgrp=4:CCDL=4:RTPL=8
+
+SAL: log_path: /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/Cerberus40b_B_MVT.txt
+log_name: Cerberus40b_B_MVT.txt
+commands: cd /root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution; source setup_environment; cd /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT; ./run >> Cerberus40b_B_MVT.txt 2>&1
+
+fatal: Not a git repository: '/root/ACCELSIM_ECC_BASELINE/gpgpu-sim/gpgpu-sim_distribution/.git'
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+Not a git repository
+To compare two paths outside a working tree:
+usage: git diff [--no-index] <path> <path>
+GPGPU-Sim version GPGPU-Sim (build gpgpu-sim_git-commit--modified_0.0) configured with AccelWattch.
+setup_environment succeeded
+
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/HBM4_R_b+tree.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/DUO_R_b+tree.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/HBM4_R_dwt2d.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/DUO_R_dwt2d.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/Unity_R_b+tree.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/Cerberus_R_b+tree.txt -> /root/Cerberus_script/result/Cerberus/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/Unity_R_dwt2d.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/Cerberus_R_dwt2d.txt -> /root/Cerberus_script/result/Cerberus/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/HBM4_G_gpu_kCore.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/DUO_G_gpu_kCore.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/Cerberus_G_gpu_kCore.txt -> /root/Cerberus_script/result/Cerberus/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/Unity_G_gpu_kCore.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/backprop/Cerberus40b_R_backprop.txt -> /root/Cerberus_script/result/Cerberus40b/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/dwt2d/Cerberus40b_R_dwt2d.txt -> /root/Cerberus_script/result/Cerberus40b/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/b+tree/Cerberus40b_R_b+tree.txt -> /root/Cerberus_script/result/Cerberus40b/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/HBM4_B_ATAX.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/HBM4_B_MVT.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/DUO_B_MVT.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/Unity_B_MVT.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/Unity_B_ATAX.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/DUO_B_ATAX.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/Cerberus_B_ATAX.txt -> /root/Cerberus_script/result/Cerberus/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/graphBIG/gpu_bench/gpu_kCore/Cerberus40b_G_gpu_kCore.txt -> /root/Cerberus_script/result/Cerberus40b/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/Cerberus_B_MVT.txt -> /root/Cerberus_script/result/Cerberus/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/ATAX/Cerberus40b_B_ATAX.txt -> /root/Cerberus_script/result/Cerberus40b/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/MVT/Cerberus40b_B_MVT.txt -> /root/Cerberus_script/result/Cerberus40b/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/Unity_R_nw.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/DUO_R_nw.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/HBM4_R_nw.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/Cerberus_R_nw.txt -> /root/Cerberus_script/result/Cerberus/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/nw/Cerberus40b_R_nw.txt -> /root/Cerberus_script/result/Cerberus40b/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/HBM4_B_3DCONV.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/DUO_R_bfs.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/Unity_R_bfs.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/Cerberus_R_bfs.txt -> /root/Cerberus_script/result/Cerberus/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/Cerberus_B_3DCONV.txt -> /root/Cerberus_script/result/Cerberus/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/DUO_B_3DCONV.txt -> /root/Cerberus_script/result/DUO/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/rodinia-3.1/bfs/HBM4_R_bfs.txt -> /root/Cerberus_script/result/HBM4/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/polybench-gpu-1.0/CUDA/3DCONV/Unity_B_3DCONV.txt -> /root/Cerberus_script/result/Unity/
+SAL: found exit and copy result file: mv /root/samples/gpgpu-sim_simulations/benchmarks/bin/8.0/release/parboil/sgemm/HBM4_R_sgemm.txt -> /root/Cerberus_script/result/HBM4/

@@ -1,0 +1,259 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version Q-2019.12-SP5-5 for linux64 - Mar 21, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/99june18/.synopsys_dv_prefs.tcl
+# ---------------------------------------
+# DESIGN PROFILE
+# ---------------------------------------
+set topmodule_name      Cerberus_32b
+Cerberus_32b
+set clk_port_name       clk
+clk
+set clk_freq            1600
+1600
+# ---------------------------------------
+# Read Libraries
+# ---------------------------------------
+#set LIBLIST_PATH        $env(LIBLIST_PATH)
+#source $LIBLIST_PATH
+set link_library [list /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db]
+/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db
+set target_library [list /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db]
+/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db
+# ---------------------------------------
+# Read Source Codes
+# ---------------------------------------
+set RTL_PATH            $env(RTL_PATH)
+/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/syn/..//rtl/
+read_file $RTL_PATH -autoread -recursive -format sverilog -top $topmodule_name
+== READ_FILE autoread for top design 'Cerberus_32b' ==
+
+Starting READ_FILE autoread mode...
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/'. (AUTOREAD-105)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/DECISION.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/DE_CORRECTOR.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/Cerberus_32b.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/SSE_CORRECTOR.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/SYNDROME_GENERATOR.sv'.  (AUTOREAD-100)
+Information: Source filelist.f ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Scanning file { DECISION.sv }. (AUTOREAD-303)
+Information: Scanning file { DE_CORRECTOR.sv }. (AUTOREAD-303)
+Information: Scanning file { Cerberus_32b.sv }. (AUTOREAD-303)
+Information: Scanning file { SSE_CORRECTOR.sv }. (AUTOREAD-303)
+Information: Scanning file { SYNDROME_GENERATOR.sv }. (AUTOREAD-303)
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/SYNDROME_GENERATOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/SSE_CORRECTOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/DE_CORRECTOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/DECISION.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/Cerberus_32b.sv
+Presto compilation completed successfully.
+Elaborating top design Cerberus_32b
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'um28nchllogl35hsl140f_ssgwc0p9v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (Cerberus_32b)
+Elaborated 1 design.
+Current design is now 'Cerberus_32b'.
+Information: Building the design 'SYNDROME_GENERATOR'. (HDL-193)
+Presto compilation completed successfully. (SYNDROME_GENERATOR)
+Information: Building the design 'SSE_CORRECTOR'. (HDL-193)
+Warning:  /home/99june18/Cerberus/Hardware_overhead/2.Cerberus_32b/S-ECC_copy_copy/rtl/SSE_CORRECTOR.sv:101: signed to unsigned part selection occurs. (VER-318)
+Presto compilation completed successfully. (SSE_CORRECTOR)
+Information: Building the design 'DE_CORRECTOR'. (HDL-193)
+Presto compilation completed successfully. (DE_CORRECTOR)
+Information: Building the design 'DECISION'. (HDL-193)
+Presto compilation completed successfully. (DECISION)
+Autoread command completed successfully.
+# ---------------------------------------
+# 1. Environments Setting
+# ---------------------------------------
+link
+
+  Linking design 'Cerberus_32b'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  um28nchllogl35hsl140f_ssgwc0p9v125c (library) /media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db
+
+1
+uniquify
+1
+# ---------------------------------------
+# 2. Constraints Setting
+# ---------------------------------------
+# Clock
+# Reduce clock period to model wire delay (60% of original period)
+set delay_percentage 0.6
+0.6
+set clk_period [expr 1000 / double($clk_freq)]
+0.625
+set clk_period [expr $clk_period * $delay_percentage]
+0.375
+if {[sizeof_collection [get_ports $clk_port_name]] > 0} {
+  # Create real clock if clock port is found
+  set clk_name $clk_port_name
+  create_clock -period $clk_period -name $clk_name [get_port {clk}]
+  # If real clock, set infinite drive strength
+  set_drive 0 $clk_name
+} elseif {[sizeof_collection [get_ports $clk_port_name]] == 0} {
+  # Create virtual clock if clock port is not found
+  set clk_name vclk
+  create_clock -period $clk_period -name $clk_name
+}
+Warning: Can't find port 'clk' in design 'Cerberus_32b'. (UID-95)
+Warning: Can't find port 'clk' in design 'Cerberus_32b'. (UID-95)
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+1
+# Apply default timing constraints for modules
+set_input_delay  [expr 2/3 * $clk_period] [all_inputs] -clock $clk_name
+1
+set_output_delay [expr 2/3 * $clk_period] [all_outputs] -clock $clk_name
+1
+# Transition time of a slope that drives the port,
+# such that a higher transition value means longer delays
+# This prevents the hold time violations that we don't have to care about
+set_input_transition 0.1 [all_inputs]
+1
+# Area
+# If max_area is set 0, DesignCompiler will minimize the design as small as possible
+set_max_area 0 
+1
+# ---------------------------------------
+# 3. Compilation
+# ---------------------------------------
+compile_ultra
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Analyzing: "/media/0/LogicLibraries/UMC/28nm/35hs/hsl/lvt/latest/liberty/logic_synth/um28nchllogl35hsl140f_ssgwc0p9v125c.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'Cerberus_32b'
+
+Loaded alib file './alib-52/um28nchllogl35hsl140f_ssgwc0p9v125c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy syndrome_generator before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy decision before Pass 1 (OPT-776)
+Information: Ungrouping 2 of 5 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'DE_CORRECTOR'
+ Implement Synthetic for 'DE_CORRECTOR'.
+  Processing 'SSE_CORRECTOR'
+  Processing 'Cerberus_32b'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'STQ_TIE1_1' in the library 'um28nchllogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STQ_TIE0_1' in the library 'um28nchllogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy de_corrector 'DE_CORRECTOR' #insts = 26629. (OPT-777)
+  Mapping Optimization (Phase 1)
+Information: Added key list 'DesignWare' to design 'Cerberus_32b'. (DDB-72)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+  Mapping Optimization (Phase 11)
+  Mapping Optimization (Phase 12)
+  Mapping Optimization (Phase 13)
+  Mapping Optimization (Phase 14)
+  Mapping Optimization (Phase 15)
+  Mapping Optimization (Phase 16)
+  Mapping Optimization (Phase 17)
+  Mapping Optimization (Phase 18)
+  Mapping Optimization (Phase 19)
+  Mapping Optimization (Phase 20)
+  Mapping Optimization (Phase 21)
+  Mapping Optimization (Phase 22)
+  Mapping Optimization (Phase 23)
+  Mapping Optimization (Phase 24)
+  Mapping Optimization (Phase 25)
+  Mapping Optimization (Phase 26)
+  Mapping Optimization (Phase 27)
+  Mapping Optimization (Phase 28)
+  Mapping Optimization (Phase 29)
+  Mapping Optimization (Phase 30)
+  Mapping Optimization (Phase 31)
+  Mapping Optimization (Phase 32)
+  Mapping Optimization (Phase 33)
+  Mapping Optimization (Phase 34)
+  Mapping Optimization (Phase 35)
+  Mapping Optimization (Phase 36)
+  Mapping Optimization (Phase 37)
+  Mapping Optimization (Phase 38)
+  Mapping Optimization (Phase 39)
+  Mapping Optimization (Phase 40)
+  Mapping Optimization (Phase 41)
+  Mapping Optimization (Phase 42)
+  Mapping Optimization (Phase 43)
+  Mapping Optimization (Phase 44)
+  Mapping Optimization (Phase 45)
+  Mapping Optimization (Phase 46)
+  Mapping Optimization (Phase 47)
+  Mapping Optimization (Phase 48)
+  Mapping Optimization (Phase 49)
+  Mapping Optimization (Phase 50)
+  Mapping Optimization (Phase 51)
+  Mapping Optimization (Phase 52)
+  Mapping Optimization (Phase 53)
+  Mapping Optimization (Phase 54)
+  Mapping Optimization (Phase 55)
+  Mapping Optimization (Phase 56)
+  Mapping Optimization (Phase 57)
+  Mapping Optimization (Phase 58)
+  Mapping Optimization (Phase 59)
+  Mapping Optimization (Phase 60)
+  Mapping Optimization (Phase 61)
+  Mapping Optimization (Phase 62)
+  Mapping Optimization (Phase 63)
+  Mapping Optimization (Phase 64)
+  Mapping Optimization (Phase 65)
+  Mapping Optimization (Phase 66)

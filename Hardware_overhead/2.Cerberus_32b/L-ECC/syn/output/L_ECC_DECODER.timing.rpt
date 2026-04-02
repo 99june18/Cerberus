@@ -1,0 +1,420 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : L_ECC_DECODER
+Version: Q-2019.12-SP5-5
+Date   : Wed Apr  1 15:21:28 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchllogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: codeword_in[199]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[199] (in)                    0.00       0.00 f
+  U1044/X (STQ_EO2_S_0P5)                  0.07       0.07 r
+  U1046/X (STQ_EO3_2)                      0.06       0.12 r
+  U1048/X (STQ_EO3_1)                      0.03       0.15 f
+  U1049/X (STQ_EO3_0P5)                    0.08       0.24 f
+  U774/X (STQ_EO3_3)                       0.06       0.29 r
+  U739/X (STQ_ND4_MM_2)                    0.02       0.31 f
+  U1151/X (STQ_NR3_G_2)                    0.02       0.33 r
+  U1239/X (STQ_AOI31_2)                    0.02       0.35 f
+  U1329/X (STQ_NR3_G_2)                    0.01       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[199]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[199] (in)                    0.00       0.00 f
+  U1044/X (STQ_EO2_S_0P5)                  0.07       0.07 r
+  U1046/X (STQ_EO3_2)                      0.06       0.12 r
+  U1048/X (STQ_EO3_1)                      0.03       0.15 f
+  U1049/X (STQ_EO3_0P5)                    0.08       0.24 f
+  U774/X (STQ_EO3_3)                       0.06       0.29 r
+  U739/X (STQ_ND4_MM_2)                    0.02       0.31 f
+  U1151/X (STQ_NR3_G_2)                    0.02       0.33 r
+  U1239/X (STQ_AOI31_2)                    0.02       0.35 f
+  U1329/X (STQ_NR3_G_2)                    0.01       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[172]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[172] (in)                    0.00       0.00 f
+  U949/X (STQ_EO2_2)                       0.05       0.05 r
+  U1287/X (STQ_INV_S_0P65)                 0.01       0.06 f
+  U860/X (STQ_EO3_0P5)                     0.07       0.13 f
+  U1289/X (STQ_EO3_1)                      0.07       0.20 f
+  U1290/X (STQ_EO3_2)                      0.06       0.26 f
+  U1291/X (STQ_EO3_3)                      0.06       0.32 f
+  U771/X (STQ_INV_2)                       0.01       0.33 r
+  U1348/X (STQ_MUXI2_MG_1P5)               0.01       0.34 f
+  U1401/X (STQ_AOI211_1P5)                 0.02       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[172]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[172] (in)                    0.00       0.00 f
+  U949/X (STQ_EO2_2)                       0.05       0.05 r
+  U1287/X (STQ_INV_S_0P65)                 0.01       0.06 f
+  U860/X (STQ_EO3_0P5)                     0.07       0.13 f
+  U1289/X (STQ_EO3_1)                      0.07       0.20 f
+  U1290/X (STQ_EO3_2)                      0.06       0.26 f
+  U1291/X (STQ_EO3_3)                      0.06       0.32 f
+  U771/X (STQ_INV_2)                       0.01       0.33 r
+  U1348/X (STQ_MUXI2_MG_1P5)               0.01       0.34 f
+  U1401/X (STQ_AOI211_1P5)                 0.02       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[25]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[25] (in)                     0.00       0.00 f
+  U1060/X (STQ_EN2_S_2)                    0.05       0.05 r
+  U723/X (STQ_EO3_1)                       0.03       0.09 f
+  U1273/X (STQ_EO3_1)                      0.07       0.16 f
+  U1274/X (STQ_EN2_S_2)                    0.04       0.20 r
+  U1309/X (STQ_EO3_0P5)                    0.04       0.24 f
+  U1315/X (STQ_EO3_0P5)                    0.08       0.32 r
+  U1328/X (STQ_MUXI2_S_2)                  0.02       0.34 f
+  U1329/X (STQ_NR3_G_2)                    0.02       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[25]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[25] (in)                     0.00       0.00 f
+  U1060/X (STQ_EN2_S_2)                    0.05       0.05 r
+  U723/X (STQ_EO3_1)                       0.03       0.09 f
+  U1273/X (STQ_EO3_1)                      0.07       0.16 f
+  U1274/X (STQ_EN2_S_2)                    0.04       0.20 r
+  U1309/X (STQ_EO3_0P5)                    0.04       0.24 f
+  U1315/X (STQ_EO3_0P5)                    0.08       0.32 r
+  U1328/X (STQ_MUXI2_S_2)                  0.02       0.34 f
+  U1329/X (STQ_NR3_G_2)                    0.02       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[25]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[25] (in)                     0.00       0.00 f
+  U1060/X (STQ_EN2_S_2)                    0.05       0.05 r
+  U723/X (STQ_EO3_1)                       0.03       0.09 f
+  U1273/X (STQ_EO3_1)                      0.07       0.16 f
+  U1274/X (STQ_EN2_S_2)                    0.04       0.20 r
+  U1309/X (STQ_EO3_0P5)                    0.04       0.24 f
+  U1315/X (STQ_EO3_0P5)                    0.08       0.32 r
+  U1328/X (STQ_MUXI2_S_2)                  0.02       0.34 f
+  U1329/X (STQ_NR3_G_2)                    0.02       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[25]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[25] (in)                     0.00       0.00 f
+  U1060/X (STQ_EN2_S_2)                    0.05       0.05 r
+  U723/X (STQ_EO3_1)                       0.03       0.09 f
+  U1273/X (STQ_EO3_1)                      0.07       0.16 f
+  U1274/X (STQ_EN2_S_2)                    0.04       0.20 r
+  U1309/X (STQ_EO3_0P5)                    0.04       0.24 f
+  U1315/X (STQ_EO3_0P5)                    0.08       0.32 r
+  U1328/X (STQ_MUXI2_S_2)                  0.02       0.34 f
+  U1329/X (STQ_NR3_G_2)                    0.02       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[25]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[25] (in)                     0.00       0.00 f
+  U1060/X (STQ_EN2_S_2)                    0.05       0.05 r
+  U723/X (STQ_EO3_1)                       0.03       0.09 f
+  U1273/X (STQ_EO3_1)                      0.07       0.16 f
+  U1274/X (STQ_EN2_S_2)                    0.04       0.20 r
+  U1309/X (STQ_EO3_0P5)                    0.04       0.24 f
+  U1315/X (STQ_EO3_0P5)                    0.08       0.32 r
+  U1328/X (STQ_MUXI2_S_2)                  0.02       0.34 f
+  U1329/X (STQ_NR3_G_2)                    0.02       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: codeword_in[25]
+              (input port clocked by vclk)
+  Endpoint: decode_result_out
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  L_ECC_DECODER      ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[25] (in)                     0.00       0.00 f
+  U1060/X (STQ_EN2_S_2)                    0.05       0.05 r
+  U723/X (STQ_EO3_1)                       0.03       0.09 f
+  U1273/X (STQ_EO3_1)                      0.07       0.16 f
+  U1274/X (STQ_EN2_S_2)                    0.04       0.20 r
+  U1309/X (STQ_EO3_0P5)                    0.04       0.24 f
+  U1315/X (STQ_EO3_0P5)                    0.08       0.32 r
+  U1328/X (STQ_MUXI2_S_2)                  0.02       0.34 f
+  U1329/X (STQ_NR3_G_2)                    0.02       0.36 r
+  U1405/X (STQ_ND3_0P5)                    0.01       0.37 f
+  decode_result_out (out)                  0.00       0.37 f
+  data arrival time                                   0.37
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.37
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
