@@ -294,3 +294,20 @@ Information: State dependent leakage is now switched from on to off.
   Processing 'GFDIV_0'
   Processing 'GFEXP_0'
   Processing 'DE_CORRECTOR'
+  Processing 'SYNDROME_GENERATOR'
+  Processing 'SSE_CORRECTOR'
+ Implement Synthetic for 'SSE_CORRECTOR'.
+Information: Added key list 'DesignWare' to design 'SSE_CORRECTOR'. (DDB-72)
+  Processing 'UNITY_DECODER'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'STQ_TIE1_1' in the library 'um28nchllogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'STQ_TIE0_1' in the library 'um28nchllogl35hsl140f_ssgwc0p9v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> LVT35 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------

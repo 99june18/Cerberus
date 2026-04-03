@@ -211,8 +211,6 @@ The expected output includes:
 
 The main expected result is that Cerberus improves performance while maintaining competitive DRAM energy consumption across the evaluated configurations.
 
----
-
 ## Hardware Overhead Evaluation
 
 The hardware-overhead artifact is organized by ECC scheme under `Hardware_overhead/`.
@@ -285,46 +283,6 @@ The hardware-overhead evaluation reproduces:
 
 The expected output includes synthesized reports for the encoder and decoder blocks of each scheme.  
 These reports can be used to compare the relative hardware cost across `DUO`, `Unity ECC`, `Cerberus (32b)`, and `Cerberus (40b)`.
-
----
-
-## Repository structure
-
-A recommended repository structure is as follows.
-
-```text
-.
-├── reliability_eval
-│   ├── inputs
-│   ├── scripts
-│   ├── results
-│   ├── Fault_sim.cpp
-│   ├── run.py
-│   └── Makefile
-├── perf_simulation
-│   ├── configs
-│   ├── workloads
-│   ├── scripts
-│   ├── results
-│   └── Dockerfile
-├── hardware_eval
-│   ├── rtl
-│   ├── scripts
-│   ├── reports
-│   └── results
-└── README.md
-```
-
-If your repository uses a different directory structure, please update the commands and paths accordingly.
-
----
-
-## Contact
-
-For questions or issues, please contact:
-
-* [Author 1 Name] [author1@email.com]
-* [Author 2 Name] [author2@email.com]
 
 ---
 
