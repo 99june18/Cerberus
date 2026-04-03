@@ -1,0 +1,725 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+              Version Q-2019.12-SP5-5 for linux64 - Mar 21, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+Initializing...
+Initializing gui preferences from file  /home/99june18/.synopsys_dv_prefs.tcl
+# ---------------------------------------
+# DESIGN PROFILE
+# ---------------------------------------
+set topmodule_name      UNITY_DECODER
+UNITY_DECODER
+set clk_port_name       clk
+clk
+set clk_freq            1500
+1500
+# ---------------------------------------
+# Read Libraries
+# ---------------------------------------
+#set LIBLIST_PATH        $env(LIBLIST_PATH)
+#source $LIBLIST_PATH
+set link_library [list /media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchhlogl35udl140f_tt1p0v85c.db]
+/media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchhlogl35udl140f_tt1p0v85c.db
+set target_library [list /media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchhlogl35udl140f_tt1p0v85c.db]
+/media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchhlogl35udl140f_tt1p0v85c.db
+# ---------------------------------------
+# Read Source Codes
+# ---------------------------------------
+set RTL_PATH            $env(RTL_PATH)
+/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/syn/..//rtl/
+read_file $RTL_PATH -autoread -recursive -format sverilog -top $topmodule_name
+== READ_FILE autoread for top design 'UNITY_DECODER' ==
+
+Starting READ_FILE autoread mode...
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/'.  (AUTOREAD-100)
+Warning: Adding missing directory to search_path - '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/'. (AUTOREAD-105)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/DECISION.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/DE_CORRECTOR.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/ERROR_LOCATION.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/UNITY_DECODER.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFDIV.sv'.  (AUTOREAD-100)
+Information: Source H_matrix.txt ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFMULT.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/SYNDROME_GENERATOR.sv'.  (AUTOREAD-100)
+Information: Adding '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFEXP.sv'.  (AUTOREAD-100)
+Information: Source filelist.f ignored by autoread due to filtering.  (AUTOREAD-102)
+Information: Scanning file { DECISION.sv }. (AUTOREAD-303)
+Information: Scanning file { DE_CORRECTOR.sv }. (AUTOREAD-303)
+Information: Scanning file { ERROR_LOCATION.sv }. (AUTOREAD-303)
+Information: Scanning file { SSE_CORRECTOR.sv }. (AUTOREAD-303)
+Information: Scanning file { UNITY_DECODER.sv }. (AUTOREAD-303)
+Information: Scanning file { GFDIV.sv }. (AUTOREAD-303)
+Information: Scanning file { GFMULT.sv }. (AUTOREAD-303)
+Information: Scanning file { SYNDROME_GENERATOR.sv }. (AUTOREAD-303)
+Information: Scanning file { GFEXP.sv }. (AUTOREAD-303)
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFMULT.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/SYNDROME_GENERATOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFEXP.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFDIV.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/ERROR_LOCATION.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/DE_CORRECTOR.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/DECISION.sv
+Presto compilation completed successfully.
+Compiling source file /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/UNITY_DECODER.sv
+Presto compilation completed successfully.
+Elaborating top design UNITY_DECODER
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchhlogl35udl140f_tt1p0v85c.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/standard.sldb'
+  Loading link library 'um28nchhlogl35udl140f_tt1p0v85c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (UNITY_DECODER)
+Elaborated 1 design.
+Current design is now 'UNITY_DECODER'.
+Information: Building the design 'SYNDROME_GENERATOR'. (HDL-193)
+Presto compilation completed successfully. (SYNDROME_GENERATOR)
+Information: Building the design 'SSE_CORRECTOR'. (HDL-193)
+
+Statistics for case statements in always block at line 49 in file
+	'/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            57            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine SSE_CORRECTOR line 49 in file
+		'/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|  decode_result_reg  | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Warning:  /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv:49: Netlist for always_comb block contains a latch. (ELAB-974)
+Presto compilation completed successfully. (SSE_CORRECTOR)
+Information: Building the design 'DE_CORRECTOR'. (HDL-193)
+
+Statistics for case statements in always block at line 29 in file
+	'/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/DE_CORRECTOR.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            33            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (DE_CORRECTOR)
+Information: Building the design 'DECISION'. (HDL-193)
+Presto compilation completed successfully. (DECISION)
+Information: Building the design 'GFMULT'. (HDL-193)
+Presto compilation completed successfully. (GFMULT)
+Information: Building the design 'GFEXP'. (HDL-193)
+
+Statistics for case statements in always block at line 13 in file
+	'/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFEXP.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            14            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine GFEXP line 13 in file
+		'/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFEXP.sv'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|      binv_reg       | Latch |  16   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Warning:  /home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFEXP.sv:13: Netlist for always_comb block contains a latch. (ELAB-974)
+Presto compilation completed successfully. (GFEXP)
+Information: Building the design 'GFDIV'. (HDL-193)
+
+Statistics for case statements in always block at line 16 in file
+	'/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFDIV.sv'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            17            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (GFDIV)
+Information: Building the design 'ERROR_LOCATION'. (HDL-193)
+Presto compilation completed successfully. (ERROR_LOCATION)
+Autoread command completed successfully.
+# ---------------------------------------
+# 1. Environments Setting
+# ---------------------------------------
+link
+
+  Linking design 'UNITY_DECODER'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  um28nchhlogl35udl140f_tt1p0v85c (library) /media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchhlogl35udl140f_tt1p0v85c.db
+
+1
+uniquify
+Information: Uniquified 36 instances of design 'GFMULT'. (OPT-1056)
+Information: Uniquified 2 instances of design 'GFEXP'. (OPT-1056)
+Information: Uniquified 2 instances of design 'GFDIV'. (OPT-1056)
+1
+# ---------------------------------------
+# 2. Constraints Setting
+# ---------------------------------------
+# Clock
+# Reduce clock period to model wire delay (60% of original period)
+set delay_percentage 0.6
+0.6
+set clk_period [expr 1000 / double($clk_freq)]
+0.666666666667
+set clk_period [expr $clk_period * $delay_percentage]
+0.4
+if {[sizeof_collection [get_ports $clk_port_name]] > 0} {
+  # Create real clock if clock port is found
+  set clk_name $clk_port_name
+  create_clock -period $clk_period -name $clk_name [get_port {clk}]
+  # If real clock, set infinite drive strength
+  set_drive 0 $clk_name
+} elseif {[sizeof_collection [get_ports $clk_port_name]] == 0} {
+  # Create virtual clock if clock port is not found
+  set clk_name vclk
+  create_clock -period $clk_period -name $clk_name
+}
+Warning: Can't find port 'clk' in design 'UNITY_DECODER'. (UID-95)
+Warning: Can't find port 'clk' in design 'UNITY_DECODER'. (UID-95)
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+1
+# Apply default timing constraints for modules
+set_input_delay  [expr 2/3 * $clk_period] [all_inputs] -clock $clk_name
+1
+set_output_delay [expr 2/3 * $clk_period] [all_outputs] -clock $clk_name
+1
+# Transition time of a slope that drives the port,
+# such that a higher transition value means longer delays
+# This prevents the hold time violations that we don't have to care about
+set_input_transition 0.1 [all_inputs]
+1
+# Area
+# If max_area is set 0, DesignCompiler will minimize the design as small as possible
+set_max_area 0 
+1
+# ---------------------------------------
+# 3. Compilation
+# ---------------------------------------
+compile_ultra
+Loading db file '/usr/synopsys/syn/Q-2019.12-SP5-5/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | Q-2019.12-DWBB_201912.5 |     *     |
+| Licensed DW Building Blocks        | Q-2019.12-DWBB_201912.5 |     *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 676 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'UNITY_DECODER'
+
+Loaded alib file './alib-52/um28nchhlogl35udl140f_tt1p0v85c.db.alib'
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy decision before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_00 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy sse_corrector/error_location before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_33 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_32 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_31 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_30 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_29 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_28 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_27 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_26 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_25 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_24 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_23 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_22 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_21 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_20 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_19 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_18 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_17 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_16 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_15 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_14 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_13 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_12 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_09 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_08 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_07 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_06 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_05 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_04 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_03 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_02 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy syndrome_generator/gmult_01 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy sse_corrector/error_value01/gfmult before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy sse_corrector/error_value00/gfmult before Pass 1 (OPT-776)
+Information: Ungrouping 38 of 46 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'GFDIV_0'
+  Processing 'GFEXP_0'
+  Processing 'DE_CORRECTOR'
+  Processing 'SYNDROME_GENERATOR'
+  Processing 'SSE_CORRECTOR'
+ Implement Synthetic for 'SSE_CORRECTOR'.
+Information: Added key list 'DesignWare' to design 'SSE_CORRECTOR'. (DDB-72)
+  Processing 'UNITY_DECODER'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'SVM_TIE1_1' in the library 'um28nchhlogl35udl140f_tt1p0v85c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'SVM_TIE0_1' in the library 'um28nchhlogl35udl140f_tt1p0v85c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy syndrome_generator 'SYNDROME_GENERATOR' #insts = 1604. (OPT-777)
+Information: Ungrouping hierarchy sse_corrector/error_value00 'GFDIV_1' #insts = 200191. (OPT-777)
+Information: Ungrouping hierarchy sse_corrector 'SSE_CORRECTOR' #insts = 201136. (OPT-777)
+Information: Added key list 'DesignWare' to design 'UNITY_DECODER'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+  Mapping Optimization (Phase 11)
+  Mapping Optimization (Phase 12)
+  Mapping Optimization (Phase 13)
+  Mapping Optimization (Phase 14)
+  Mapping Optimization (Phase 15)
+  Mapping Optimization (Phase 16)
+  Mapping Optimization (Phase 17)
+  Mapping Optimization (Phase 18)
+  Mapping Optimization (Phase 19)
+  Mapping Optimization (Phase 20)
+  Mapping Optimization (Phase 21)
+  Mapping Optimization (Phase 22)
+  Mapping Optimization (Phase 23)
+  Mapping Optimization (Phase 24)
+  Mapping Optimization (Phase 25)
+  Mapping Optimization (Phase 26)
+  Mapping Optimization (Phase 27)
+  Mapping Optimization (Phase 28)
+  Mapping Optimization (Phase 29)
+  Mapping Optimization (Phase 30)
+  Mapping Optimization (Phase 31)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+  131:24:57  982101.7      1.39     354.2      12.0                           3461917.7500
+  131:30:57  977484.3      1.99     507.2      15.0                           3440938.5000
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%
+
+  Beginning Constant Register Removal
+  -----------------------------------
+  131:32:47  980251.8      1.95     498.3      12.0                           3469200.2500
+  131:33:08  981519.0      1.97     502.2       0.0                           3482046.7500
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%
+
+  Beginning Isolate Ports
+  -----------------------
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%
+
+  Beginning Delay Optimization
+  ----------------------------
+  131:53:54  411754.5      1.73     442.1       0.0                           780219.6250
+  132:13:21  412838.6      1.48     378.4     660.0                           785656.6250
+  132:13:21  412838.6      1.48     378.4     660.0                           785656.6250
+  132:13:22  412838.6      1.48     378.4     660.0                           785656.6250
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%
+  136:22:04  412837.1      1.48     378.4     660.0                           785656.0000
+  136:26:20  412801.4      1.80     456.6     661.0                           785538.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+  141:07:00  412796.5      1.80     456.6     661.0                           785503.3750
+  141:07:07  412795.1      1.80     456.6     661.0                           785498.0625
+  141:07:15  412794.2      1.80     456.6     661.0                           785496.8125
+  141:07:19  412792.2      1.80     456.6     661.0                           785492.2500
+  141:07:22  412791.9      1.80     456.6     661.0                           785491.4375
+  141:07:25  412791.3      1.80     456.6     661.0                           785489.8125
+  141:07:28  412788.1      1.80     456.6     661.0                           785483.3750
+  141:07:31  412783.3      1.80     455.8     661.0                           785472.1875
+  141:07:34  412781.1      1.80     455.8     661.0                           785465.4375
+  141:07:35  412776.7      1.80     455.8     661.0                           785457.4375
+  141:07:37  412769.1      1.80     455.8     661.0                           785443.2500
+  141:07:38  412762.3      1.80     455.8     661.0                           785430.1250
+  141:07:40  412752.8      1.80     455.8     661.0                           785402.3125
+  141:07:42  412749.1      1.80     455.8     661.0                           785381.0000
+  141:07:47  412743.5      1.80     455.8     661.0                           785352.8125
+  141:07:50  412737.1      1.80     455.8     661.0                           785319.6250
+  141:07:56  412732.9      1.80     455.7     661.0                           785303.0000
+  141:08:09  412707.9      1.80     455.6     661.0                           785231.5625
+  141:08:14  412699.6      1.80     455.6     661.0                           785205.5000
+  141:08:18  412693.1      1.80     455.6     661.0                           785176.5625
+  141:08:26  412685.7      1.80     455.6     661.0                           785146.3125
+  141:08:29  412680.6      1.80     455.6     661.0                           785113.6250
+  141:08:31  412674.6      1.80     455.6     661.0                           785095.6250
+  141:08:45  412638.6      1.80     455.6     661.0                           784995.8750
+  141:08:58  412567.7      1.80     455.6     661.0                           784732.5000
+  141:09:42  412354.4      1.79     455.3     661.0                           784124.6875
+  141:10:02  412243.6      1.79     455.3     661.0                           783741.9375
+  141:10:12  412082.6      1.79     455.3     661.0                           783293.4375
+  141:10:17  412033.5      1.79     455.3     661.0                           783107.5000
+  141:10:21  412011.2      1.79     455.3     661.0                           782986.1250
+  141:10:30  411968.9      1.79     455.3     661.0                           782786.5625
+  141:10:37  411890.0      1.79     455.3     657.0                           782435.6875
+  141:10:46  411783.6      1.79     455.3     656.0                           782055.9375
+  141:10:56  411681.9      1.78     452.4     656.0                           781672.9375
+  141:11:15  411592.0      1.78     452.4     656.0                           781365.7500
+  141:11:27  411477.7      1.78     452.4     656.0                           780941.3750
+  141:11:37  411378.3      1.78     452.4     656.0                           780567.9375
+  141:11:47  411313.3      1.78     452.4     656.0                           780325.0625
+  141:11:56  411222.1      1.78     452.4     656.0                           780007.8750
+  141:12:05  411178.0      1.78     451.7     656.0                           779806.0000
+  141:12:12  411131.6      1.78     451.7     656.0                           779634.1250
+  141:12:23  411058.8      1.78     451.6     656.0                           779286.7500
+  141:12:34  411011.5      1.78     451.6     656.0                           779072.4375
+  141:12:39  410994.7      1.78     451.6     656.0                           779000.6250
+  141:12:45  410975.4      1.78     451.6     656.0                           778927.3750
+  141:12:51  410937.3      1.78     451.6     656.0                           778778.5000
+  141:13:00  410898.3      1.78     451.6     656.0                           778614.1875
+  141:13:10  410829.4      1.78     451.5     656.0                           778394.8750
+  141:13:15  410778.5      1.78     451.5     656.0                           778219.6250
+  141:13:19  410762.6      1.78     451.5     656.0                           778165.2500
+  141:13:28  410741.8      1.78     451.5     656.0                           778087.3750
+  141:13:33  410718.8      1.78     451.5     656.0                           777986.9375
+  141:13:37  410697.5      1.78     451.5     656.0                           777893.3125
+  141:13:42  410675.5      1.78     451.5     656.0                           777792.8750
+  141:13:48  410652.8      1.78     451.5     656.0                           777669.6250
+  141:13:53  410640.9      1.78     451.5     656.0                           777611.5625
+  141:13:56  410640.4      1.78     451.5     656.0                           777611.1875
+  141:13:59  410639.7      1.78     451.5     656.0                           777609.8750
+  141:14:03  410639.6      1.78     451.5     656.0                           777610.0625
+  141:14:15  410638.0      1.78     451.5     656.0                           777601.8750
+  141:14:17  410633.4      1.78     451.5     656.0                           777567.3125
+  141:14:30  410594.7      1.78     451.5     651.0                           777335.4375
+  141:14:32  410583.0      1.78     451.5     651.0                           777248.6875
+  141:27:19  411451.3      1.46     371.1     651.0                           783978.6250
+  141:36:16  411871.3      1.44     366.4     651.0                           787056.6875
+  141:39:30  411864.7      1.43     365.1     651.0                           787066.9375
+  141:39:33  411864.7      1.43     365.1     651.0                           787066.9375
+  141:44:52  411894.9      1.43     365.1     651.0                           767522.8750
+  141:44:57  411894.9      1.43     365.1     651.0                           767522.8750
+  142:26:41  417781.1      1.36     346.4     687.0                           796118.0625
+  142:26:41  417781.1      1.36     346.4     687.0                           796118.0625
+  142:52:24  421276.4      1.26     320.3     687.0                           814296.0000
+  142:52:24  421276.4      1.26     320.3     687.0                           814296.0000
+  143:10:41  423111.4      1.25     319.1     707.0                           823202.0625
+  143:10:42  423111.4      1.25     319.1     707.0                           823202.0625
+  144:15:07  427982.0      1.16     295.0    2050.0                           846418.7500
+  144:15:08  427982.0      1.16     295.0    2050.0                           846418.7500
+  144:31:43  429868.9      1.17     298.4    2058.0                           855819.3125
+  144:31:43  429868.9      1.17     298.4    2058.0                           855819.3125
+  144:51:04  431827.8      1.14     290.2    2442.0                           865336.0625
+  144:51:04  431827.8      1.14     290.2    2442.0                           865336.0625
+  145:02:55  433915.3      1.14     291.8    2462.0                           875657.1250
+  145:02:56  433915.3      1.14     291.8    2462.0                           875657.1250
+  145:20:21  434915.6      1.12     286.8    2620.0                           880783.9375
+  145:20:21  434915.6      1.12     286.8    2620.0                           880783.9375
+  145:35:36  436691.4      1.12     287.5    2684.0                           889508.6875
+
+
+  Beginning Design Rule Fixing  (min_capacitance)  (max_fanout)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+  145:35:36  436691.4      1.12     287.5    2684.0                           889508.6875
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  145:37:33  436940.6      1.12     287.4     312.0 data_out[237]             891463.5000
+  145:43:34  437117.8      1.12     285.6     312.0 data_out[234]             892466.1875
+  145:46:22  437213.2      1.11     285.1      33.0 net20154270               893113.5000
+  145:49:09  437240.6      1.11     284.9       0.0 data_out[192]             893283.1875
+  145:51:28  437282.3      1.11     284.8       0.0                           893528.0625
+  146:08:21  439369.6      1.12     285.9      27.0                           904154.3750
+
+Threshold voltage group cell usage:
+>> HVT35 100.00%
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+  146:08:23  439369.6      1.12     285.9      27.0                           904154.3750
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+  Global Optimization (Phase 50)
+  Global Optimization (Phase 51)
+  Global Optimization (Phase 52)
+  Global Optimization (Phase 53)
+  Global Optimization (Phase 54)
+  Global Optimization (Phase 55)
+  Global Optimization (Phase 56)
+  Global Optimization (Phase 57)
+  Global Optimization (Phase 58)
+  Global Optimization (Phase 59)
+  146:43:10  426906.7      1.20     305.8       0.0                           817597.8750
+  147:01:31  431266.7      1.17     299.2      89.0                           838521.8750
+  147:01:33  431266.7      1.17     299.2      89.0                           838521.8750
+  147:03:11  431240.0      1.17     299.0      89.0                           838255.7500
+  147:03:14  431240.0      1.17     299.0      89.0                           838255.7500
+  147:17:54  433193.9      1.16     296.6     123.0                           847773.0625
+  147:17:54  433193.9      1.16     296.6     123.0                           847773.0625
+  147:29:15  434152.3      1.14     291.7     123.0                           852908.1250
+  147:29:16  434152.3      1.14     291.7     123.0                           852908.1250
+  147:41:26  436197.7      1.14     291.2     166.0                           863021.6875
+  147:41:26  436197.7      1.14     291.2     166.0                           863021.6875
+  148:00:03  437810.7      1.11     284.2     541.0                           871273.8125
+  148:00:04  437810.7      1.11     284.2     541.0                           871273.8125
+  148:10:58  439725.2      1.11     283.7     569.0                           880656.0000
+  148:10:58  439725.2      1.11     283.7     569.0                           880656.0000
+  148:19:40  440329.3      1.10     282.0     781.0                           883695.0625
+  148:19:41  440329.3      1.10     282.0     781.0                           883695.0625
+  148:29:46  442037.6      1.11     282.4     795.0                           892009.8125
+  148:29:47  442037.6      1.11     282.4     795.0                           892009.8125
+  148:39:56  442801.8      1.10     280.0     902.0                           895830.0000
+  148:39:56  442801.8      1.10     280.0     902.0                           895830.0000
+  148:50:42  444469.5      1.10     282.3     909.0                           903974.2500
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+  148:51:30  444469.5      1.10     282.3     909.0                           903974.2500
+  148:57:21  428591.0      1.11     282.0     867.0                           815351.5000
+  149:00:53  428795.5      1.09     279.1     909.0 data_out[225]             816690.6875
+  149:04:36  428969.2      1.09     278.0     879.0 data_out[217]             817894.1875
+  149:07:56  429013.4      1.09     277.5     879.0 data_out[243]             818120.9375
+  149:10:58  429074.5      1.08     277.1     901.0 data_out[49]              818518.5000
+  149:14:17  429084.1      1.08     277.0     901.0                           818557.3750
+  149:14:20  429084.1      1.08     277.0     901.0                           818557.3750
+  149:15:51  429083.8      1.08     277.0     901.0                           818566.5625
+  149:15:57  429083.5      1.08     277.0     901.0                           818565.2500
+  149:15:59  429083.3      1.08     277.0     901.0                           818564.7500
+  149:16:05  429077.9      1.08     276.9     901.0                           818539.2500
+  149:16:21  429047.5      1.08     276.9     900.0                           818393.3750
+  149:16:30  429040.6      1.08     276.9     900.0                           818360.2500
+  149:16:36  429015.1      1.08     276.9     900.0                           818215.3125
+  149:16:55  428971.5      1.08     276.9     900.0                           818020.1250
+  149:17:00  428942.6      1.08     276.9     900.0                           817863.6250
+  149:17:16  428911.4      1.08     276.9     897.0                           817710.3750
+  149:17:26  428886.9      1.08     276.9     895.0                           817593.5000
+  149:17:31  428851.4      1.08     276.9     895.0                           817367.8750
+  149:17:37  428819.1      1.08     276.9     895.0                           817166.7500
+  149:17:43  428795.4      1.08     276.9     895.0                           817022.0000
+  149:17:52  428766.1      1.08     276.9     894.0                           816847.1875
+  149:17:56  428737.7      1.08     276.9     892.0                           816661.8750
+  149:18:01  428708.8      1.08     276.9     890.0                           816474.5000
+  149:18:05  428683.4      1.08     276.9     890.0                           816359.5000
+  149:18:14  428649.8      1.08     276.9     890.0                           816210.8125
+  149:18:19  428617.5      1.08     276.9     890.0                           816075.4375
+  149:18:23  428591.4      1.08     276.9     890.0                           815916.3125
+  149:18:27  428561.7      1.08     276.9     890.0                           815770.6250
+  149:18:35  428533.4      1.08     276.9     889.0                           815618.1875
+  149:18:38  428530.4      1.08     276.9     889.0                           815609.9375
+  149:18:40  428526.8      1.08     276.9     889.0                           815599.6875
+  149:18:42  428522.5      1.08     276.9     889.0                           815586.8750
+  149:18:45  428518.0      1.08     276.9     889.0                           815574.6875
+  149:18:47  428514.2      1.08     276.9     888.0                           815565.6250
+  149:18:54  428511.1      1.08     276.9     888.0                           815557.0000
+  149:18:58  428501.4      1.08     276.9     888.0                           815518.3125
+  149:19:08  428485.0      1.08     276.9     888.0                           815430.5625
+  149:19:14  428467.9      1.08     276.9     888.0                           815353.8750
+  149:19:18  428452.8      1.08     276.9     888.0                           815270.8750
+  149:19:21  428441.8      1.08     276.9     888.0                           815218.4375
+  149:19:23  428438.3      1.08     276.9     888.0                           815210.1875
+  149:19:25  428434.6      1.08     276.9     888.0                           815197.5000
+  149:19:27  428431.6      1.08     276.9     888.0                           815189.5625
+  149:19:30  428428.2      1.08     276.9     888.0                           815180.5000
+  149:19:32  428426.4      1.08     276.9     888.0                           815175.3125
+  149:19:34  428423.3      1.08     276.9     888.0                           815166.8125
+  149:19:37  428409.4      1.08     276.9     888.0                           815112.3125
+  149:19:42  428374.9      1.08     276.9     888.0                           814937.5000
+  149:20:01  428349.8      1.08     276.8     888.0                           814821.1250
+  149:20:10  428348.7      1.08     276.8     888.0                           814814.1250
+  149:20:17  428346.6      1.08     276.8     888.0                           814804.0000
+  149:20:24  428317.3      1.08     276.8     888.0                           814720.5625
+  149:20:26  428267.4      1.08     276.8     888.0                           814573.6875
+  149:20:29  428228.1      1.08     276.8     888.0                           814441.3125
+  149:20:31  428198.3      1.08     276.8     888.0                           814321.4375
+  149:20:35  428171.4      1.08     276.8     888.0                           814214.5625
+  149:20:38  428143.6      1.08     276.8     888.0                           814079.6250
+  149:20:46  428103.6      1.08     276.8     888.0                           813915.5625
+  149:20:50  428049.8      1.08     276.8     888.0                           813770.7500
+  149:20:53  428004.5      1.08     276.8     888.0                           813638.1875
+  149:20:57  427973.2      1.08     276.8     888.0                           813489.7500
+  149:21:01  427938.1      1.08     276.8     888.0                           813339.3750
+  149:21:10  427900.9      1.08     276.8     888.0                           813148.5625
+  149:21:15  427870.1      1.08     276.8     888.0                           813015.3750
+  149:21:23  427913.8      1.08     276.8     255.0 sse_corrector/error_value01/net21000347 813439.6250
+  149:21:54  427950.3      1.08     276.7     140.0 data_out[170]             813734.2500
+  149:24:22  428051.0      1.08     276.0     140.0 data_out[69]              814435.1875
+  149:26:39  428107.9      1.08     275.6     142.0 data_out[170]             814790.8125
+  149:29:44  428190.4      1.08     275.1     142.0 data_out[243]             815301.9375
+  149:31:56  428220.9      1.08     274.9     142.0 data_out[243]             815481.5000
+  149:34:14  428277.7      1.07     274.6     142.0 data_out[4]               815766.4375
+  149:36:28  428306.6      1.07     274.5     142.0 data_out[243]             815964.8125
+  149:38:18  428374.6      1.07     274.6       0.0 data_out[243]             816403.4375
+  149:39:49  428379.8      1.07     274.5       0.0                           816443.6250
+  149:54:54  429633.6      1.07     273.2     186.0                           822860.4375
+  149:54:54  429633.6      1.07     273.2     186.0                           822860.4375
+  149:58:26  429712.1      1.06     271.8     186.0                           823411.6875
+  149:59:47  429708.1      1.06     271.6     186.0                           823398.6250
+  150:00:20  429694.5      1.06     271.5     186.0                           823335.4375
+  150:00:29  429694.5      1.06     271.5     186.0                           823335.4375
+  150:08:51  431153.0      1.06     272.0     186.0                           829980.2500
+  150:21:52  429067.7      1.06     271.4     186.0                           817887.3750
+  150:32:02  427005.3      1.06     270.5     186.0                           805687.4375
+  150:38:03  426879.3      1.06     270.5     186.0                           805031.6875
+Loading db file '/media/0/LogicLibraries/UMC/28nm/35uhd/udl/hvt/latest/liberty/logic_synth/um28nchhlogl35udl140f_tt1p0v85c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# ---------------------------------------
+# 4. Design Reports
+# ---------------------------------------
+check_design  > $topmodule_name.check_design.rpt
+report_constraint -all_violators -verbose -sig 10 > $topmodule_name.all_viol.rpt
+report_design > $topmodule_name.design.rpt
+report_area -physical -hierarchy > $topmodule_name.area.rpt
+report_cell > $topmodule_name.cell.rpt
+report_qor > $topmodule_name.qor.rpt
+report_reference > $topmodule_name.reference.rpt
+report_resources > $topmodule_name.resources.rpt
+report_hierarchy -full > $topmodule_name.hierarchy.rpt
+report_timing -nworst 10 -max_paths 10 > $topmodule_name.timing.rpt
+report_power -analysis_effort high > $topmodule_name.power.rpt
+report_threshold_voltage_group > $topmodule_name.vth.rpt
+# Dump out the constraints in an SDC file
+write_sdc $topmodule_name.constraints.sdc
+1
+# Dump out the synthesized database and gate-level-netlist
+write -hierarchy -format ddc -output      $topmodule_name.ddc
+Writing ddc file 'UNITY_DECODER.ddc'.
+1
+write -hierarchy -format verilog -output  $topmodule_name.netlist.v
+Writing verilog file '/home/99june18/X-ECC/3_Hardware_overhead/2.Unity_ECC/Decoder/syn/output/UNITY_DECODER.netlist.v'.
+1
+exit
+
+Memory usage for this session 11739 Mbytes.
+Memory usage for this session including child processes 11739 Mbytes.
+CPU usage for this session 540322 seconds ( 150.09 hours ).
+Elapsed time for this session 545206 seconds ( 151.45 hours ).
+
+Thank you...

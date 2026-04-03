@@ -10,22 +10,32 @@ This repository provides the artifact for the ISCA 2026 paper **Cerberus: Cross-
   * Hardware overhead evaluation of Cerberus
 
 * Structure of this repository:
-  * `reliability_eval`: Cerberus reliability evaluation directory (Table II, Table III)
-  * `perf_simulation`: Cerberus performance and DRAM energy evaluation directory (Figure 7)
-  * `hardware_eval`: Cerberus hardware overhead evaluation directory (Table VI)
+  * `Reliability`: Cerberus reliability evaluation directory (Table II, Table III)
+  * `Performance_Energy`: Cerberus performance and DRAM energy evaluation directory (Figure 7)
+  * `Hardware_overhead`: Cerberus hardware overhead evaluation directory (Table VI)
 
-> **Note:** This README follows the organization style of the RowArmor artifact repository. If your local file names or script names differ, replace the example commands below accordingly.
+# Cerberus Artifact
 
----
+## Reliability
 
-## Reliability Evaluation
+The reliability artifact is organized by ECC scheme under `Reliability/`.
 
-This artifact consists of the following components:
+Each scheme has its own directory:
+- `1.DUO/`
+- `2.Unity_ECC/`
+- `3.HBM4_CRC16/`
+- `4.HBM4_SECDED/`
+- `5.LPDDR6_CRC16/`
+- `6.LPDDR6_SECDED/`
+- `7.Cerberus_32b/`
+- `8.Cerberus_40b/`
 
-* `Fault_sim.cpp`: A Monte Carlo-based error injection simulator
-* `inputs/`: ECC input files for the simulation
-* `scripts/`: Scripts to run the simulation and parse the results
-* `results/`: Directory for simulation results
+Each scheme directory consists of the following components:
+
+* `<scheme>_fault_sim.cpp`: A Monte Carlo-based error injection simulator for the target ECC scheme
+* `Makefile`: Compiles `<scheme>_fault_sim.cpp` into the simulation executable
+* `run.py`: Runs the single-location reliability evaluation and parses the results
+* `Result/`: Directory for simulation results
 
 ### System specification
 
@@ -33,68 +43,48 @@ No special hardware requirements. Any modern CPU is sufficient.
 
 ### Required Dependencies
 
-We tested our evaluation under the following.
+We tested the evaluation under the following environment.
 
 * OS: Ubuntu 18.04.6 LTS
 * Compiler: gcc/g++
 * Interpreter: Python 3
 
-### Setting up Configuration Files
+### Single-location evaluation
 
-To run the reliability simulation, you need to configure the evaluated ECC schemes, error locations, and fault scenarios.
+Single-location results are obtained by running `run.py` inside each scheme directory.  
+The script uses the corresponding simulator binary and stores the outputs in `Result/`.
 
-First, set the ECC and fault parameters in `run.py`. We provide customizable lists to define the target ECC schemes and fault scenarios.
-
-```python
-scheme = [
-    "unity", "duo",
-    "lpddr6_secded", "lpddr6_crc",
-    "hbm4_secded", "hbm4_crc",
-    "cerberus32", "cerberus40",
-]
-
-location = [
-    "in_bank", "write_link", "out_bank", "multi_location",
-]
-
-scenario = [
-    "SE", "16E", "32E", "SE+SE", "DQE", "DQSE", "DE",
-    "16E+DQE", "32E+DQSE", "SE+SE+SE", "SE+DE", "SE+DQE+DQSE",
-]
-```
-
-Then, set the number of simulation iterations. To change the number of fault injections per experiment, edit the following line in `Fault_sim.cpp`:
-
-```cpp
-#define RUN_NUM 10000000
-```
-
-### Run the reliability evaluation
-
-To run the simulation, use the shell script provided in the `reliability_eval/scripts/` directory.
-The simulation runs Monte Carlo-based error injections by varying ECC and fault parameters.
+Example:
 
 ```bash
-cd reliability_eval/scripts
-bash ./sim.sh
-```
-
-This script launches multiple simulation processes in parallel and parses the results after the simulations complete.
-
-To launch the simulations and parse the results manually, you can run the following commands.
-
-```bash
-cd reliability_eval
-
-# 1. Build the simulator
+cd Reliability/1.DUO
 make
-
-# 2. Run a simulation
-./Fault_sim_start <scheme> <location> <scenario> <path-to-output>
-
-# 3. Parse the results
-python3 scripts/parse_results.py
+python3 run.py
 ```
+
+Repeat the same process for the other scheme directories to reproduce the single-location results.
+
+### Multi-location evaluation
+
+Multi-location error injection is performed by directly running the compiled simulator executable with user-specified fault types.
+
+Example:
+
+```bash
+cd Reliability/1.DUO
+make
+./<scheme>_Fault_sim <LINK1_FAULT> <STOR_FAULT> <PERI_FAULT> <LINK2_FAULT>
+```
+
+The simulator supports the following fault encodings:
+
+```text
+LINK*_FAULT: 0=NE_L, 1=SE_L, 2=DQS, 3=DQ
+PERI*_FAULT: 0=NE_P, 1=SE_P, 2=DE_P
+STOR_FAULT : 0=NE_O, 1=SE, 2=SE_SE, 3=SWL_16E, 4=SWD_32E
+```
+
+This interface allows the user to inject arbitrary multi-location fault combinations by directly specifying the desired link, storage, and peripheral fault types.
 
 ### Expected output
 
@@ -103,25 +93,27 @@ The reliability evaluation reproduces:
 * **Table II**: A comparison of reliability against single-location error scenarios
 * **Table III**: A comparison of reliability against multiple-location error scenarios
 
-The final output should report, for each ECC configuration and fault scenario:
+For each ECC configuration and fault scenario, the final output reports:
 
 * CE: Correctable Error probability
 * DUE: Detected Uncorrectable Error probability
 * SDC: Silent Data Corruption probability
 
-The expected trend is that Cerberus provides strong correction and detection capability across both single-location and multi-location error scenarios while maintaining the same or lower redundancy budget than prior multi-layer baselines.
+Single-location results are generated through `run.py`, while multi-location results are generated by directly invoking the simulator with the desired fault combination.
 
----
 
 ## Performance and DRAM Energy Evaluation
 
+The performance artifact is organized under `Performance_Energy/Performance/Cerberus_script/`.
+
 This artifact consists of the following components:
 
-* `Dockerfile`: Docker environment for Accel-Sim
-* `configs/`: Machine and memory configuration files
-* `workloads/`: Workload input files or wrappers
-* `scripts/`: Simulation scripts and post-processing scripts
-* `results/`: Directory for simulation results
+* `run.sh`: Shell script that launches the Accel-Sim workflow
+* `run_script.py`: Python script that runs the benchmark simulations
+* `Cerberus.yaml`: Accel-Sim configuration file used for the evaluation
+* `result/`: Directory for simulation results
+* `run_status/`: Directory for run status files and execution logs
+* `make_excel.py`: Script that collects the results and exports them to an Excel file
 
 ### System specification
 
@@ -135,95 +127,74 @@ We tested and ran the simulation in the following environment.
 
 **Recommended host hardware**
 * CPU: modern multicore x86_64 server/workstation
-* Memory: sufficient DRAM capacity for parallel Docker-based simulation and post-processing
+* Memory: sufficient DRAM capacity for Accel-Sim execution and post-processing
 
 ### Required Dependencies
 
-We tested our simulator under the following.
+We tested the evaluation under the following.
 
 * Docker
 * Python 3
 * bash
 * Accel-Sim
 
-### Setting up Configuration Files
-
-This evaluation uses **Accel-Sim** to reproduce the GPU performance results and a post-processing flow to reproduce the DRAM energy results.
-
-First, prepare the simulation configuration files in `configs/`.
-
-The baseline model follows the paper configuration:
-
-* NVIDIA V100-like GPU
-* 32 HBM channels
-* HBM4 timing configuration
-* ECC-specific timing changes applied to `tCL` and `tWL`
-
-We also provide scripts to run the evaluated workloads from:
-
-* Rodinia
-* Parboil
-* GraphBIG
-* PolyBench
-
-### Building the Docker-based Accel-Sim environment
-
-To build the Docker image:
-
-```bash
-cd perf_simulation
-docker build -t cerberus-accelsim .
-```
-
-To launch the container:
-
-```bash
-docker run --rm -it \
-  -v $(pwd):/workspace \
-  cerberus-accelsim
-```
-
 ### Running experiments
 
-Inside the container, run the provided simulation script.
+This evaluation uses Accel-Sim to reproduce the performance results.  
+The provided `run.sh` script executes `run_script.py` with `Cerberus.yaml` in an Accel-Sim Docker environment.
+
+Example:
 
 ```bash
-cd /workspace
-bash ./scripts/run_all.sh
+cd Performance_Energy/Performance/Cerberus_script
+bash ./run.sh
 ```
 
-This script executes all simulations for the following configurations:
+After execution, the generated results are stored in `result/` under the following scheme directories:
 
-* HBM4
-* Unity ECC
-* DUO
-* Cerberus (32b)
-* Cerberus (40b)
+* `Unity/`
+* `DUO/`
+* `HBM4/`
+* `Cerberus/`
+* `Cerberus40b/`
 
-### Parse results
+Each scheme directory contains the results for the 16 evaluated benchmarks.  
+Aggregated outputs are stored under `final_result/`.
 
-After running simulations, parse the raw results files.
+The execution progress and logs can be monitored in `run_status/`.
+
+### Exporting results
+
+After the simulations finish, run the following command to collect the results and export them to an Excel file.
 
 ```bash
-cd /workspace
-python3 ./scripts/parse_results.py
-python3 ./scripts/plot_figure7.py
+cd Performance_Energy/Performance/Cerberus_script
+python3 make_excel.py
 ```
 
-The raw output files are saved in the `results/` directory.
-These raw outputs are post-processed to generate CSV files and plots used for Figure 7.
+The generated Excel file is saved in `run_status/`.
+
+### Expected output
+
+The performance and DRAM energy evaluation reproduces **Figure 7(a)**: IPC normalized to HBM4
+
+The expected output includes:
+* performance results for `Unity ECC`, `DUO`, `HBM4`, `Cerberus (32b)`, and `Cerberus (40b)`
+* per-benchmark results for all 16 workloads
+* aggregated results exported to an Excel file
+
+### Note
+
+The Docker image itself is not included in this repository because its size is too large to distribute through GitHub.  
+However, this repository provides the exact Accel-Sim scripts and configuration files used for the evaluation.  
+If you prepare any compatible Docker environment that can run Accel-Sim, you can use the provided scripts to reproduce the results.
 
 ### DRAM energy estimation
 
-The DRAM energy evaluation uses the operating currents defined in the paper and the Micron DDR4 power calculator.
+The DRAM energy evaluation is based on the performance results obtained from Accel-Sim.  
+Using the collected simulation results, we calculated DRAM energy in Excel with the **Micron DDR4 power calculator**, following the methodology described in the paper.
 
-To generate the normalized DRAM energy results:
-
-```bash
-cd /workspace
-python3 ./scripts/estimate_energy.py
-python3 ./scripts/plot_energy.py
-```
+The corresponding Excel files are provided in the `Performance_Energy/Energy/` directory.
 
 ### Expected output
 
@@ -232,103 +203,88 @@ The performance and energy evaluation reproduces:
 * **Figure 7(a)**: IPC normalized to HBM4
 * **Figure 7(b)**: DRAM energy normalized to HBM4
 
-Expected trends:
+The expected output includes:
 
-* **Cerberus (32b)**
-  * IPC improvement: **0.7% geomean** over HBM4
-  * DRAM energy reduction: **1.84% average** relative to HBM4
+* Accel-Sim performance results for `Unity ECC`, `DUO`, `HBM4`, `Cerberus (32b)`, and `Cerberus (40b)`
+* DRAM energy values calculated from the Accel-Sim results using the Micron DDR4 power calculator
+* Excel files in the `Energy/` directory containing the final energy calculations
 
-* **Cerberus (40b)**
-  * IPC improvement: **0.5% geomean** over HBM4
-  * DRAM energy increase: **0.86% average** relative to HBM4
-
-The main expected result is that Cerberus improves performance through its Encode-Once, Decode-Many (EODM) organization while also reducing or controlling DRAM energy depending on the redundancy configuration.
+The main expected result is that Cerberus improves performance while maintaining competitive DRAM energy consumption across the evaluated configurations.
 
 ---
 
 ## Hardware Overhead Evaluation
 
-This artifact consists of the following components:
+The hardware-overhead artifact is organized by ECC scheme under `Hardware_overhead/`.
 
-* `rtl/`: SystemVerilog RTL for the Cerberus encoder and decoders
-* `scripts/`: Synthesis scripts
-* `reports/`: Output synthesis reports
-* `results/`: Parsed synthesis summaries
+Each scheme has its own directory:
+- `1.DUO/`
+- `2.Unity_ECC/`
+- `3.Cerberus_32b/`
+- `4.Cerberus_40b/`
+
+Each scheme directory contains both `Encoder/` and `Decoder/` blocks.  
+For each block, the following subdirectories are provided:
+
+* `rtl/`: SystemVerilog RTL source code
+* `sim/`: Testbench and simulation files
+* `syn/`: Synthesis scripts and synthesis-related files
+* `common.sh`: Common setup script used by the flow
 
 ### System specification
 
-A Linux server/workstation capable of RTL synthesis is required.
+A Linux server/workstation capable of RTL simulation and synthesis is required.
 
 ### Required Dependencies
 
-We tested our synthesis flow under the following.
+We tested the evaluation under the following.
 
+* Ubuntu 18.04.6 LTS
+* VCS
 * Synopsys Design Compiler
 * UMC 28nm standard-cell library
-* Python 3 (optional, for report parsing)
+* bash
 
-### Setting up Configuration Files
+### Running simulation
 
-The hardware overhead evaluation synthesizes:
+For each encoder or decoder block, the testbench can be compiled and executed in the `sim/` directory.
 
-* shared encoder
-* Decoder 1 (L-ECC)
-* Decoder 2 (O-ECC)
-* Decoder 3 (S-ECC)
+Example:
 
-for both:
+```bash
+cd Hardware_overhead/1.DUO/Decoder/sim
+./run compile
+./run tb
+```
 
-* Cerberus (32b)
-* Cerberus (40b)
+To clean the simulation directory:
 
-The synthesis scripts are located in `hardware_eval/scripts/`.
+```bash
+./run clean
+```
 
 ### Running synthesis
 
-To run the full synthesis flow:
+For each encoder or decoder block, logic synthesis can be run in the `syn/` directory.
+
+Example:
 
 ```bash
-cd hardware_eval
-dc_shell -f scripts/synth_all.tcl
+cd Hardware_overhead/1.DUO/Decoder/syn
+./run clean
+./run synth
 ```
 
-If you want to synthesize each block separately, use the corresponding TCL scripts in the `scripts/` directory.
-
-### Parse results
-
-After synthesis, parse the reports and summarize the final area results.
-
-```bash
-cd hardware_eval
-python3 scripts/parse_area.py
-```
-
-The final results should report:
-
-* area in `um^2`
-* area normalized to NAND2 equivalents
+This flow runs synthesis with Synopsys Design Compiler using the provided synthesis setup.
 
 ### Expected output
 
-The hardware overhead evaluation reproduces:
+The hardware-overhead evaluation reproduces:
 
-* **Table VI**: Area overheads (in NAND2 equivalents)
+* **Table VI**: Area overheads for the evaluated ECC schemes
 
-The expected outputs include the following results.
-
-#### Cerberus (32b)
-* Encoder: 1632.79 μm² (3240 NAND2 equivalents)
-* Decoder 1 (L-ECC): 1205.40 μm² (2392 NAND2 equivalents)
-* Decoder 2 (O-ECC): 6199.87 μm² (12301 NAND2 equivalents)
-* Decoder 3 (S-ECC): 62669.04 μm² (124343 NAND2 equivalents)
-
-#### Cerberus (40b)
-* Encoder: 2015.49 μm² (3999 NAND2 equivalents)
-* Decoder 1 (L-ECC): 1398.43 μm² (2775 NAND2 equivalents)
-* Decoder 2 (O-ECC): 6495.15 μm² (12887 NAND2 equivalents)
-* Decoder 3 (S-ECC): 82633.15 μm² (163955 NAND2 equivalents)
-
-The key expected trend is that the L-ECC and O-ECC logic remain modest, while the S-ECC decoder dominates the total area overhead.
+The expected output includes synthesized reports for the encoder and decoder blocks of each scheme.  
+These reports can be used to compare the relative hardware cost across `DUO`, `Unity ECC`, `Cerberus (32b)`, and `Cerberus (40b)`.
 
 ---
 

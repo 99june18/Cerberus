@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : reference
+Design : UNITY_ENCODER
+Version: Q-2019.12-SP5-5
+Date   : Fri Apr  3 12:23:38 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+STQ_AO2BB2_0P5     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       2      2.016000  
+STQ_AO2BB2_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       3      3.024000  
+STQ_EN2_S_1        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000       2      3.024000  
+STQ_EN3_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.184000       2      4.368000  
+STQ_EO2_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     126    190.511996  
+STQ_EO2_S_0P5      um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     121    182.951996  
+STQ_EO2_S_2        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     361    545.831987  
+STQ_EO3_0P5        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.512000     457    690.983984  
+STQ_EO3_1          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.184000       9     19.656000  
+STQ_EO3_2          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  2.688000       5     13.440000  
+STQ_EO3_3          um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  4.200000       1      4.200000  
+STQ_INV_S_0P65     um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.336000       5      1.680000  
+STQ_INV_S_1        um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  0.336000       8      2.688000  
+STQ_OA2BB2_1       um28nchllogl35hsl140f_ssgwc0p9v125c
+                                  1.008000       2      2.016000  
+-----------------------------------------------------------------------------
+Total 14 references                                  1666.391962
+1

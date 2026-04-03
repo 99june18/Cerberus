@@ -1,0 +1,694 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : Cerberus_32b
+Version: Q-2019.12-SP5-5
+Date   : Thu Apr  2 21:31:51 2026
+****************************************
+
+Operating Conditions: SSGWC0P9V125C   Library: um28nchllogl35hsl140f_ssgwc0p9v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: codeword_in[2]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[2] (in)                      0.00       0.00 r
+  U32027/X (STQ_EN2_8)                     0.05       0.05 r
+  U29287/X (STQ_EN3_3)                     0.03       0.08 f
+  U29298/X (STQ_EN3_3)                     0.06       0.14 r
+  U30450/X (STQ_EN2_4)                     0.03       0.16 r
+  U30850/X (STQ_EN3_3)                     0.03       0.19 f
+  U32506/X (STQ_EN3_6)                     0.06       0.26 r
+  U38039/X (STQ_EO2_S_8)                   0.05       0.30 f
+  U9401/X (STQ_INV_S_24)                   0.01       0.32 r
+  U30678/X (STQ_EN2_8)                     0.04       0.36 f
+  U13797/X (STQ_BUF_S_3)                   0.03       0.39 f
+  U30903/X (STQ_EN3_2)                     0.07       0.46 f
+  U13358/X (STQ_INV_1P5)                   0.01       0.47 r
+  U11892/X (STQ_ND2_G_2)                   0.01       0.48 f
+  U18146/X (STQ_NR2_1P5)                   0.01       0.50 r
+  U20646/X (STQ_ND2_S_2)                   0.01       0.51 f
+  U21923/X (STQ_OR3B_4)                    0.02       0.53 f
+  U14217/X (STQ_NR2_1P5)                   0.01       0.54 r
+  U12807/X (STQ_INV_S_1)                   0.01       0.55 f
+  U19038/X (STQ_AOI22_2)                   0.02       0.57 r
+  U12761/X (STQ_ND2_G_2)                   0.02       0.59 f
+  U28839/X (STQ_NR3_G_4)                   0.02       0.60 r
+  U3021/X (STQ_ND2_S_6)                    0.02       0.62 f
+  U18995/X (STQ_INV_6)                     0.01       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[91]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 f
+  codeword_in[91] (in)                     0.00       0.00 f
+  U32306/X (STQ_EN3_6)                     0.07       0.07 f
+  U30211/X (STQ_EN3_3)                     0.06       0.13 r
+  U30450/X (STQ_EN2_4)                     0.03       0.16 r
+  U30850/X (STQ_EN3_3)                     0.03       0.19 f
+  U32506/X (STQ_EN3_6)                     0.06       0.26 r
+  U38039/X (STQ_EO2_S_8)                   0.05       0.30 f
+  U9401/X (STQ_INV_S_24)                   0.01       0.32 r
+  U30678/X (STQ_EN2_8)                     0.04       0.36 f
+  U13797/X (STQ_BUF_S_3)                   0.03       0.39 f
+  U30903/X (STQ_EN3_2)                     0.07       0.46 f
+  U13358/X (STQ_INV_1P5)                   0.01       0.47 r
+  U11892/X (STQ_ND2_G_2)                   0.01       0.48 f
+  U18146/X (STQ_NR2_1P5)                   0.01       0.50 r
+  U20646/X (STQ_ND2_S_2)                   0.01       0.51 f
+  U21923/X (STQ_OR3B_4)                    0.02       0.53 f
+  U14217/X (STQ_NR2_1P5)                   0.01       0.54 r
+  U12807/X (STQ_INV_S_1)                   0.01       0.55 f
+  U19038/X (STQ_AOI22_2)                   0.02       0.57 r
+  U12761/X (STQ_ND2_G_2)                   0.02       0.59 f
+  U28839/X (STQ_NR3_G_4)                   0.02       0.60 r
+  U3021/X (STQ_ND2_S_6)                    0.02       0.62 f
+  U18995/X (STQ_INV_6)                     0.01       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[259]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[259] (in)                    0.00       0.00 r
+  U29276/X (STQ_EN2_8)                     0.05       0.05 r
+  U27145/X (STQ_EN2_8)                     0.04       0.08 f
+  U7926/X (STQ_EN2_6)                      0.03       0.12 r
+  U31557/X (STQ_EO3_3)                     0.03       0.14 f
+  U29142/X (STQ_EN3_3)                     0.05       0.19 r
+  U31868/X (STQ_EN3_3)                     0.03       0.23 r
+  U30068/X (STQ_EN3_6)                     0.04       0.27 f
+  U6457/X (STQ_EN2_8)                      0.04       0.31 r
+  U9438/X (STQ_BUF_S_8)                    0.02       0.32 r
+  U32227/X (STQ_EN2_8)                     0.04       0.36 f
+  U7057/X (STQ_INV_S_14)                   0.02       0.38 r
+  U24254/X (STQ_EN2_6)                     0.03       0.41 f
+  U27943/X (STQ_EN3_3)                     0.05       0.47 r
+  U17024/X (STQ_ND2_S_3)                   0.01       0.48 f
+  U4373/X (STQ_NR2_2)                      0.02       0.49 r
+  U4198/X (STQ_ND2_S_2)                    0.01       0.51 f
+  U16734/X (STQ_NR2_G_3P5)                 0.02       0.53 r
+  U11399/X (STQ_ND2_G_2)                   0.01       0.54 f
+  U36745/X (STQ_EO2_2)                     0.03       0.58 r
+  U29671/X (STQ_ND2_G_3)                   0.02       0.59 f
+  U8484/X (STQ_NR3_G_4)                    0.02       0.61 r
+  U9446/X (STQ_OR4_6)                      0.02       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[259]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[259] (in)                    0.00       0.00 r
+  U29276/X (STQ_EN2_8)                     0.05       0.05 r
+  U27145/X (STQ_EN2_8)                     0.04       0.08 f
+  U7926/X (STQ_EN2_6)                      0.03       0.12 r
+  U31557/X (STQ_EO3_3)                     0.03       0.14 f
+  U29142/X (STQ_EN3_3)                     0.05       0.19 r
+  U31868/X (STQ_EN3_3)                     0.03       0.23 r
+  U30068/X (STQ_EN3_6)                     0.04       0.27 f
+  U6457/X (STQ_EN2_8)                      0.04       0.31 r
+  U9438/X (STQ_BUF_S_8)                    0.02       0.32 r
+  U32227/X (STQ_EN2_8)                     0.04       0.36 f
+  U7057/X (STQ_INV_S_14)                   0.02       0.38 r
+  U24254/X (STQ_EN2_6)                     0.03       0.41 f
+  U27943/X (STQ_EN3_3)                     0.05       0.47 r
+  U17024/X (STQ_ND2_S_3)                   0.01       0.48 f
+  U4373/X (STQ_NR2_2)                      0.02       0.49 r
+  U4198/X (STQ_ND2_S_2)                    0.01       0.51 f
+  U16734/X (STQ_NR2_G_3P5)                 0.02       0.53 r
+  U11399/X (STQ_ND2_G_2)                   0.01       0.54 f
+  U36745/X (STQ_EO2_2)                     0.03       0.58 r
+  U29671/X (STQ_ND2_G_3)                   0.02       0.59 f
+  U8484/X (STQ_NR3_G_4)                    0.02       0.61 r
+  U9446/X (STQ_OR4_6)                      0.02       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[116]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[116] (in)                    0.00       0.00 r
+  U37988/X (STQ_EN2_4)                     0.04       0.04 f
+  U39302/X (STQ_EN3_3)                     0.05       0.10 r
+  U27874/X (STQ_EN2_S_2)                   0.04       0.14 f
+  U27873/X (STQ_EO3_3)                     0.06       0.19 f
+  U32526/X (STQ_EO3_3)                     0.03       0.23 r
+  U30069/X (STQ_EN3_6)                     0.04       0.27 f
+  U6457/X (STQ_EN2_8)                      0.04       0.31 r
+  U9438/X (STQ_BUF_S_8)                    0.02       0.32 r
+  U32227/X (STQ_EN2_8)                     0.04       0.36 f
+  U7057/X (STQ_INV_S_14)                   0.02       0.38 r
+  U24254/X (STQ_EN2_6)                     0.03       0.41 f
+  U27943/X (STQ_EN3_3)                     0.05       0.47 r
+  U17024/X (STQ_ND2_S_3)                   0.01       0.48 f
+  U4373/X (STQ_NR2_2)                      0.02       0.49 r
+  U4198/X (STQ_ND2_S_2)                    0.01       0.51 f
+  U16734/X (STQ_NR2_G_3P5)                 0.02       0.53 r
+  U11399/X (STQ_ND2_G_2)                   0.01       0.54 f
+  U36745/X (STQ_EO2_2)                     0.03       0.58 r
+  U29671/X (STQ_ND2_G_3)                   0.02       0.59 f
+  U8484/X (STQ_NR3_G_4)                    0.02       0.61 r
+  U9446/X (STQ_OR4_6)                      0.02       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[19]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[19] (in)                     0.00       0.00 r
+  U38755/X (STQ_EN2_8)                     0.05       0.05 r
+  U39302/X (STQ_EN3_3)                     0.05       0.10 r
+  U27874/X (STQ_EN2_S_2)                   0.04       0.14 f
+  U27873/X (STQ_EO3_3)                     0.06       0.19 f
+  U32526/X (STQ_EO3_3)                     0.03       0.23 r
+  U30069/X (STQ_EN3_6)                     0.04       0.27 f
+  U6457/X (STQ_EN2_8)                      0.04       0.31 r
+  U9438/X (STQ_BUF_S_8)                    0.02       0.32 r
+  U32227/X (STQ_EN2_8)                     0.04       0.36 f
+  U7057/X (STQ_INV_S_14)                   0.02       0.38 r
+  U24254/X (STQ_EN2_6)                     0.03       0.41 f
+  U27943/X (STQ_EN3_3)                     0.05       0.47 r
+  U17024/X (STQ_ND2_S_3)                   0.01       0.48 f
+  U4373/X (STQ_NR2_2)                      0.02       0.49 r
+  U4198/X (STQ_ND2_S_2)                    0.01       0.51 f
+  U16734/X (STQ_NR2_G_3P5)                 0.02       0.53 r
+  U11399/X (STQ_ND2_G_2)                   0.01       0.54 f
+  U36745/X (STQ_EO2_2)                     0.03       0.58 r
+  U29671/X (STQ_ND2_G_3)                   0.02       0.59 f
+  U8484/X (STQ_NR3_G_4)                    0.02       0.61 r
+  U9446/X (STQ_OR4_6)                      0.02       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[131]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[131] (in)                    0.00       0.00 r
+  U32858/X (STQ_EN2_8)                     0.05       0.05 r
+  U32658/X (STQ_EN2_6)                     0.03       0.08 f
+  U27765/X (STQ_EN3_6)                     0.06       0.14 f
+  U30620/X (STQ_EN2_8)                     0.03       0.17 r
+  U28055/X (STQ_EN3_3)                     0.03       0.20 f
+  U28054/X (STQ_EN3_3)                     0.06       0.26 r
+  U32431/X (STQ_INV_7P5)                   0.01       0.27 f
+  U6073/X (STQ_INV_6)                      0.01       0.28 r
+  U26861/X (STQ_EN2_6)                     0.04       0.32 r
+  U17536/X (STQ_INV_18)                    0.02       0.34 f
+  U28341/X (STQ_EN2_8)                     0.04       0.38 r
+  U28340/X (STQ_EN2_6)                     0.03       0.41 f
+  U28339/X (STQ_EN3_3)                     0.05       0.46 f
+  U26852/X (STQ_ND2B_4)                    0.02       0.48 f
+  U26849/X (STQ_NR2_G_4)                   0.02       0.50 r
+  U26845/X (STQ_AOI21_1P5)                 0.01       0.51 f
+  U33288/X (STQ_OAOI211_2)                 0.02       0.53 r
+  U30172/X (STQ_AOI21B_2)                  0.03       0.56 r
+  U32991/X (STQ_ND4_MM_4)                  0.02       0.58 f
+  U3035/X (STQ_NR4_4)                      0.02       0.61 r
+  U9446/X (STQ_OR4_6)                      0.02       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[259]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[259] (in)                    0.00       0.00 r
+  U29276/X (STQ_EN2_8)                     0.05       0.05 r
+  U27145/X (STQ_EN2_8)                     0.04       0.08 f
+  U7926/X (STQ_EN2_6)                      0.03       0.12 r
+  U31557/X (STQ_EO3_3)                     0.03       0.14 f
+  U29142/X (STQ_EN3_3)                     0.05       0.19 r
+  U31868/X (STQ_EN3_3)                     0.03       0.23 r
+  U30068/X (STQ_EN3_6)                     0.04       0.27 f
+  U6457/X (STQ_EN2_8)                      0.04       0.31 r
+  U9438/X (STQ_BUF_S_8)                    0.02       0.32 r
+  U32227/X (STQ_EN2_8)                     0.04       0.36 f
+  U7057/X (STQ_INV_S_14)                   0.02       0.38 r
+  U24254/X (STQ_EN2_6)                     0.03       0.41 f
+  U27943/X (STQ_EN3_3)                     0.05       0.47 r
+  U17024/X (STQ_ND2_S_3)                   0.01       0.48 f
+  U4373/X (STQ_NR2_2)                      0.02       0.49 r
+  U4198/X (STQ_ND2_S_2)                    0.01       0.51 f
+  U16734/X (STQ_NR2_G_3P5)                 0.02       0.53 r
+  U11399/X (STQ_ND2_G_2)                   0.01       0.54 f
+  U36745/X (STQ_EO2_2)                     0.03       0.58 r
+  U29671/X (STQ_ND2_G_3)                   0.02       0.59 f
+  U8484/X (STQ_NR3_G_4)                    0.02       0.61 r
+  U9446/X (STQ_OR4_6)                      0.02       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[259]
+              (input port clocked by vclk)
+  Endpoint: data_out[0]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[259] (in)                    0.00       0.00 r
+  U29276/X (STQ_EN2_8)                     0.05       0.05 r
+  U27145/X (STQ_EN2_8)                     0.04       0.08 f
+  U7926/X (STQ_EN2_6)                      0.03       0.12 r
+  U31557/X (STQ_EO3_3)                     0.03       0.14 f
+  U29142/X (STQ_EN3_3)                     0.05       0.19 r
+  U31868/X (STQ_EN3_3)                     0.03       0.23 r
+  U30068/X (STQ_EN3_6)                     0.04       0.27 f
+  U6457/X (STQ_EN2_8)                      0.04       0.31 r
+  U9438/X (STQ_BUF_S_8)                    0.02       0.32 r
+  U32227/X (STQ_EN2_8)                     0.04       0.36 f
+  U7057/X (STQ_INV_S_14)                   0.02       0.38 r
+  U24254/X (STQ_EN2_6)                     0.03       0.41 f
+  U27943/X (STQ_EN3_3)                     0.05       0.47 r
+  U17024/X (STQ_ND2_S_3)                   0.01       0.48 f
+  U4373/X (STQ_NR2_2)                      0.02       0.49 r
+  U4198/X (STQ_ND2_S_2)                    0.01       0.51 f
+  U16734/X (STQ_NR2_G_3P5)                 0.02       0.53 r
+  U11399/X (STQ_ND2_G_2)                   0.01       0.54 f
+  U36745/X (STQ_EO2_2)                     0.03       0.58 r
+  U29671/X (STQ_ND2_G_3)                   0.02       0.59 f
+  U8484/X (STQ_NR3_G_4)                    0.02       0.61 r
+  U9446/X (STQ_OR4_6)                      0.02       0.63 r
+  U2952/X (STQ_NR3_G_8)                    0.01       0.64 f
+  U7532/X (STQ_ND2_5)                      0.01       0.65 r
+  U7531/X (STQ_NR3_G_16)                   0.02       0.67 f
+  U7893/X (STQ_INV_18)                     0.01       0.68 r
+  U7910/X (STQ_NR2_G_5)                    0.01       0.69 f
+  U2592/X (STQ_INV_2)                      0.01       0.70 r
+  U2559/X (STQ_ND3_5)                      0.02       0.72 f
+  U30247/X (STQ_NR3_G_4)                   0.02       0.74 r
+  U6654/X (STQ_ND2_S_1P5)                  0.02       0.76 f
+  U28894/X (STQ_NR4_4)                     0.02       0.78 r
+  U2069/X (STQ_ND2_S_5)                    0.02       0.79 f
+  U31409/X (STQ_NR3_G_8)                   0.02       0.81 r
+  U1837/X (STQ_AOI21_1P5)                  0.01       0.82 f
+  U1789/X (STQ_INV_S_1)                    0.01       0.83 r
+  U11063/X (STQ_ND3_0P5)                   0.01       0.85 f
+  data_out[0] (out)                        0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+  Startpoint: codeword_in[202]
+              (input port clocked by vclk)
+  Endpoint: data_out[207]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Cerberus_32b       ZeroWLM               um28nchllogl35hsl140f_ssgwc0p9v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.00       0.00 r
+  codeword_in[202] (in)                    0.00       0.00 r
+  U38097/X (STQ_EN2_8)                     0.05       0.05 r
+  U27703/X (STQ_EN3_3)                     0.05       0.10 f
+  U38096/X (STQ_EN3_3)                     0.05       0.15 f
+  U6119/X (STQ_INV_2)                      0.01       0.16 r
+  U7304/X (STQ_EN3_3)                      0.03       0.19 f
+  U27376/X (STQ_EN3_3)                     0.06       0.25 r
+  U22786/X (STQ_BUF_S_18)                  0.02       0.27 r
+  U6015/X (STQ_BUF_S_4)                    0.02       0.29 r
+  U29094/X (STQ_EN2_6)                     0.04       0.33 f
+  U7232/X (STQ_EN2_6)                      0.03       0.36 r
+  U8112/X (STQ_EN2_4)                      0.03       0.39 f
+  U22590/X (STQ_EN2_4)                     0.03       0.42 r
+  U7231/X (STQ_EO3_3)                      0.03       0.46 f
+  U7230/X (STQ_INV_3P5)                    0.01       0.47 r
+  U7229/X (STQ_ND3_5)                      0.02       0.48 f
+  U7334/X (STQ_NR2_8)                      0.01       0.50 r
+  U4338/X (STQ_OAI22_3)                    0.01       0.51 f
+  U29591/X (STQ_NR2_2)                     0.02       0.53 r
+  U7326/X (STQ_ND2_G_2)                    0.01       0.54 f
+  U30036/X (STQ_NR4_2)                     0.02       0.55 r
+  U28059/X (STQ_ND3_2)                     0.02       0.57 f
+  U7244/X (STQ_ND2_G_2)                    0.01       0.58 r
+  U28081/X (STQ_NR2_G_3P5)                 0.01       0.60 f
+  U30386/X (STQ_ND2_7)                     0.01       0.61 r
+  U7912/X (STQ_AN3B_8)                     0.01       0.62 f
+  U7911/X (STQ_ND2_16)                     0.01       0.63 r
+  U7886/X (STQ_OR2_20)                     0.02       0.65 r
+  U28448/X (STQ_OR2_12)                    0.01       0.66 r
+  U2585/X (STQ_OR2_3)                      0.03       0.70 r
+  U9675/X (STQ_INV_S_5)                    0.02       0.72 f
+  U39304/X (STQ_OR3B_4)                    0.03       0.74 f
+  U38466/X (STQ_NR4_2)                     0.02       0.76 r
+  U32451/X (STQ_ND2_S_5)                   0.02       0.78 f
+  U1925/X (STQ_INV_2P5)                    0.01       0.79 r
+  U37789/X (STQ_ND4_1)                     0.02       0.81 f
+  U31090/X (STQ_MUXI2_MG_0P75)             0.02       0.83 r
+  U39412/X (STQ_MUXI2_MG_0P75)             0.01       0.85 f
+  data_out[207] (out)                      0.00       0.85 f
+  data arrival time                                   0.85
+
+  clock vclk (rise edge)                   0.38       0.38
+  clock network delay (ideal)              0.00       0.38
+  output external delay                    0.00       0.38
+  data required time                                  0.38
+  -----------------------------------------------------------
+  data required time                                  0.38
+  data arrival time                                  -0.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.47
+
+
+1
