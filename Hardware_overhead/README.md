@@ -1,17 +1,10 @@
 # Hardware Overhead Evaluation
 
-This directory contains the artifact used to reproduce the **hardware-overhead evaluation** of **Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection**.
-
 This part of the artifact evaluates the implementation cost of the ECC schemes studied in the paper by providing RTL source code, testbenches, and synthesis scripts for the main encoder and decoder blocks.
 
 The hardware-overhead artifact reproduces:
 
 - **Table VI**: Area overhead comparison of the evaluated ECC schemes
-
-The main purpose of this artifact is to enable users to:
-
-1. verify the functionality of each encoder and decoder block through RTL simulation, and
-2. reproduce the relative hardware cost through logic synthesis.
 
 ---
 
@@ -28,14 +21,6 @@ Hardware_overhead/
 ```
 
 Each ECC-scheme directory contains both an **Encoder** block and a **Decoder** block.
-
-For example:
-
-```text
-Hardware_overhead/1.DUO/
-├── Encoder/
-└── Decoder/
-```
 
 Each encoder or decoder block contains the following components:
 
@@ -103,20 +88,6 @@ This stage checks the functional behavior of the block before synthesis.
 Second, the same encoder or decoder block is synthesized using **Synopsys Design Compiler** with the provided synthesis scripts and target standard-cell library.
 
 This stage generates the reports used to compare the implementation overhead across ECC schemes.
-
-At a high level, the workflow is:
-
-```text
-RTL source
-   ↓
-Testbench-based simulation
-   ↓
-Synthesis with Design Compiler
-   ↓
-Area report generation
-   ↓
-Comparison across ECC schemes
-```
 
 ---
 
@@ -235,54 +206,8 @@ This flow generates the reports used to compare the hardware cost of the evaluat
 
 ---
 
-## 9. Role of Each Subdirectory
 
-### `rtl/`
-
-Contains the SystemVerilog implementation of the encoder or decoder block.
-
-This is the actual hardware description used for both simulation and synthesis.
-
-### `sim/`
-
-Contains the simulation environment, including the testbench and helper scripts.
-
-This directory is used to verify that the block operates correctly at the RTL level.
-
-### `syn/`
-
-Contains the synthesis environment, including scripts and setup files required to run Design Compiler.
-
-This directory is used to derive the area-related reports for the block.
-
-### `common.sh`
-
-Provides shared environment setup used by the simulation and synthesis flows.
-
-This helps keep the workflow consistent across different ECC schemes and blocks.
-
----
-
-## 10. Reproducing Table VI
-
-The hardware-overhead artifact reproduces:
-
-- **Table VI**: Area overheads for the evaluated ECC schemes
-
-To reproduce the comparison, users should perform synthesis for the encoder and decoder blocks of:
-
-- `1.DUO`
-- `2.Unity_ECC`
-- `3.Cerberus_32b`
-- `4.Cerberus_40b`
-
-The generated synthesis reports can then be used to compare the relative hardware cost across schemes.
-
-Because the final table is based on synthesized implementation cost, the synthesis stage is the key part of this artifact.
-
----
-
-## 11. Expected Output
+## 9. Expected Output
 
 The expected outputs of this artifact include:
 
@@ -296,50 +221,7 @@ The main expected observation is that the synthesized reports reproduce the rela
 
 ---
 
-## 12. Reproducibility Workflow
-
-A typical workflow to reproduce the hardware-overhead evaluation is:
-
-### Step 1. Choose a target scheme and block
-
-For example:
-
-```bash
-cd Hardware_overhead/3.Cerberus_32b/Decoder
-```
-
-### Step 2. Run RTL simulation
-
-```bash
-cd sim
-./run compile
-./run tb
-```
-
-### Step 3. Run synthesis
-
-```bash
-cd ../syn
-./run clean
-./run synth
-```
-
-### Step 4. Inspect the generated reports
-
-Use the synthesis outputs to compare the target block against the other ECC schemes.
-
-### Step 5. Repeat for other blocks and schemes
-
-Repeat the same process for:
-
-- both **Encoder** and **Decoder**, and
-- all evaluated ECC schemes
-
-to reproduce the comparison used in **Table VI**.
-
----
-
-## 13. Practical Notes
+## 10. Practical Notes
 
 - The hardware-overhead evaluation depends on licensed commercial tools.
 - It is recommended to verify RTL simulation first before running synthesis.
@@ -348,21 +230,3 @@ to reproduce the comparison used in **Table VI**.
 - The exact generated files may depend on the local tool environment, but the provided scripts define the intended flow.
 
 ---
-
-## 14. Limitations
-
-This artifact provides the RTL implementations and synthesis flow used for evaluation, but successful reproduction requires:
-
-- access to VCS,
-- access to Synopsys Design Compiler, and
-- access to a compatible UMC 28nm standard-cell library.
-
-If these prerequisites are not available, users may still inspect the RTL and simulation structure, but they may not be able to reproduce the full synthesis-based area comparison.
-
----
-
-## 15. Citation
-
-If you use this artifact, please cite the ISCA 2026 paper:
-
-**Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection**
