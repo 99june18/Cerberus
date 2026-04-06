@@ -122,7 +122,6 @@ Specifically, the DRAM energy is calculated using:
 In other words, the artifact does **not** estimate DRAM energy directly inside Accel-Sim.  
 Instead, it first collects the relevant simulation statistics from Accel-Sim, and then uses those values as inputs to the Excel-based DRAM energy model.
 
-```
 
 The final energy metric reported in the paper is:
 
