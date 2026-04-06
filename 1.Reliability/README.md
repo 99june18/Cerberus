@@ -1,7 +1,5 @@
 # Reliability Evaluation
 
-This directory contains the artifact used to reproduce the **reliability evaluation** of **Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection**.
-
 The reliability evaluation is implemented as a set of **Monte Carlo-based error injection simulators**, one for each ECC scheme evaluated in the paper. These simulators estimate the probability of three final outcomes under different fault scenarios:
 
 - **CE**: Correctable Error
@@ -98,7 +96,7 @@ make
 
 This generates the simulator executable for that scheme.
 
-Repeat the same process in other scheme directories if you want to evaluate multiple ECC configurations.
+Repeat the same process in other scheme directories if you want to evaluate other ECC configurations.
 
 ---
 
@@ -161,9 +159,9 @@ This interface allows the user to inject arbitrary combinations of faults across
 
 ---
 
-## 7. Fault Encoding Interface
+## 7. Fault Interface
 
-The simulator supports the following fault encodings.
+The simulator supports the following fault mode.
 
 ```text
 LINK*_FAULT: 0=NE_L, 1=SE_L, 2=DQS, 3=DQ
@@ -194,8 +192,8 @@ Faults injected in the stored data or memory cell array.
 - **NE_O**: No storage error
 - **SE**: Single-bit storage error
 - **SE_SE**: Two independent single-bit storage errors
-- **SWL_16E**: 16-bit subwordline-correlated storage fault
-- **SWD_32E**: 32-bit storage fault pattern
+- **SWL_16E**: 16-bit subwordline storage errors
+- **SWD_32E**: 32-bit subwordline driver storage errors
 
 ---
 
@@ -257,12 +255,6 @@ For each evaluated scenario, the simulator reports the probability of the follow
 - **SDC (Silent Data Corruption)**  
   Corrupted data escapes detection and remains in the final output.
 
-In general:
-
-- A **higher CE** is desirable when correction is possible.
-- A **lower DUE** is desirable, though DUE is still safer than undetected corruption.
-- A **lower SDC** is the most critical goal for robust memory protection.
-
 ---
 
 ## 10. Expected Results
@@ -274,46 +266,6 @@ This artifact is intended to reproduce the following reliability results from th
 
 Across ECC schemes and fault combinations, the final result of each experiment is a set of CE / DUE / SDC probabilities.
 
-### Expected qualitative outcome
-
-The main expected observation is that **Cerberus** provides stronger reliability than the baseline ECC schemes, especially under challenging multi-location error scenarios, while maintaining robust protection against silent data corruption.
-
----
-
-## 11. Reproducibility Workflow
-
-A typical workflow to reproduce the reliability results is:
-
-### Step 1. Choose a scheme
-
-For example:
-
-```bash
-cd Reliability/7.Cerberus_32b
-```
-
-### Step 2. Build the simulator
-
-```bash
-make
-```
-
-### Step 3. Reproduce single-location results
-
-```bash
-python3 run.py
-```
-
-### Step 4. Evaluate custom multi-location fault scenarios
-
-```bash
-./<scheme>_fault_sim <LINK1_FAULT> <STOR_FAULT> <PERI_FAULT> <LINK2_FAULT>
-```
-
-### Step 5. Repeat for other schemes
-
-Run the same process in the remaining directories to compare all ECC configurations.
-
 ---
 
 ## 12. Notes
@@ -324,9 +276,3 @@ Run the same process in the remaining directories to compare all ECC configurati
 - Generated outputs are stored under each scheme's `Result/` directory.
 
 ---
-
-## 13. Citation
-
-If you use this artifact, please cite the ISCA 2026 paper:
-
-**Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection**

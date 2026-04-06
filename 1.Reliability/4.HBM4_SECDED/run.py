@@ -3,7 +3,7 @@ import subprocess
 import os
 from multiprocessing import Pool, cpu_count
 
-EXE = "./HBM4_fault_sim_SECDED"
+EXE = "./HBM4_fault_sim"
 
 # Sequence: [LINK1 STOR, PERI, LINK2]
 DOMAINS = {
