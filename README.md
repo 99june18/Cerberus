@@ -1,6 +1,6 @@
 # Artifact Evaluation for "Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection" (ISCA 2026)
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5147569.svg)](https://doi.org/10.5281/zenodo.5147569)
+[![DOI](https://zenodo.org/badge/1202489380.svg)](https://doi.org/10.5281/zenodo.19435338)
 
 This repository provides the artifact for the ISCA 2026 paper **Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection**.
 
