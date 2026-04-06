@@ -1,7 +1,5 @@
 # Performance and DRAM Energy Evaluation
 
-This directory contains the artifact used to reproduce the **performance** and **DRAM energy** evaluation of **Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection**.
-
 This part of the artifact reproduces the following results from the paper:
 
 - **Figure 7(a)**: IPC normalized to HBM4
@@ -32,6 +30,7 @@ Performance_Energy/
 │       ├── run_status/
 │       └── make_excel.py
 └── Energy/
+    └── Energy calculation.xlsx
 ```
 
 ### Performance directory
@@ -89,8 +88,6 @@ The evaluated ECC configurations include:
 - **Cerberus (32b)**
 - **Cerberus (40b)**
 
-The main expected outcome is that **Cerberus improves performance while maintaining competitive DRAM energy consumption** across the evaluated workloads and ECC configurations.
-
 ---
 
 ## 3. Evaluation Methodology
@@ -125,18 +122,6 @@ Specifically, the DRAM energy is calculated using:
 In other words, the artifact does **not** estimate DRAM energy directly inside Accel-Sim.  
 Instead, it first collects the relevant simulation statistics from Accel-Sim, and then uses those values as inputs to the Excel-based DRAM energy model.
 
-At a high level, the energy flow is:
-
-```text
-Accel-Sim simulation
-        ↓
-Collection of instruction numbers
-        ↓
-Application of DRAM current values
-        ↓
-Excel-based calculation reflecting Micron power calculator
-        ↓
-Final DRAM energy values
 ```
 
 The final energy metric reported in the paper is:
