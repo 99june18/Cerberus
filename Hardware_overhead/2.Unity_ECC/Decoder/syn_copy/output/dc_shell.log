@@ -55,7 +55,6 @@ Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decod
 Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv'.  (AUTOREAD-100)
 Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/UNITY_DECODER.sv'.  (AUTOREAD-100)
 Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFDIV.sv'.  (AUTOREAD-100)
-Information: Source H_matrix.txt ignored by autoread due to filtering.  (AUTOREAD-102)
 Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFMULT.sv'.  (AUTOREAD-100)
 Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/SYNDROME_GENERATOR.sv'.  (AUTOREAD-100)
 Information: Adding '/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/GFEXP.sv'.  (AUTOREAD-100)
@@ -101,32 +100,32 @@ Information: Building the design 'SYNDROME_GENERATOR'. (HDL-193)
 Presto compilation completed successfully. (SYNDROME_GENERATOR)
 Information: Building the design 'SSE_CORRECTOR'. (HDL-193)
 
-Statistics for case statements in always block at line 49 in file
+Statistics for case statements in always block at line 21 in file
 	'/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|            57            |    auto/auto     |
+|            24            |    auto/auto     |
 ===============================================
 
 Inferred memory devices in process
-	in routine SSE_CORRECTOR line 49 in file
+	in routine SSE_CORRECTOR line 21 in file
 		'/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv'.
 ===========================================================================
 |    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
 ===========================================================================
 |  decode_result_reg  | Latch |   1   |  N  | N  | N  | N  | -  | -  | -  |
 ===========================================================================
-Warning:  /home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv:49: Netlist for always_comb block contains a latch. (ELAB-974)
+Warning:  /home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/SSE_CORRECTOR.sv:21: Netlist for always_comb block contains a latch. (ELAB-974)
 Presto compilation completed successfully. (SSE_CORRECTOR)
 Information: Building the design 'DE_CORRECTOR'. (HDL-193)
 
-Statistics for case statements in always block at line 29 in file
+Statistics for case statements in always block at line 10 in file
 	'/home/99june18/Cerberus/Hardware_overhead/2.Unity_ECC/Decoder/rtl/DE_CORRECTOR.sv'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|            33            |    auto/auto     |
+|            14            |    auto/auto     |
 ===============================================
 Presto compilation completed successfully. (DE_CORRECTOR)
 Information: Building the design 'DECISION'. (HDL-193)
@@ -311,3 +310,21 @@ Threshold voltage group cell usage:
 
   Beginning Mapping Optimizations  (Ultra High effort)
   -------------------------------
+Information: Ungrouping hierarchy syndrome_generator 'SYNDROME_GENERATOR' #insts = 1050. (OPT-777)
+Information: Ungrouping hierarchy sse_corrector/error_value00 'GFDIV_1' #insts = 204348. (OPT-777)
+Information: Ungrouping hierarchy sse_corrector 'SSE_CORRECTOR' #insts = 205314. (OPT-777)
+Information: Added key list 'DesignWare' to design 'UNITY_DECODER'. (DDB-72)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+  Mapping Optimization (Phase 10)
+  Mapping Optimization (Phase 11)
+  Mapping Optimization (Phase 12)
+  Mapping Optimization (Phase 13)
+  Mapping Optimization (Phase 14)
