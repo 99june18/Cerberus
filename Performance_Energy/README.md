@@ -158,43 +158,15 @@ We tested the evaluation with the following tools:
 
 ## 5. Performance Workflow
 
+Before running the performance evaluation, users should first prepare a **Docker environment that can run Accel-Sim**.  
+After that, apply the provided `Cerberus_script/` files in that environment and run the evaluation script.
+
 The performance workflow is executed under:
 
 ```bash
 cd Performance_Energy/Performance/Cerberus_script
-```
-
-### Step 1. Launch the evaluation
-
-Run:
-
-```bash
 bash ./run.sh
 ```
-
-This script launches the main simulation workflow.
-
-### What `run.sh` does
-
-`run.sh` serves as the entry point of the performance artifact.  
-It invokes `run_script.py` with the configuration specified in `Cerberus.yaml` inside the prepared Accel-Sim environment.
-
-At a high level, it performs the following tasks:
-
-1. Sets up the execution environment
-2. Loads the Accel-Sim configuration
-3. Starts the benchmark simulation flow
-4. Stores results and logs in the designated directories
-
-### What `run_script.py` does
-
-`run_script.py` is responsible for the benchmark-level execution flow.  
-It runs the simulations for the evaluated ECC configurations and manages result generation for the benchmark suite used in the paper.
-
-### Role of `Cerberus.yaml`
-
-`Cerberus.yaml` defines the Accel-Sim configuration used to reproduce the paper’s performance results.  
-This file controls the experiment setup and simulation parameters used by the workflow.
 
 ---
 
@@ -238,16 +210,6 @@ After the simulations finish, run the following command to collect the raw outpu
 cd Performance_Energy/Performance/Cerberus_script
 python3 make_excel.py
 ```
-
-### What `make_excel.py` does
-
-This script:
-
-1. Collects the generated performance results
-2. Parses the relevant metrics
-3. Aggregates the results across the evaluated workloads
-4. Exports the summarized outputs to an Excel file
-
 The generated Excel file is saved in:
 
 ```text
@@ -319,53 +281,6 @@ The main expected observation is that **Cerberus improves performance while main
 
 ---
 
-## 10. Reproducibility Workflow
-
-A typical workflow to reproduce the performance and DRAM energy evaluation is:
-
-### Step 1. Move to the performance script directory
-
-```bash
-cd Performance_Energy/Performance/Cerberus_script
-```
-
-### Step 2. Launch the Accel-Sim evaluation
-
-```bash
-bash ./run.sh
-```
-
-### Step 3. Monitor run progress
-
-Inspect files under:
-
-```text
-run_status/
-```
-
-### Step 4. Export aggregated performance results
-
-```bash
-python3 make_excel.py
-```
-
-### Step 5. Use the generated statistics for DRAM energy calculation
-
-Check the Excel files under:
-
-```text
-Performance_Energy/Energy/
-```
-
-### Step 6. Verify the final normalized results
-
-Compare the generated outputs against:
-
-- **Figure 7(a)** for IPC
-- **Figure 7(b)** for DRAM energy
-
----
-
 ## 11. Notes on the Docker Environment
 
 The performance artifact is designed around a **Docker-based Accel-Sim workflow**.
@@ -396,9 +311,3 @@ Therefore, if you prepare a compatible Docker environment that supports Accel-Si
 - Sufficient storage is recommended because simulation outputs and logs can accumulate across workloads and ECC configurations.
 
 ---
-
-## 13. Citation
-
-If you use this artifact, please cite the ISCA 2026 paper:
-
-**Cerberus: Cross-Layer ECC Co-Design for Robust and Efficient Memory Protection**
