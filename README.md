@@ -8,7 +8,7 @@ This repository provides the artifact for the ISCA 2026 paper **Cerberus: Cross-
 
 This artifact supports reproduction of three parts of the paper:
 
-- **Reliability evaluation** of Cerberus and baseline ECC schemes
+- **Reliability evaluation**
 - **Performance and DRAM energy evaluation**
 - **Hardware overhead evaluation**
 
