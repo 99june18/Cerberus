@@ -242,8 +242,10 @@ Therefore, the DRAM energy results are produced through an **offline Excel-based
 
 ### Important note
 
-The DRAM energy results are **not generated independently** of the performance results.  
-They are derived from the performance evaluation outputs. Therefore, the performance workflow must be completed first.
+The DRAM energy calculation is based on the Micron power-calculation methodology.  
+However, the full energy-calculation formula is not distributed in this repository because external redistribution is difficult due to Micron licensing restrictions.
+
+Instead, we provide only the **current calculation values** used for the final DRAM energy estimation.
 
 ---
 
