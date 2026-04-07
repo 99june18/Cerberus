@@ -95,7 +95,7 @@ The evaluated ECC configurations include:
 ### 3.1 Performance evaluation
 
 Performance is evaluated using **Accel-Sim**.  
-The provided scripts automate the execution of the benchmark suite under the ECC-aware simulation configuration used in the paper.
+The provided scripts automate the execution of the selected workloads from **Rodinia, Parboil, GraphBIG, and PolyBench** under the ECC-aware simulation configuration used in the paper.
 
 At a high level, the performance workflow proceeds as follows:
 
@@ -186,7 +186,7 @@ The results are organized by ECC scheme under directories such as:
 - `Cerberus/`
 - `Cerberus40b/`
 
-Each scheme directory contains the simulation results for the **16 evaluated benchmarks**.
+Each scheme directory contains the simulation results for the selected workloads from **Rodinia, Parboil, GraphBIG, and PolyBench**.
 
 Aggregated outputs are stored under:
 
