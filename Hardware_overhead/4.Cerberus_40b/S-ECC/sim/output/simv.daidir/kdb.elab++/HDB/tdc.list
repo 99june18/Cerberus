@@ -1,6 +1,0 @@
-/home/99june18/Cerberus/Hardware_overhead/3.Cerberus_40b/S-ECC/sim/..//rtl/Cerberus_40b.sv
-/home/99june18/Cerberus/Hardware_overhead/3.Cerberus_40b/S-ECC/sim/..//rtl/DECISION.sv
-/home/99june18/Cerberus/Hardware_overhead/3.Cerberus_40b/S-ECC/sim/..//rtl/DE_CORRECTOR.sv
-/home/99june18/Cerberus/Hardware_overhead/3.Cerberus_40b/S-ECC/sim/..//rtl/SSE_CORRECTOR.sv
-/home/99june18/Cerberus/Hardware_overhead/3.Cerberus_40b/S-ECC/sim/..//rtl/SYNDROME_GENERATOR.sv
-/home/99june18/Cerberus/Hardware_overhead/3.Cerberus_40b/S-ECC/sim/..//sim/tb/TB_testbench.sv

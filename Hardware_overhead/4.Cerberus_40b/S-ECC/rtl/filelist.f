@@ -1,8 +1,0 @@
-+incdir+$ROOT_PATH/rtl
-
--sverilog
-$ROOT_PATH/rtl/SYNDROME_GENERATOR.sv
-$ROOT_PATH/rtl/SSE_CORRECTOR.sv
-$ROOT_PATH/rtl/DE_CORRECTOR.sv
-$ROOT_PATH/rtl/DECISION.sv
-$ROOT_PATH/rtl/Cerberus_40b.sv
